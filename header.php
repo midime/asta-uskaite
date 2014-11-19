@@ -24,7 +24,6 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-	Just test
 		<!-- wrapper -->
 		<div class="wrapper">
 
