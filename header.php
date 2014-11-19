@@ -40,7 +40,7 @@
 					</div>
 					<!-- /logo -->
 
-                <?php include("wp-content/themes/asta/home-menu.php"); ?>
+                <?php include("wp-content/themes/asta-uskaite/home-menu.php"); ?>
 
 			</header>
 
