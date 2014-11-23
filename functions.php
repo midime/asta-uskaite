@@ -1,4 +1,14 @@
 <?php
+
+if(!is_admin()) {
+  // $blog_language = get_bloginfo('language');
+  //  include('wp-content/translations/'.$blog_language.'.php');
+}
+
+function get_template_start() {
+    return '/wp-content/themes/asta-uskaite/';
+}
+
 /*
  *  Author: Todd Motto | @toddmotto
  *  URL: html5blank.com | @html5blank

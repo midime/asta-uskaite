@@ -1,47 +1,101 @@
-<!doctype html>
-<html <?php language_attributes(); ?> class="no-js">
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+<!DOCTYPE html>
 
-		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+<!--[if lte IE 7]>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+<html class="ie7 page-home"><![endif]-->
 
-		<?php wp_head(); ?>
-		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
+<!--[if IE 8]>
 
-	</head>
-	<body <?php body_class(); ?>>
-		<!-- wrapper -->
-		<div class="wrapper">
+<html class="ie8 page-home"><![endif]-->
 
-			<!-- header -->
-			<header class="header clear" role="banner">
+<!--[if IE 9]>
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
+<html class="ie9 page-home"><![endif]-->
 
-                <?php include("wp-content/themes/asta-uskaite/home-menu.php"); ?>
+<!--[if !IE]><!-->
 
-			</header>
+<html class="page-home"><!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+
+
+    <title>Title</title>
+
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic|Great+Vibes|Lora:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/styles.css">
+
+
+
+    <!--[if lt IE 9]>
+
+    <script src="/scripts/html5shim.js" type="text/javascript"></script>
+
+    <![endif]-->
+
+
+
+    <script type="text/javascript">
+
+        (function () {
+
+            'use strict';
+
+            var el, head;
+
+            el = document.createElement('script');
+
+            el.type = 'text/javascript';
+
+            el.async = true;
+
+            el.setAttribute("data-main","<?php echo get_template_start(); ?>scripts/main");
+
+            el.src = '<?php echo get_template_start(); ?>scripts/require.js';
+
+            head = document.getElementsByTagName('script')[0];
+
+            head.parentNode.insertBefore(el, head);
+
+        }());
+
+    </script>
+
+</head>
+
+	<body>
+
+        <div class="page-header home">
+
+            <div class="page-frame clearfix">
+
+                <a href="#" class="logo">
+
+                    <img src="<?php echo get_template_start(); ?>content/images/logo.png" alt="Asta Uskaite">
+
+                </a>
+
+                <?php include("home-menu.php"); ?>
+
+            </div>
+
+        </div>
+
+
+
 
 
 			<!-- /header -->
