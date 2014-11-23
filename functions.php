@@ -6,7 +6,7 @@ if(!is_admin()) {
 }
 
 function get_template_start() {
-    return '/wp-content/themes/asta-uskaite/';
+    return '/staging/wp-content/themes/asta-uskaite/';
 }
 
 /*
@@ -502,6 +502,55 @@ class ik_walker extends Walker_Nav_Menu{
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
     }
 }
+
+function getProductImageObject($postID) {
+    global $wpdb;
+    $results = $wpdb->get_results( "SELECT * FROM as_postmeta WHERE post_id = ".$postID." and meta_key = '_easy_image_gallery' LIMIT 0, 1", OBJECT );
+
+    $attachments = get_posts( array(
+        'post__in' => explode(',', $results[0]->meta_value),
+        'post_type' => 'attachment',
+        'posts_per_page' => 1
+    ) );
+
+    if ( $attachments ) {
+        foreach ( $attachments as $attachment ) {
+            $productTitle = apply_filters( 'the_title', $attachment->post_title );
+            $productImage = wp_get_attachment_image_src( $attachment->ID, 'full' );
+
+        }
+    }
+
+    return array('title' => $productTitle, 'image' => $productImage[0]);
+}
+
+function getPrevNextProduct($currentProductId, $catId) {
+
+    $args = array( 'posts_per_page' => 1000, 'category' => $catId, 'order'=> 'DESC', 'orderby' => 'date' );
+    $productList = get_posts( $args );
+
+    $found = false;
+    $prev = false;
+    $next = false;
+
+    foreach ( $productList as $product ) {
+        var_dump($product->ID);
+        if ($found) {
+            $next = $product->ID;
+            break;
+        }
+
+        if ($product->ID == $currentProductId) {
+            $found = true;
+        } else {
+            $prev = $product->ID;
+        }
+
+    }
+
+    return array('prev' => $prev, 'next' => $next);
+}
+
 
 function register_my_menu() {
     register_nav_menu('home-menu',__( 'Home' ));

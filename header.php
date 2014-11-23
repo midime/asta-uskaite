@@ -78,24 +78,35 @@
 
 	<body>
 
-        <div class="page-header home">
+        <?php if (is_front_page()) { ?>
+            <div class="page-header home">
+                <div class="page-frame clearfix">
+                    <a href="#" class="logo">
+                        <img src="<?php echo get_template_start(); ?>content/images/logo.png" alt="Asta Uskaite">
+                    </a>
+                    <?php include("home-menu.php"); ?>
+                </div>
+            </div>
+            <section class="page-section promo" id="promo">
+                <div id="promo-slide">
+                    <div class="slide s01"></div>
+                    <div class="slide s02"></div>
+                    <div class="slide s03"></div>
+                    <div class="slide s04"></div>
+                    <div class="slide s05"></div>
+                </div>
+            </section>
+        <?php } ?>
 
-            <div class="page-frame clearfix">
+        <header class="page-header <?php if (is_front_page()) { ?> js-header"<?php } ?>">
+
+                <div class="page-frame clearfix">
 
                 <a href="#" class="logo">
-
-                    <img src="<?php echo get_template_start(); ?>content/images/logo.png" alt="Asta Uskaite">
-
+                    <img src="<?php echo get_template_start(); ?>content/images/logo-black.png" alt="Asta Uskaite">
                 </a>
-
                 <?php include("home-menu.php"); ?>
 
-            </div>
+                </div>
 
-        </div>
-
-
-
-
-
-			<!-- /header -->
+        </header>

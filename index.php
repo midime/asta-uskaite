@@ -1,48 +1,23 @@
 <?php get_header(); ?>
 
-<section class="page-section promo" id="promo">
-
-    <div id="promo-slide">
-
-        <div class="slide s01"></div>
-
-        <div class="slide s02"></div>
-
-        <div class="slide s03"></div>
-
-        <div class="slide s04"></div>
-
-        <div class="slide s05"></div>
-
-    </div>
-
-</section>
-
-<header class="page-header js-header">
-
-    <div class="page-frame clearfix">
-
-        <a href="#" class="logo">
-
-            <img src="<?php echo get_template_start(); ?>content/images/logo-black.png" alt="Asta Uskaite">
-
-        </a>
-
-        <?php include("home-menu.php"); ?>
-
-    </div>
-
-</header>
-
 <section class="page-section about" id="about">
 
     <div class="page-frame clearfix">
 
 
 
-        <h1>About</h1>
+        <h1>
+            <?php
+                echo __(get_the_title(39));
+            ?>
+        </h1>
 
-        <p>Fusce in pretium dui, non interdum diam. Aenean venenatis mattis dignissim. Cras et laoreet eros. Nullam ligula sem, volutpat sed vulputate in, consequat quis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ante turpis, blandit et laoreet nec, accumsan id odio. Suspendisse sit amet bibendum sem. Vestibulum eget mauris in neque adipiscing porta eget quis dolor. Nunc nec lacinia elit. Integer sodales vel dui eu adipiscing. Pellentesque ac odio libero. </p>
+        <?php
+
+            $post_about_me = get_post(39);
+            echo __($post_about_me->post_content);
+
+        ?>
 
         <div class="clearfix">
 
@@ -77,8 +52,11 @@
     <div class="page-frame">
 
 
-
-        <h1>Galerija</h1>
+        <h1>
+            <?php
+                echo __(get_the_title(41));
+            ?>
+        </h1>
 
         <div class="catalog-list">
 
@@ -154,15 +132,15 @@
 
                     <dt><img src="<?php echo get_template_start(); ?>content/images/icn-phone.png" alt="">tel.:</dt>
 
-                    <dd>+ 370 612 32789</dd>
+                    <dd><?php echo __(get_field('phone_con', 44)); ?></dd>
 
                     <dt><img src="<?php echo get_template_start(); ?>content/images/icn-address.png" alt="">adresas:</dt>
 
-                    <dd>vilniaus g. 12-1d., kaunas</dd>
+                    <dd><?php echo __(get_field('address_con', 44)); ?></dd>
 
                     <dt><img src="<?php echo get_template_start(); ?>content/images/icn-facebook.png" alt="">facebook:</dt>
 
-                    <dd>asta.uskaite.3</dd>
+                    <dd><?php echo __(get_field('facebook_con', 44)); ?></dd>
 
                 </dl>
 
@@ -193,7 +171,6 @@
                         </div>
 
                     </div>
-
                     <div class="two-columns clearfix">
 
                         <div class="form-row">
@@ -213,7 +190,6 @@
                         </div>
 
                     </div>
-
                     <div class="form-row textarea-row">
 
                         <label for="textarea">žinutė</label>
@@ -221,7 +197,6 @@
                         <textarea id="textarea" class="textarea required js-field" name="zinute" placeholder="žinutė" title="&nbsp;"></textarea>
 
                     </div>
-
                     <div class="form-row">
 
                         <button class="btn">siųsti žinutę</button>

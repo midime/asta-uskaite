@@ -5,8 +5,8 @@
 <div>
     <?php
 
-    $post_about_me = get_post(get_the_ID());
-    echo do_shortcode($post_about_me->post_content);
+        $post_about_me = get_post(get_the_ID());
+        echo do_shortcode($post_about_me->post_content);
 
     ?>
 
