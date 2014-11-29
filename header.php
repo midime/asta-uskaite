@@ -46,7 +46,11 @@
     <header class="page-header<?php if (is_front_page()) { ?> home<?php } ?>">
         <div class="page-frame clearfix">
             <a href="#" class="logo">
-                <img src="<?php echo get_template_start(); ?>content/images/logo-black.png" alt="Asta Uskaite">
+                <?php if (is_front_page()) { ?>
+                    <img src="<?php echo get_template_start(); ?>content/images/logo-white.png" alt="Asta Uskaite">
+                <?php }else{ ?>
+                    <img src="<?php echo get_template_start(); ?>content/images/logo-black.png" alt="Asta Uskaite">
+                <?php } ?>
             </a>
             <?php include("home-menu.php"); ?>
         </div>

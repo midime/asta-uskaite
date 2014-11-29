@@ -117,7 +117,7 @@ a {
     text-transform: uppercase;
     font-size: 16px;
     color: $color-black;
-    border: $color-black solid 1px;
+    border: $color-black solid 2px;
     padding: 0 30px;
     position: relative;
     z-index: 10;
@@ -126,16 +126,6 @@ a {
     &:hover{
         background: $color-white;
         color: $color-black;
-    }
-    &:after{
-        content: '';
-        position: absolute;
-        left: -1px;
-        top: -1px;
-        right: -1px;
-        bottom: -1px;
-        border: $color-black solid 1px;
-        @include  transition(all, 0.5s);
     }
     &.dark{
         margin: 0;
@@ -215,12 +205,21 @@ a {
     left: 0;
     min-width: $page-width;
     width: 100%;
-    background: url(../images/header-bg.png) 50% 100% no-repeat;
-    height: 79px;
-    margin-top: -12px;
+    margin-top: 0;
     z-index: 99;
     .page-frame {
         position: relative;
+        margin-top: 45px;
+        padding-bottom: 25px;
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 14px;
+            background: url(../images/bar-white.png) 50% 100% no-repeat;
+        }
     }
     .logo {
         display: block;
@@ -236,7 +235,6 @@ a {
             font-size: 26px;
             line-height: 1em;
             color: $color-black;
-            letter-spacing: 2px;
             margin-left: 30px;
             @include transition(all, 0.3s);
             &:hover, &.active {
@@ -266,8 +264,6 @@ a {
     }
 }
 .page-header.home {
-    top: 40px;
-    background: none;
     .page-nav {
         margin-top: 35px;
         a {
@@ -287,14 +283,17 @@ a {
         left: 0;
         right: 0;
         top: -25px;
-        height: 220px;
+        height: 280px;
+
+        @include background-image(linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0)));
+/*
         background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0)));
         background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
         background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
         background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
         background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );*/
     }
 }
 
@@ -412,12 +411,6 @@ a {
         height: 150px;
     }
 }
-
-@import "section-promo";
-@import "section-about";
-@import "section-gallery";
-@import "section-contact";
-@import "gallery";
 
 @-webkit-keyframes rotate-360 {
     0%   { transform: rotate(0deg); }

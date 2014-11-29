@@ -2,11 +2,46 @@
 
 <section class="page-section promo" id="promo">
     <div id="promo-slide">
-        <div class="slide s01"></div>
-        <div class="slide s02"></div>
-        <div class="slide s03"></div>
-        <div class="slide s04"></div>
-        <div class="slide s05"></div>
+        <div class="slide s01">
+            <div class="page-frame">
+                <div class="slide-content">
+                    <h2>Slide Title</h2>
+                    <a href="#nolink" class="btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide s02">
+            <div class="page-frame">
+                <div class="slide-content">
+                    <h2>Slide Title</h2>
+                    <a href="#nolink" class="btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide s03">
+            <div class="page-frame">
+                <div class="slide-content">
+                    <h2>Slide Title</h2>
+                    <a href="#nolink" class="btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide s04">
+            <div class="page-frame">
+                <div class="slide-content">
+                    <h2>Slide Title</h2>
+                    <a href="#nolink" class="btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide s05">
+            <div class="page-frame">
+                <div class="slide-content">
+                    <h2>Slide Title</h2>
+                    <a href="#nolink" class="btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
