@@ -19,12 +19,10 @@ foreach($results as $result) {
 
             ?>
             <a href="<?php echo '?p=' . $objectPostID; ?>">
-            <figure>
-
-                <img src="<?php echo $img[0]; ?>" width="<?php echo $img[1]; ?>px" height="<?php echo $img[2]; ?>px" alt="<?php echo $title; ?>">
-
-            </figure>
-            <p class="price"><?php echo get_field('price', $objectPostID); ?></p>
+                <figure>
+                    <img src="<?php echo $img[0]; ?>" width="<?php echo $img[1]; ?>px" height="<?php echo $img[2]; ?>px" alt="<?php echo $title; ?>">
+                </figure>
+                <p class="price"><?php echo get_field('price', $objectPostID); ?></p>
             </a>
         <?php
         }

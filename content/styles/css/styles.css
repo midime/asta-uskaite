@@ -885,13 +885,31 @@ a {
     /* line 28, ../scss/_gallery.scss */
     .gallery .tile figure {
       display: block;
+      position: relative;
       width: 275px;
       height: 241px;
       overflow: hidden;
       margin: 19px auto 0;
       text-align: center;
       background: #ECECEC; }
-    /* line 37, ../scss/_gallery.scss */
+    /* line 38, ../scss/_gallery.scss */
+    .gallery .tile .thumb-wrapper {
+      position: absolute;
+      left: -68px;
+      top: -85px;
+      width: 410px;
+      height: 410px;
+      display: table; }
+      /* line 45, ../scss/_gallery.scss */
+      .gallery .tile .thumb-wrapper .thumb-inner {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle; }
+      /* line 50, ../scss/_gallery.scss */
+      .gallery .tile .thumb-wrapper img {
+        max-width: 410px;
+        max-height: 410px; }
+    /* line 55, ../scss/_gallery.scss */
     .gallery .tile figcaption {
       display: block;
       margin: 15px 0 0;
@@ -900,44 +918,48 @@ a {
       font-size: 28px;
       line-height: 1.0em;
       color: #000000; }
+      /* line 63, ../scss/_gallery.scss */
+      .gallery .tile figcaption span {
+        font-size: 22px;
+        margin-right: 5px; }
 
-/* line 48, ../scss/_gallery.scss */
+/* line 72, ../scss/_gallery.scss */
 .product {
   position: relative; }
 
-/* line 51, ../scss/_gallery.scss */
+/* line 75, ../scss/_gallery.scss */
 .product-image {
   float: left;
   width: 507px;
   height: 507px;
   margin: 0;
   background: url("../images/product-bg.png") 50% 50% no-repeat; }
-  /* line 57, ../scss/_gallery.scss */
+  /* line 81, ../scss/_gallery.scss */
   .product-image img {
     display: block;
     margin: 20px 0 0 20px; }
 
-/* line 62, ../scss/_gallery.scss */
+/* line 86, ../scss/_gallery.scss */
 .product-info {
   float: right;
   width: 430px;
   display: table;
   height: 507px; }
-  /* line 67, ../scss/_gallery.scss */
+  /* line 91, ../scss/_gallery.scss */
   .product-info .inner {
     display: table-cell;
     vertical-align: bottom;
     padding-top: 45px; }
-  /* line 72, ../scss/_gallery.scss */
+  /* line 96, ../scss/_gallery.scss */
   .product-info h1 {
     font-size: 50px;
     text-align: left; }
 
-/* line 77, ../scss/_gallery.scss */
+/* line 101, ../scss/_gallery.scss */
 .product-price {
   background: url("../images/nav-bg.png") 50% 0 no-repeat;
   padding: 15px 0 0; }
-  /* line 80, ../scss/_gallery.scss */
+  /* line 104, ../scss/_gallery.scss */
   .product-price h4 {
     float: left;
     font-family: "Great Vibes", cursive;
@@ -947,19 +969,19 @@ a {
     vertical-align: middle;
     margin: 0;
     letter-spacing: 1px; }
-    /* line 89, ../scss/_gallery.scss */
+    /* line 113, ../scss/_gallery.scss */
     .product-price h4 span {
       font-size: 24px; }
-  /* line 93, ../scss/_gallery.scss */
+  /* line 117, ../scss/_gallery.scss */
   .product-price .btn {
     float: right; }
 
-/* line 97, ../scss/_gallery.scss */
+/* line 121, ../scss/_gallery.scss */
 .prod-nav {
   position: absolute;
   right: 0;
   top: 0; }
-  /* line 101, ../scss/_gallery.scss */
+  /* line 125, ../scss/_gallery.scss */
   .prod-nav a {
     display: inline-block;
     width: 30px;
@@ -975,7 +997,7 @@ a {
     -o-transition: background 0.3s;
     -webkit-transition: background 0.3s;
     transition: background 0.3s; }
-    /* line 113, ../scss/_gallery.scss */
+    /* line 137, ../scss/_gallery.scss */
     .prod-nav a:before {
       content: '';
       display: block;
@@ -985,14 +1007,14 @@ a {
       margin: -8px 0 0 -15px;
       border: transparent solid 8px;
       border-right: #000000 solid 12px; }
-    /* line 124, ../scss/_gallery.scss */
+    /* line 148, ../scss/_gallery.scss */
     .prod-nav a + a {
       margin-left: 5px; }
-      /* line 126, ../scss/_gallery.scss */
+      /* line 150, ../scss/_gallery.scss */
       .prod-nav a + a:before {
         border: transparent solid 8px;
         border-left: #000000 solid 12px;
         margin: -8px 0 0 -4px; }
-    /* line 132, ../scss/_gallery.scss */
+    /* line 156, ../scss/_gallery.scss */
     .prod-nav a:hover {
       background: #ffffff; }

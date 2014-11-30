@@ -27,12 +27,30 @@
         background: url('../images/tile-bg.png') 50% 50% no-repeat;
         figure{
             display: block;
+            position: relative;
             width: 275px;
             height: 241px;
             overflow: hidden;
             margin: 19px auto 0;
             text-align: center;
             background: #ECECEC;
+        }
+        .thumb-wrapper{
+            position: absolute;
+            left: -68px;
+            top: -85px;
+            width: 410px;
+            height: 410px;
+            display: table;
+            .thumb-inner{
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+            img{
+                max-width: 410px;
+                max-height: 410px;
+            }
         }
         figcaption{
             display: block;
@@ -42,9 +60,15 @@
             font-size: 28px;
             line-height: 1.0em;
             color: $color-black;
+            span{
+                font-size: 22px;
+                margin-right: 5px;
+            }
         }
     }
 }
+
+
 .product{
     position: relative;
 }
