@@ -1,16 +1,18 @@
 @import "compass/css3";
 
+.xdebug-var-dump{
+    display: none;
+}
+
 html{
     min-height: 100%;
     height: 100%;
     width: 100%;
     margin: 0;
 }
-
 body {
     margin: 0;
     width: 100%;
-    height: 100%;
     min-height: 100%;
     min-width: $page-width;
     font-family: $font-opensans;
@@ -21,6 +23,9 @@ body {
     background: url(../images/bg.png);
     -webkit-font-smoothing: antialiased;
     position: relative;
+    &.home{
+        height: 100%;
+    }
 }
 img {
     border: none;
@@ -56,7 +61,7 @@ a {
 }
 :focus {
     outline: none;
-    box-shadow: 0 0 3px $color-red
+    box-shadow: 0 0 0 $color-black
 }
 
 .page-frame {
@@ -99,11 +104,11 @@ a {
     }
 }
 .page-content{
-    padding-top: 160px;
+    padding-top: 230px;
     padding-bottom: 110px;
     h1{
         text-align: center;
-        margin-top: 78px;
+        margin-top: 0;
     }
 }
 .centered{
@@ -130,7 +135,7 @@ a {
     }
     &.dark{
         margin: 0;
-        border: none;
+        border: $color-black solid 1px;
         background: $color-black;
         color: $color-white;
         text-transform: none;
@@ -264,7 +269,7 @@ a {
         }
     }
 }
-.page-header.home {
+.home .page-header {
     .page-frame{
         &:before{
             background: url(../images/bar-white.png) 50% 100% no-repeat;
@@ -376,7 +381,9 @@ a {
 
 //Form Elements
 .field-wrapper{
-    padding: 0 22px 10px 0;
+    padding: 0 22px 0 0;
+    margin-bottom: 10px;
+    position: relative;
     %field-style{
         background: $color-white;
         border: $color-black solid 1px;
@@ -387,10 +394,46 @@ a {
     }
     .field-text{
         @extend %field-style;
+        &:focus {
+            box-shadow: inset 4px 4px 0 rgba($color-black, 0.06);
+        }
     }
     .text-area{
         @extend %field-style;
         height: 150px;
+        &:focus {
+            box-shadow: inset 4px 4px 0 rgba($color-black, 0.06);
+        }
+    }
+    label.error{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 34px;
+        height: 100%;
+        background: $color-white;
+        border:$color-black solid 1px;
+        outline-offset: -1px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: -9999px;
+        @include box-sizing(border-box);
+        &:after{
+            content:'!';
+            text-align: center;
+            vertical-align: middle;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            line-height: 34px;
+            text-indent: 0;
+            color: $color-black;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: georgia, sans-serif;
+        }
     }
 }
 

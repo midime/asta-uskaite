@@ -1,3 +1,4 @@
+//Gallery
 .nav-catalog{
     width: 585px;
     margin: 30px auto 0;
@@ -35,6 +36,17 @@
             text-align: center;
             background: #ECECEC;
         }
+        img{
+            max-width: 410px;
+            max-height: 410px;
+            @include transition(transform 0.35s);
+            @include transform-origin(50%, 50%);
+        }
+        &:hover{
+            img{
+                @include transform(scale3d(1.10,1.10,1));
+            }
+        }
         .thumb-wrapper{
             position: absolute;
             left: -68px;
@@ -46,10 +58,6 @@
                 display: table-cell;
                 text-align: center;
                 vertical-align: middle;
-            }
-            img{
-                max-width: 410px;
-                max-height: 410px;
             }
         }
         figcaption{
@@ -68,19 +76,34 @@
     }
 }
 
-
+//Product single
 .product{
     position: relative;
 }
-.product-image{
+.product-img{
     float: left;
     width: 507px;
     height: 507px;
     margin: 0;
     background: url('../images/product-bg.png') 50% 50% no-repeat;
+    .wrapper{
+        overflow: hidden;
+        margin: 20px;
+        width: 467px;
+        height: 467px;
+    }
+    .inner{
+        width: 720px;
+        height: 720px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 720px;
+        margin: -126px 0 0 -126px;
+    }
     img{
-        display: block;
-        margin: 20px 0 0 20px;
+        max-width: 720px;
+        max-height: 720px;
+        vertical-align: middle;
     }
 }
 .product-info{
@@ -106,7 +129,7 @@
         font-family: $font-greatvibes;
         font-weight: 400;
         font-size: 30px;
-        line-height: 40px;
+        line-height: 50px;
         vertical-align: middle;
         margin: 0;
         letter-spacing: 1px;

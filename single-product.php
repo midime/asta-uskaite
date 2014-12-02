@@ -57,10 +57,9 @@
     </div>
 </div>
 
-<?php include("gallery-menu.php"); ?>
 
 <div class="page-frame page-content">
-    <!-- +++ Content Start +++ -->
+
     <div class="clearfix product">
         <div class="prod-nav">
             <?php if ($productsPrevNext['prev'] ) { ?>
@@ -74,14 +73,16 @@
                 <a href="<?php echo get_permalink($productsPrevNext['next']); ?>">next</a>
             <?php } ?>
         </div>
-        <figure class="product-image">
-            <div class="inner">
-                <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+        <figure class="product-img">
+            <div class="wrapper">
+                <div class="inner">
+                    <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+                </div>
             </div>
         </figure>
         <div class="product-info">
             <div class="inner">
-                <h1><?php echo get_the_TITLE(); ?>></h1>
+                <h1><?php echo get_the_TITLE(); ?></h1>
                 <?php
                     echo __($cPost->post_content);
                 ?>
@@ -95,5 +96,5 @@
             </div>
         </div>
     </div>
-    <!-- +++ Content End +++ -->
+
 </div>
