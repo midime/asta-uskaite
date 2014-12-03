@@ -40,7 +40,7 @@
             max-width: 410px;
             max-height: 410px;
             @include transition(transform 0.35s);
-            @include transform-origin(50%, 50%);
+            @include transform-origin(50%, 100%);
         }
         &:hover{
             img{

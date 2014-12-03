@@ -417,14 +417,14 @@ a {
 /* line 383, ../scss/_global.scss */
 .field-wrapper {
   padding: 0 22px 0 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   position: relative; }
   /* line 387, ../scss/_global.scss */
   .field-wrapper .field-text, .field-wrapper .text-area {
     background: #ffffff;
-    border: #000000 solid 1px;
+    border: #808080 solid 1px;
     width: 100%;
-    padding: 5px 10px;
+    padding: 8px 10px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px; }
   /* line 397, ../scss/_global.scss */
@@ -489,7 +489,7 @@ a {
     z-index: 9999;
     width: 12px;
     margin: -65px 0 0 0; }
-    /* line 16, ../scss/_section-promo.scss */
+    /* line 15, ../scss/_section-promo.scss */
     .promo .bx-controls .bx-pager-link {
       display: block;
       width: 12px;
@@ -499,10 +499,10 @@ a {
       margin: 10px;
       text-indent: -9999px;
       overflow: hidden; }
-    /* line 26, ../scss/_section-promo.scss */
+    /* line 25, ../scss/_section-promo.scss */
     .promo .bx-controls .bx-pager-link.active {
       background: #ffffff; }
-    /* line 29, ../scss/_section-promo.scss */
+    /* line 28, ../scss/_section-promo.scss */
     .promo .bx-controls .bx-prev, .promo .bx-controls .bx-next {
       position: absolute;
       display: block;
@@ -513,35 +513,35 @@ a {
       width: 14px;
       height: 14px;
       background: url(../images/icn-top.png) 50% 50% no-repeat; }
-    /* line 40, ../scss/_section-promo.scss */
+    /* line 39, ../scss/_section-promo.scss */
     .promo .bx-controls .bx-next {
       top: auto;
       bottom: -15px;
       background-image: url(../images/icn-bottom.png); }
 
-/* line 48, ../scss/_section-promo.scss */
+/* line 47, ../scss/_section-promo.scss */
 .slide {
   width: 100%;
   height: 100%;
   background: #ffffff;
   color: #ffffff; }
-  /* line 55, ../scss/_section-promo.scss */
+  /* line 54, ../scss/_section-promo.scss */
   .slide .slide-content {
     position: absolute;
     top: 40%; }
-    /* line 58, ../scss/_section-promo.scss */
+    /* line 57, ../scss/_section-promo.scss */
     .slide .slide-content h2 {
       font-family: "Great Vibes", cursive;
       font-size: 70px;
       line-height: 1.0em;
       margin: 0;
       font-weight: normal; }
-    /* line 65, ../scss/_section-promo.scss */
+    /* line 64, ../scss/_section-promo.scss */
     .slide .slide-content .btn {
       border-color: #ffffff;
       color: #ffffff; }
 
-/* line 72, ../scss/_section-promo.scss */
+/* line 71, ../scss/_section-promo.scss */
 .slide.s01 {
   background: url(../images/slides/bg-01.jpg) 50% 30% no-repeat;
   -webkit-background-size: cover;
@@ -549,7 +549,7 @@ a {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 77, ../scss/_section-promo.scss */
+/* line 76, ../scss/_section-promo.scss */
 .slide.s02 {
   background: url(../images/slides/bg-02.jpg) 50% 30% no-repeat;
   -webkit-background-size: cover;
@@ -557,7 +557,7 @@ a {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 82, ../scss/_section-promo.scss */
+/* line 81, ../scss/_section-promo.scss */
 .slide.s03 {
   background: url(../images/slides/bg-03.jpg) 50% 30% no-repeat;
   -webkit-background-size: cover;
@@ -565,7 +565,7 @@ a {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 87, ../scss/_section-promo.scss */
+/* line 86, ../scss/_section-promo.scss */
 .slide.s04 {
   background: url(../images/slides/bg-04.jpg) 50% 30% no-repeat;
   -webkit-background-size: cover;
@@ -573,7 +573,7 @@ a {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 92, ../scss/_section-promo.scss */
+/* line 91, ../scss/_section-promo.scss */
 .slide.s05 {
   background: url(../images/slides/bg-06.jpg) 50% 30% no-repeat;
   -webkit-background-size: cover;
@@ -685,217 +685,62 @@ a {
     z-index: 10; }
 
 /* line 1, ../scss/_section-contact.scss */
-.contact {
-  border-top: #D8D4CC solid 1px;
-  position: relative; }
-  /* line 4, ../scss/_section-contact.scss */
-  .contact .page-frame {
-    position: relative; }
-
-/* line 8, ../scss/_section-contact.scss */
 #contact-map {
   height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0; }
-
-/* line 15, ../scss/_section-contact.scss */
-.contact-box {
-  position: absolute;
-  left: 20px;
-  top: 135px;
-  width: 492px;
-  z-index: 95;
-  height: 510px;
-  overflow: hidden;
-  -moz-transition: height, 0.3s;
-  -o-transition: height, 0.3s;
-  -webkit-transition: height, 0.3s;
-  transition: height, 0.3s; }
-
-/* line 25, ../scss/_section-contact.scss */
-.contact-box.minimise {
-  height: 30px;
-  overflow: hidden; }
-
-/* line 29, ../scss/_section-contact.scss */
-.contact-header {
-  background: #443B30;
-  background: rgba(68, 59, 48, 0.8);
-  padding: 25px 25px 15px; }
-  /* line 33, ../scss/_section-contact.scss */
-  .contact-header dl {
-    color: #ffffff;
-    font-family: "Lora, serif";
-    font-weight: 400;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 31px;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0; }
-  /* line 44, ../scss/_section-contact.scss */
-  .contact-header dt {
-    float: left;
-    height: 45px;
-    margin-right: 5px; }
-  /* line 49, ../scss/_section-contact.scss */
-  .contact-header dd {
-    height: 45px; }
-  /* line 52, ../scss/_section-contact.scss */
-  .contact-header img {
-    vertical-align: middle;
-    margin-right: 10px; }
-
-/* line 57, ../scss/_section-contact.scss */
-.contact-form {
-  padding: 25px 25px 10px;
-  background: #ffffff;
-  background: rgba(255, 255, 255, 0.9); }
-  /* line 61, ../scss/_section-contact.scss */
-  .contact-form form {
-    margin: 0;
-    padding: 0; }
-  /* line 65, ../scss/_section-contact.scss */
-  .contact-form .link-toggle {
+  /* line 7, ../scss/_section-contact.scss */
+  #contact-map:after {
+    content: '';
     position: absolute;
-    right: 14px;
-    top: 10px;
-    font-size: 30px;
-    line-height: 5px;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700; }
-    /* line 74, ../scss/_section-contact.scss */
-    .contact-form .link-toggle:hover {
-      color: #000000; }
-
-/* line 79, ../scss/_section-contact.scss */
-.form-row {
-  margin-bottom: 0;
-  padding-right: 0;
-  position: relative; }
-  /* line 83, ../scss/_section-contact.scss */
-  .form-row label {
-    display: block;
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    font-size: 10px;
-    line-height: 1em;
-    text-transform: uppercase;
-    color: #929292;
-    margin: 0;
-    z-index: 1;
-    opacity: 0.1;
-    -moz-transition: all, 1s;
-    -o-transition: all, 1s;
-    -webkit-transition: all, 1s;
-    transition: all, 1s; }
-  /* line 97, ../scss/_section-contact.scss */
-  .form-row .textfield {
-    background: none;
-    border: none;
-    border-bottom: #B3B3B3 solid 1px;
-    font-size: 14px;
-    width: 150px;
-    padding: 13px 62px 5px 0;
-    vertical-align: middle;
-    position: relative;
-    z-index: 5;
-    -moz-transition: all, 0.2s;
-    -o-transition: all, 0.2s;
-    -webkit-transition: all, 0.2s;
-    transition: all, 0.2s; }
-  /* line 109, ../scss/_section-contact.scss */
-  .form-row .textfield:focus, .form-row textarea:focus, .form-row .textfield.valid, .form-row textarea.valid {
-    outline: none;
-    box-shadow: none;
-    font-weight: 700; }
-  /* line 114, ../scss/_section-contact.scss */
-  .form-row .textfield.error {
-    border-bottom: #DE5D5D solid 1px !important;
-    color: #DE5D5D;
-    font-weight: 700; }
-  /* line 119, ../scss/_section-contact.scss */
-  .form-row .textfield.error::-webkit-input-placeholder {
-    color: #DE5D5D;
-    font-weight: 700; }
-  /* line 123, ../scss/_section-contact.scss */
-  .form-row .textarea {
-    background: url(../images/form-bg.png) repeat;
-    background-attachment: local;
-    border: none;
+    left: 0;
+    top: 0;
     width: 100%;
-    font-size: 14px;
-    line-height: 37px;
-    padding: 9px 0;
-    vertical-align: middle;
-    height: 100px;
-    font-family: "Open Sans", sans-serif;
-    position: relative;
-    z-index: 5;
-    box-shadow: none;
-    overflow: auto;
-    -moz-transition: box-shadow, 0.1s;
-    -o-transition: box-shadow, 0.1s;
-    -webkit-transition: box-shadow, 0.1s;
-    transition: box-shadow, 0.1s; }
-  /* line 140, ../scss/_section-contact.scss */
-  .form-row .textarea.error {
-    color: #DE5D5D; }
-  /* line 143, ../scss/_section-contact.scss */
-  .form-row .btn {
-    border: none;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 7px 20px;
-    font-size: 14px;
-    margin: 15px 0 10px;
-    cursor: pointer;
-    -moz-transition: background, 0.2s;
-    -o-transition: background, 0.2s;
-    -webkit-transition: background, 0.2s;
-    transition: background, 0.2s; }
-    /* line 153, ../scss/_section-contact.scss */
-    .form-row .btn:hover {
-      background: #B53C3C; }
-  /* line 157, ../scss/_section-contact.scss */
-  .form-row span.error {
-    display: none !important; }
+    height: 280px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -moz-linear-gradient(#ffffff, rgba(255, 255, 255, 0));
+    background-image: -webkit-linear-gradient(#ffffff, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(#ffffff, rgba(255, 255, 255, 0)); }
 
-/* line 162, ../scss/_section-contact.scss */
-.form-row.full label {
-  opacity: 1; }
-/* line 165, ../scss/_section-contact.scss */
-.form-row.full .textfield, .form-row.full .textarea {
-  box-shadow: none; }
+/* line 17, ../scss/_section-contact.scss */
+.overlay {
+  background: url(../images/bg.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  z-index: 10;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
 
-/* line 170, ../scss/_section-contact.scss */
-.two-columns .form-row {
-  float: left;
-  width: 48%; }
-/* line 174, ../scss/_section-contact.scss */
-.two-columns .form-row + .form-row {
-  float: right; }
-
-/* line 179, ../scss/_section-contact.scss */
-.ie9 .contact-box, .ie8 .contact-box {
-  height: 630px; }
-/* line 182, ../scss/_section-contact.scss */
-.ie9 label, .ie8 label {
+/* line 28, ../scss/_section-contact.scss */
+.page-contact {
   position: relative;
-  left: auto;
-  bottom: auto;
-  font-size: 13px;
-  text-transform: none;
-  margin: 0 0 5px 15px; }
+  z-index: 20;
+  opacity: 1;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  /* line 33, ../scss/_section-contact.scss */
+  .page-contact form {
+    width: 420px;
+    margin: 0 auto; }
 
-/* line 192, ../scss/_section-contact.scss */
-.ie8 label {
-  margin-left: 0; }
+/* line 39, ../scss/_section-contact.scss */
+.show-map .page-contact {
+  opacity: 0; }
+/* line 42, ../scss/_section-contact.scss */
+.show-map .overlay {
+  opacity: 0; }
 
 /* line 2, ../scss/_gallery.scss */
 .nav-catalog {
@@ -945,10 +790,10 @@ a {
       -o-transition: -o-transform 0.35s;
       -webkit-transition: -webkit-transform 0.35s;
       transition: transform 0.35s;
-      -moz-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      -webkit-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
+      -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%; }
     /* line 46, ../scss/_gallery.scss */
     .gallery .tile:hover img {
       -moz-transform: scale3d(1.1, 1.1, 1);
