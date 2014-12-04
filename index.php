@@ -66,7 +66,7 @@
 
                 <img src="http://lorempixel.com/960/275/nature/" alt="">
 
-                <a href="/gallery.html">žiūreti galerija</a>
+                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
 
             </div>
 
@@ -76,7 +76,7 @@
 
                 <img src="http://lorempixel.com/960/275/nature/" alt="">
 
-                <a href="/gallery.html">žiūreti galerija</a>
+                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
 
             </div>
 
@@ -86,7 +86,7 @@
 
                 <img src="http://lorempixel.com/960/275/nature/" alt="">
 
-                <a href="/gallery.html">žiūreti galerija</a>
+                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
 
             </div>
 
@@ -96,7 +96,7 @@
 
                 <img src="http://lorempixel.com/960/275/nature/" alt="">
 
-                <a href="/gallery.html">žiūreti galerija</a>
+                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
 
             </div>
 
@@ -106,7 +106,7 @@
 
                 <img src="http://lorempixel.com/960/275/nature/" alt="">
 
-                <a href="/gallery.html">žiūreti galerija</a>
+                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
 
             </div>
 
@@ -130,15 +130,15 @@
 
                 <dl>
 
-                    <dt><img src="<?php echo get_template_start(); ?>content/images/icn-phone.png" alt="">tel.:</dt>
+                    <dt><img src="<?php echo get_template_start(); ?>content/images/icn-phone.png" alt=""><?php getQVertimas('main_form_phone'); ?>:</dt>
 
                     <dd><?php echo __(get_field('phone_con', 44)); ?></dd>
 
-                    <dt><img src="<?php echo get_template_start(); ?>content/images/icn-address.png" alt="">adresas:</dt>
+                    <dt><img src="<?php echo get_template_start(); ?>content/images/icn-address.png" alt=""><?php getQVertimas('main_address'); ?>:</dt>
 
                     <dd><?php echo __(get_field('address_con', 44)); ?></dd>
 
-                    <dt><img src="<?php echo get_template_start(); ?>content/images/icn-facebook.png" alt="">facebook:</dt>
+                    <dt><img src="<?php echo get_template_start(); ?>content/images/icn-facebook.png" alt=""><?php getQVertimas('main_facebook'); ?>:</dt>
 
                     <dd><?php echo __(get_field('facebook_con', 44)); ?></dd>
 
@@ -150,6 +150,11 @@
 
                 <a class="link-toggle js-toggle">&ndash;</a>
 
+                <?php
+                    $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="76" title="Be pavadinimo"]'))    ;
+                    echo $ct_shortcode;
+                ?>
+                <?php /*
                 <form method="post" action="" class="js-contactform">
 
                     <div class="two-columns clearfix">
@@ -204,8 +209,7 @@
                     </div>
 
                 </form>
-
-
+ */ ?>
 
             </div>
 

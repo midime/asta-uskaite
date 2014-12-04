@@ -28,6 +28,11 @@
     <div class="inner">
         <!-- Drawer Content -->
         <h3>Uzsisakyti papuosala skambinkite <br>tel.: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> arba uzpildykite sia forma:</h3>
+                        <?php
+        $ct_shortcode = translate_phrases_of_forms(do_shortcode('   [contact-form-7 id="77" title="Be pavadinimo"]'))    ;
+        echo $ct_shortcode;
+        ?>
+<?php /*
         <form action="" method="post">
             <label for="name1">Vardas:</label>
             <div class="field-wrapper">
@@ -53,6 +58,7 @@
                 <button type="submit" class="btn dark">Siųsti užklausimą</button>
             </div>
         </form>
+ */?>
         <!-- Drawer Content End -->
     </div>
 </div>

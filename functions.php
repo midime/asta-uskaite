@@ -1,12 +1,12 @@
 <?php
 
 if(!is_admin()) {
-  // $blog_language = get_bloginfo('language');
-  //  include('wp-content/translations/'.$blog_language.'.php');
+    $blog_language = get_bloginfo('language');
+    include('wp-content/translations/'.$blog_language.'.php');
 }
 
 function get_template_start() {
-    return '/staging/wp-content/themes/asta-uskaite/';
+    return '/asta/wp-content/themes/asta-uskaite/';
 }
 
 /*
@@ -551,6 +551,19 @@ function getPrevNextProduct($currentProductId, $catId) {
     return array('prev' => $prev, 'next' => $next);
 }
 
+function translate_phrases_of_forms($contactForm) {
+    $result = $contactForm;
+
+    preg_match_all("/##[a-zA-Z0-9@'\"_-]+##/", $contactForm, $matches);
+    $actualMatches = $matches[0];
+
+    foreach($actualMatches as $match) {
+        $translateString = substr($match, 2, strlen($match) - 4);
+        $result = str_replace($match, getQVertimasString($translateString), $result);
+    }
+
+    return $result;
+}
 
 function register_my_menu() {
     register_nav_menu('home-menu',__( 'Home' ));
