@@ -2,12 +2,12 @@
 <div class="overlay"></div>
 <div class="page-frame page-content page-contact">
     <h1><?php echo do_shortcode(get_the_title(get_the_ID())); ?></h1>
+    <div class="contacts centered">
+        <span class="tel"><?php echo get_field('phone_con', 16); ?></span>
+        <span class="address"><a href="" class="js-contact"><?php echo get_field('address_con', 16); ?></a></span>
+        <span class="facebook"><?php echo get_field('facebook_con', 16); ?></span>
+    </div>
     <form action="" method="post">
-        <div style="text-align: center">
-            <div><span>Tel. nr.</span><span><?php echo get_field('phone_con', 16); ?></span></div>
-            <div><span><a href="" class="js-contact">Adresas</a></span><span><?php echo get_field('address_con', 16); ?></span></div>
-            <div><span>Facebook</span><span><?php echo get_field('facebook_con', 16); ?></span></div>
-        </div>
         <div class="field-wrapper">
             <input type="text" id="name1" name="name" class="field-text required" value="" placeholder="Vardas">
         </div>
@@ -23,7 +23,7 @@
         <div class="field-wrapper">
             <textarea id="message" name="message" class="text-area" placeholder="Pastabos"></textarea>
         </div>
-        <div class="field-wrapper">
+        <div class="field-wrapper centered">
             <button type="submit" class="btn dark">Siųsti užklausimą</button>
         </div>
     </form>

@@ -44,7 +44,7 @@
         }
         &:hover{
             img{
-                @include transform(scale3d(1.10,1.10,1));
+                @include transform(scale3d(1.04,1.04,1));
             }
         }
         .thumb-wrapper{

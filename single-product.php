@@ -29,25 +29,20 @@
         <!-- Drawer Content -->
         <h3>Uzsisakyti papuosala skambinkite <br>tel.: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> arba uzpildykite sia forma:</h3>
         <form action="" method="post">
-            <label for="name1">Vardas:</label>
             <div class="field-wrapper">
-                <input type="text" id="name1" name="name" class="field-text required" value="">
+                <input type="text" id="name1" name="name" class="field-text required" value="" placeholder="Vardas">
             </div>
-            <label for="name2">Pavardė:</label>
             <div class="field-wrapper">
-                <input type="text" id="name2" name="fname" class="field-text required" value="">
+                <input type="text" id="name2" name="fname" class="field-text required" value="" placeholder="Pavardė">
             </div>
-            <label for="email">El. paštas:</label>
             <div class="field-wrapper">
-                <input type="email" id="email" name="email" class="field-text required" value="">
+                <input type="email" id="email" name="email" class="field-text required" value="" placeholder="El. paštas">
             </div>
-            <label for="tel">Telefonas:</label>
             <div class="field-wrapper">
-                <input type="text" id="tel" name="tel" class="field-text required" value="">
+                <input type="text" id="tel" name="tel" class="field-text required" value="" placeholder="Telefonas">
             </div>
-            <label for="message">Pastabos:</label>
             <div class="field-wrapper">
-                <textarea id="message" name="message" class="text-area"></textarea>
+                <textarea id="message" name="message" class="text-area" placeholder="Pastabos"></textarea>
             </div>
             <div class="field-wrapper">
                 <button type="submit" class="btn dark">Siųsti užklausimą</button>
