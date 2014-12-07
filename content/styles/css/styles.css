@@ -612,8 +612,9 @@ a {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0; }
-  /* line 7, ../scss/_section-contact.scss */
+  top: 0;
+  z-index: 2; }
+  /* line 8, ../scss/_section-contact.scss */
   #contact-map:after {
     content: '';
     position: absolute;
@@ -628,7 +629,7 @@ a {
     background-image: -webkit-linear-gradient(#c3c0b5, rgba(195, 192, 181, 0));
     background-image: linear-gradient(#c3c0b5, rgba(195, 192, 181, 0)); }
 
-/* line 17, ../scss/_section-contact.scss */
+/* line 18, ../scss/_section-contact.scss */
 .overlay {
   background: url(../images/bg.png);
   height: 100%;
@@ -638,42 +639,42 @@ a {
   top: 0;
   opacity: 0.8;
   z-index: 10;
-  -moz-transition: opacity 0.7s;
-  -o-transition: opacity 0.7s;
-  -webkit-transition: opacity 0.7s;
-  transition: opacity 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   border-top: #a3a3a3 solid 1px;
   margin-top: -1px; }
 
-/* line 30, ../scss/_section-contact.scss */
+/* line 31, ../scss/_section-contact.scss */
 .page-contact {
   position: relative;
   z-index: 20;
   oacity: 1;
-  -moz-transition: opacity 0.7s;
-  -o-transition: opacity 0.7s;
-  -webkit-transition: opacity 0.7s;
-  transition: opacity 0.7s; }
-  /* line 35, ../scss/_section-contact.scss */
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  /* line 36, ../scss/_section-contact.scss */
   .page-contact .contacts {
     width: 800px;
     margin: 40px auto 50px; }
-  /* line 39, ../scss/_section-contact.scss */
+  /* line 40, ../scss/_section-contact.scss */
   .page-contact form {
     width: 420px;
     margin: 0 auto; }
 
-/* line 45, ../scss/_section-contact.scss */
+/* line 46, ../scss/_section-contact.scss */
 .show-map #contact-map {
   overflow: hidden; }
-/* line 48, ../scss/_section-contact.scss */
+/* line 49, ../scss/_section-contact.scss */
 .show-map .page-contact {
-  display: none;
-  opacity: 0; }
-/* line 52, ../scss/_section-contact.scss */
+  opacity: 0;
+  z-index: 1; }
+/* line 53, ../scss/_section-contact.scss */
 .show-map .overlay {
-  display: none;
-  opacity: 0; }
+  opacity: 0;
+  z-index: 1; }
 
 /* line 2, ../scss/_gallery.scss */
 .nav-catalog {
