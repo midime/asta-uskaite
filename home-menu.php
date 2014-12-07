@@ -18,9 +18,9 @@
 
         <span class="lang-nav">
 
-            <a href="#nolink">LT</a>
+            <a href="/">LT</a>
 
-            <a href="#nolink">ENG</a>
+            <a href="/en/">ENG</a>
 
         </span>
 
