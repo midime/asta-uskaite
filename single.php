@@ -1,5 +1,10 @@
-<?php get_header(); ?>
 <?php
+    if (!isAjaxContent()) {
+        get_header();
+    }
+?>
+<?php
+
     if (get_the_ID() == 37) {
         include('single-home.php');
     } elseif (get_the_ID() == 39) {
@@ -8,6 +13,8 @@
         include('single-gallery.php');
     } elseif (get_the_ID() == 44) {
         include('single-contacts.php');
+    } elseif (get_the_ID() == 80) {
+        include('single-more-products.php');
     } elseif (in_category(array(12))) {
         include('single-gallery-category.php');
 
@@ -15,5 +22,9 @@
         include('single-product.php');
     }
 ?>
-<?php include("html-footer.php"); ?>
-<?php get_footer(); ?>
+<?php
+    if (!isAjaxContent()) {
+        include("html-footer.php");
+        get_footer();
+    }
+?>

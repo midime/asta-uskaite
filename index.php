@@ -60,55 +60,29 @@
 
         <div class="catalog-list">
 
-            <div class="catalog papuosalai">
+            <?php
+                $n = 1;
+                $args = array( 'posts_per_page' => 99, 'category' => 12, 'order'=> 'DESC', 'orderby' => 'date' );
+                $postList = get_posts( $args );
 
-                <h3>Kaklo papuošalai</h3>
+                foreach ( $postList as $post ) {
+            ?>
 
-                <img src="http://lorempixel.com/960/275/nature/" alt="">
+                    <div class="catalog <?php if ($n % 2 == 0) { echo "dir-right"; } ?>">
 
-                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
+                        <h3><?php echo __(get_the_title()); ?></h3>
 
-            </div>
+                        <img src="http://lorempixel.com/960/275/nature/" alt="">
 
-            <div class="catalog sages dir-right">
+                        <a href="<?php echo get_permalink($post->ID); ?>"><?php getQVertimas('view_gallery'); ?></a>
 
-                <h3>Sagės</h3>
+                    </div>
+            <?php
+                    $n++;
+                }
 
-                <img src="http://lorempixel.com/960/275/nature/" alt="">
-
-                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
-
-            </div>
-
-            <div class="catalog apyrankes">
-
-                <h3>Apyrankės</h3>
-
-                <img src="http://lorempixel.com/960/275/nature/" alt="">
-
-                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
-
-            </div>
-
-            <div class="catalog auskarai dir-right">
-
-                <h3>Auskarai</h3>
-
-                <img src="http://lorempixel.com/960/275/nature/" alt="">
-
-                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
-
-            </div>
-
-            <div class="catalog aksesuarai">
-
-                <h3>Galvos aksesuarai</h3>
-
-                <img src="http://lorempixel.com/960/275/nature/" alt="">
-
-                <a href="/gallery.html"><?php getQVertimas('view_gallery'); ?></a>
-
-            </div>
+                wp_reset_postdata();
+            ?>
 
         </div>
 

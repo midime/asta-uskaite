@@ -27,9 +27,9 @@
     <a href="" class="icn-close js-drawer-close"><span>Close</span></a>
     <div class="inner">
         <!-- Drawer Content -->
-        <h3>Uzsisakyti papuosala skambinkite <br>tel.: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> arba uzpildykite sia forma:</h3>
+        <h3><?php getQVertimas('if_order_1'); ?>: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> <?php getQVertimas('if_order_2'); ?>:</h3>
                         <?php
-        $ct_shortcode = translate_phrases_of_forms(do_shortcode('   [contact-form-7 id="77" title="Be pavadinimo"]'))    ;
+        $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="77" title="Be pavadinimo"]'));
         echo $ct_shortcode;
         ?>
 <?php /*
@@ -63,8 +63,6 @@
     </div>
 </div>
 
-<?php include("gallery-menu.php"); ?>
-
 <div class="page-frame page-content">
     <!-- +++ Content Start +++ -->
     <div class="clearfix product">
@@ -96,7 +94,7 @@
                 </p>
                 <div class="product-price clearfix">
                     <h4><span>€</span><?php echo get_field('price', get_the_ID()); ?></h4>
-                    <a href="#nolink" class="btn dark js-show-form">Uzsisakyti</a>
+                    <a href="#nolink" class="btn dark js-show-form"><?php getQVertimas('order'); ?></a>
                 </div>
             </div>
         </div>

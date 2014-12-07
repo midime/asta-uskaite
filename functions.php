@@ -6,7 +6,7 @@ if(!is_admin()) {
 }
 
 function get_template_start() {
-    return '/staging/wp-content/themes/asta-uskaite/';
+    return '/asta/wp-content/themes/asta-uskaite/';
 }
 
 /*
@@ -516,7 +516,7 @@ function getProductImageObject($postID) {
     if ( $attachments ) {
         foreach ( $attachments as $attachment ) {
             $productTitle = apply_filters( 'the_title', $attachment->post_title );
-            $productImage = wp_get_attachment_image_src( $attachment->ID, 'full' );
+            $productImage = wp_get_attachment_image_src( $attachment->ID, 'gallery-thumb' );
 
         }
     }
@@ -534,7 +534,6 @@ function getPrevNextProduct($currentProductId, $catId) {
     $next = false;
 
     foreach ( $productList as $product ) {
-        var_dump($product->ID);
         if ($found) {
             $next = $product->ID;
             break;
@@ -574,5 +573,17 @@ function register_my_menu2() {
     register_nav_menu('gallery-menu',__( 'Gallery' ));
 }
 add_action( 'init', 'register_my_menu2' );
+
+function isAjaxContent() {
+    if (isset($_GET['fetchContent']) || isset($_POST['fetchContent'])) {
+        return true;
+    }
+
+    return false;
+}
+
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'gallery-thumb', 270, 240, true );
+}
 
 ?>

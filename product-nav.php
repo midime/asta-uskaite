@@ -1,14 +1,14 @@
 <nav class="nav-catalog">
     <?php
-    $nav_sec_menu_params = array(
-        'container' => '',
-        'items_wrap' => '%3$s',
-        'walker'=> new ik_walker(),
-        'depth' => 0,
-        'theme_location' => 'gallery-menu',
+        $currentPageId = get_the_ID();
+        $args = array( 'posts_per_page' => 99, 'category' => 12, 'order'=> 'DESC', 'orderby' => 'date' );
+        $postList = get_posts( $args );
 
-    );
-
-    wp_nav_menu($nav_sec_menu_params);
+        foreach ( $postList as $post ) {
+    ?>
+            <a href="<?php echo get_permalink($post->ID); ?>" <?php if ($currentPageId == get_the_ID()) { ?>class="active"<?php } ?>><?php echo __(get_the_title()); ?></a>
+    <?php
+        }
+        wp_reset_postdata();
     ?>
 </nav>
