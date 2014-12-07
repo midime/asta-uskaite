@@ -583,7 +583,7 @@ function isAjaxContent() {
 }
 
 if ( function_exists( 'add_image_size' ) ) {
-    add_image_size( 'gallery-thumb', 270, 240, true );
+    add_image_size( 'gallery-thumb', 280, 250, true );
 }
 
 ?>
