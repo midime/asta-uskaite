@@ -18,9 +18,9 @@
 
         <span class="lang-nav">
 
-            <a href="/">LT</a>
+            <a href="/staging/">LT</a>
 
-            <a href="/en/">ENG</a>
+            <a href="/staging/en/">ENG</a>
 
         </span>
 
