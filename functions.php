@@ -6,7 +6,7 @@ if(!is_admin()) {
 }
 
 function get_template_start() {
-    return '/asta/wp-content/themes/asta-uskaite/';
+    return '/staging/wp-content/themes/asta-uskaite/';
 }
 
 /*
