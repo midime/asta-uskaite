@@ -1,6 +1,8 @@
 <div id="contact-map"></div>
+
 <div class="overlay"></div>
 <div class="page-frame page-content page-contact">
+
     <h1><?php echo do_shortcode(get_the_title(get_the_ID())); ?></h1>
     <div class="contacts centered">
         <span class="tel"><?php echo get_field('phone_con', 16); ?></span>
