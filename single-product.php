@@ -26,46 +26,18 @@
 <div class="drawer js-drawer">
     <a href="" class="icn-close js-drawer-close"><span>Close</span></a>
     <div class="inner">
-        <!-- Drawer Content -->
-        <h3><?php getQVertimas('if_order_1'); ?>: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> <?php getQVertimas('if_order_2'); ?>:</h3>
-                        <?php
-        //$ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="77" title="Be pavadinimo"]'));
-        $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="81" title="Be pavadinimo"]'));
-        echo $ct_shortcode;
+        <h3>
+            <?php getQVertimas('if_order_1'); ?>: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> <?php getQVertimas('if_order_2'); ?>:
+        </h3>
+        <?php
+            //$ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="77" title="Be pavadinimo"]'));
+            $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="81" title="Be pavadinimo"]'));
+            echo $ct_shortcode;
         ?>
-<?php /*
-        <form action="" method="post">
-            <label for="name1">Vardas:</label>
-            <div class="field-wrapper">
-                <input type="text" id="name1" name="name" class="field-text required" value="">
-            </div>
-            <label for="name2">Pavardė:</label>
-            <div class="field-wrapper">
-                <input type="text" id="name2" name="fname" class="field-text required" value="">
-            </div>
-            <label for="email">El. paštas:</label>
-            <div class="field-wrapper">
-                <input type="email" id="email" name="email" class="field-text required" value="">
-            </div>
-            <label for="tel">Telefonas:</label>
-            <div class="field-wrapper">
-                <input type="text" id="tel" name="tel" class="field-text required" value="">
-            </div>
-            <label for="message">Pastabos:</label>
-            <div class="field-wrapper">
-                <textarea id="message" name="message" class="text-area"></textarea>
-            </div>
-            <div class="field-wrapper">
-                <button type="submit" class="btn dark">Siųsti užklausimą</button>
-            </div>
-        </form>
- */?>
-        <!-- Drawer Content End -->
     </div>
 </div>
 
 <div class="page-frame page-content">
-    <!-- +++ Content Start +++ -->
     <div class="clearfix product">
         <div class="prod-nav">
             <?php if ($productsPrevNext['prev'] ) { ?>
@@ -79,9 +51,11 @@
                 <a href="<?php echo get_permalink($productsPrevNext['next']); ?>">next</a>
             <?php } ?>
         </div>
-        <figure class="product-image">
-            <div class="inner">
-                <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+        <figure class="product-img">
+            <div class="wrapper">
+                <div class="inner">
+                    <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+                </div>
             </div>
         </figure>
         <div class="product-info">
@@ -100,5 +74,4 @@
             </div>
         </div>
     </div>
-    <!-- +++ Content End +++ -->
 </div>
