@@ -1,8 +1,6 @@
 <?php $accessoryPageId = get_the_ID(); ?>
 <div class="page-frame page-content">
 
-    <!-- +++ Content Start +++ -->
-
     <h1><?php getQVertimas('gallery_title'); ?></h1>
 
     <?php
@@ -19,15 +17,14 @@
                 $productImage = getProductImageObject($post->ID);
         ?>
                 <a href="<?php echo get_permalink($post->ID); ?>" class="tile">
-
                     <figure>
-
-                        <img src="<?php echo $productImage['image']; ?>" alt="<?php echo __($productImage['title']); ?>">
-
+                        <div class="thumb-wrapper">
+                            <div class="thumb-inner">
+                                <img src="<?php echo $productImage['image']; ?>" alt="<?php echo __($productImage['title']); ?>">
+                            </div>
+                        </div>
                     </figure>
-
-                    <figcaption><?php echo get_field('price', $post->ID); ?></figcaption>
-
+                    <figcaption><span>€</span><?php echo get_field('price', $post->ID); ?></figcaption>
                 </a>
         <?php
             }
@@ -38,12 +35,8 @@
     </div>
 
     <p class="centered">
-
         <a href="#nolink" class="btn js-load-more"><span><?php getQVertimas('show_more'); ?></span></a>
-
     </p>
-
-    <!-- +++ Content End +++ -->
 
 </div>
 <div class="accessory-page-data" style="display: none;" data-category="<?php echo get_field('accessory_category', $accessoryPageId); ?>"></div>

@@ -17,10 +17,10 @@
         include('single-more-products.php');
     } elseif (in_category(array(12))) {
         include('single-gallery-category.php');
-
     } elseif (in_category(array(4,7,8,5,6,9))) {
         include('single-product.php');
     }
+
 ?>
 <?php
     if (!isAjaxContent()) {
