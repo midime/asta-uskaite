@@ -35,4 +35,4 @@
 
 </p>
 </div>
-
+<div class="accessory-page-data" style="display: none;" data-category="<?php echo get_field('accessory_category', 46); ?>"></div>

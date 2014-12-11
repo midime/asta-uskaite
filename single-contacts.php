@@ -14,7 +14,7 @@
         $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="81" title="Be pavadinimo"]'));
         echo $ct_shortcode;
     ?>
-    
+
 </div>
 
 
