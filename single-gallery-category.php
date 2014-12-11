@@ -10,7 +10,7 @@
     <div class="clearfix gallery">
 
         <?php
-            $args = array( 'posts_per_page' => 1000, 'category' => get_field('accessory_category', $accessoryPageId), 'order'=> 'DESC', 'orderby' => 'date' );
+            $args = array( 'posts_per_page' => 3, 'category' => get_field('accessory_category', $accessoryPageId), 'order'=> 'DESC', 'orderby' => 'date' );
             $postList = get_posts( $args );
 
             foreach ( $postList as $post ) {

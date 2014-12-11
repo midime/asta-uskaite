@@ -5,7 +5,7 @@ if (!isset($_GET['catPage']) || !isset($_GET['catId'])) {
 
 $categoryID = $_GET['catId'];
 $page = $_GET['catPage'];
-$offset = 1*$page;
+$offset = 3*$page;
 
 $args = array( 'posts_per_page' => 3, 'category' => $categoryID, 'offset' => $offset, 'order'=> 'DESC', 'orderby' => 'date' );
 $postList = get_posts( $args );

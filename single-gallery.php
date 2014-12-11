@@ -6,7 +6,7 @@
 <div class="clearfix gallery">
 
     <?php
-    $args = array( 'posts_per_page' => 1000, 'category' => 4, 'order'=> 'DESC', 'orderby' => 'date' );
+    $args = array( 'posts_per_page' => 3, 'category' => 4, 'order'=> 'DESC', 'orderby' => 'date' );
     $postList = get_posts( $args );
 
     foreach ( $postList as $post ) {
