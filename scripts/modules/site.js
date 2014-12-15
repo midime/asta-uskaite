@@ -207,10 +207,11 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                 data: { _wpcf7 : _wpcf7, _wpcf7_version : _wpcf7_version, _wpcf7_locale : _wpcf7_locale, _wpcf7_unit_tag : _wpcf7_unit_tag,
                     _wpnonce : _wpnonce,  m_fname : _m_fname, m_lname : _m_lname, m_email : _m_email, m_phone : _m_phone,
                     m_zinute : _m_zinute }
-            }).done(function( html ) {
+            }).done(function( htmlContent ) {
 
+      
 
-                if (html.search("wpcf7-mail-sent-ok")) {
+                if (htmlContent.indexOf("wpcf7-mail-sent-ok")) {
                     $('.form-response').children('.fsuccess').show();
                 } else {
                     $('.form-response').children('.ferror').show();
