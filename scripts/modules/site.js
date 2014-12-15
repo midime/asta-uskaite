@@ -194,11 +194,11 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
             var _wpcf7_unit_tag = $("input[name='_wpcf7_unit_tag']").val();
             var _wpnonce = $("input[name='_wpnonce']").val();
 
-            var _m_fname = $("input[name='m_fname']").val();
-            var _m_lname = $("input[name='m_lname']").val();
+            var _m_fname = $("input[name='fname']").val();
+            var _m_lname = $("input[name='lname']").val();
             var _m_email = $("input[name='m_email']").val();
             var _m_phone = $("input[name='m_phone']").val();
-            var _m_zinute = $("input[name='m_zinute']").val();
+            var _m_zinute = $("m_zinute[name='m_zinute']").val();
 
             $.ajax({
                 type: "post",
@@ -209,6 +209,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                     m_zinute : _m_zinute }
             }).done(function( html ) {
 
+                console.log(html.search("wpcf7-mail-sent-ok"));
                 if (html.search("wpcf7-mail-sent-ok")) {
                     $('.form-response').children('.fsuccess').show();
                 } else {
