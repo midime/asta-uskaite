@@ -187,6 +187,10 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                 $(this).hide();
             });
 
+            if (!$(this).valid()) {
+                return false;
+            }
+
             var href = $(this).attr('action');
             var _wpcf7 = $("input[name='_wpcf7']").val();
             var _wpcf7_version = $("input[name='_wpcf7_version']").val();
@@ -209,9 +213,9 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                     m_zinute : _m_zinute }
             }).done(function( htmlContent ) {
 
-      
 
-                if (htmlContent.indexOf("wpcf7-mail-sent-ok")) {
+
+                if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
                     $('.form-response').children('.fsuccess').show();
                 } else {
                     $('.form-response').children('.ferror').show();
