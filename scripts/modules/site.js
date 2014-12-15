@@ -181,6 +181,59 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
 
         });
 
+        $('form.wpcf7-form').submit(function() {
+
+            thisForm = $(this);
+
+            $('.form-response').children().each(function() {
+                $(this).hide();
+            });
+
+            if (!$(this).valid()) {
+                return false;
+            }
+
+            var href = $(this).attr('action');
+            var _wpcf7 = $("input[name='_wpcf7']").val();
+            var _wpcf7_version = $("input[name='_wpcf7_version']").val();
+            var _wpcf7_locale = $("input[name='_wpcf7_locale']").val();
+            var _wpcf7_unit_tag = $("input[name='_wpcf7_unit_tag']").val();
+            var _wpnonce = $("input[name='_wpnonce']").val();
+
+            var _m_fname = $("input[name='m_fname']").val();
+            var _m_lname = $("input[name='m_lname']").val();
+            var _m_email = $("input[name='m_email']").val();
+            var _m_phone = $("input[name='m_phone']").val();
+            var _m_zinute = $("textarea[name='m_zinute']").val();
+
+            $.ajax({
+                type: "post",
+                url: href,
+                dataType: "html",
+                data: { _wpcf7 : _wpcf7, _wpcf7_version : _wpcf7_version, _wpcf7_locale : _wpcf7_locale, _wpcf7_unit_tag : _wpcf7_unit_tag,
+                    _wpnonce : _wpnonce,  m_fname : _m_fname, m_lname : _m_lname, m_email : _m_email, m_phone : _m_phone,
+                    m_zinute : _m_zinute }
+            }).done(function( htmlContent ) {
+
+
+
+                if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
+                    $('.form-response').children('.fsuccess').show();
+                } else {
+                    $('.form-response').children('.ferror').show();
+                }
+
+                thisForm.find("input[type='text']").val('');
+                thisForm.find("input[type='email']").val('');
+                thisForm.find("textarea").val('');
+
+            });
+
+
+            return false;
+
+        });
+
         //Toggle drawer
         var elDrawer = $('.js-drawer');
         if (elDrawer.length > 0) {

@@ -34,6 +34,10 @@
             $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="81" title="Be pavadinimo"]'));
             echo $ct_shortcode;
         ?>
+        <div class="form-response">
+            <span class="fsuccess"><?php getQVertimas('form_success_message'); ?></span>
+            <span class="ferror"><?php getQVertimas('form_error_message'); ?></span>
+        </div>
     </div>
 </div>
 

@@ -19,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic|Great+Vibes|Lora:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/styles.css">
-
+    <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/custom.css">
     <!--[if lt IE 9]>
         <script src="<?php echo get_template_start(); ?>scripts/html5shim.js" type="text/javascript"></script>
     <![endif]-->
