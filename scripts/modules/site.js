@@ -183,6 +183,8 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
 
         $('form.wpcf7-form').submit(function() {
 
+            thisForm = $(this);
+
             $('.form-response').children().each(function() {
                 $(this).hide();
             });
@@ -221,7 +223,12 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                     $('.form-response').children('.ferror').show();
                 }
 
+                thisForm.find("input[type='text']").val('');
+                thisForm.find("input[type='email']").val('');
+                thisForm.find("textarea").val('');
+
             });
+
 
             return false;
 
