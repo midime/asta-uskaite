@@ -2,43 +2,43 @@
 
 <section class="page-section promo" id="promo">
     <div id="promo-slide">
-        <div class="slide s01">
+        <div class="slide brooches">
             <div class="page-frame">
                 <div class="slide-content">
-                    <h2>Slide Title</h2>
-                    <a href="#nolink" class="btn">View Gallery</a>
+                    <h2><?php getQVertimas('cat_brooches'); ?></h2>
+                    <a href="#nolink" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
-        <div class="slide s02">
+        <div class="slide necklaces">
             <div class="page-frame">
                 <div class="slide-content">
-                    <h2>Slide Title</h2>
-                    <a href="#nolink" class="btn">View Gallery</a>
+                    <h2><?php getQVertimas('cat_necklaces'); ?></h2>
+                    <a href="#nolink" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
-        <div class="slide s03">
+        <div class="slide earrings">
             <div class="page-frame">
                 <div class="slide-content">
-                    <h2>Slide Title</h2>
-                    <a href="#nolink" class="btn">View Gallery</a>
+                    <h2><?php getQVertimas('cat_earrings'); ?></h2>
+                    <a href="#nolink" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
-        <div class="slide s04">
+        <div class="slide bracelets">
             <div class="page-frame">
                 <div class="slide-content">
-                    <h2>Slide Title</h2>
-                    <a href="#nolink" class="btn">View Gallery</a>
+                    <h2><?php getQVertimas('cat_bracelets'); ?></h2>
+                    <a href="#nolink" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
-        <div class="slide s05">
+        <div class="slide accessories">
             <div class="page-frame">
                 <div class="slide-content">
-                    <h2>Slide Title</h2>
-                    <a href="#nolink" class="btn">View Gallery</a>
+                    <h2><?php getQVertimas('cat_head_accessories'); ?></h2>
+                    <a href="#nolink" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
@@ -59,21 +59,6 @@
             echo __($post_about_me->post_content);
         ?>
 
-        <div class="clearfix">
-
-            <figure class="img-frame">
-                <img src="http://lorempixel.com/g/211/252/fashion/" alt="Asta Uskaite">
-            </figure>
-
-            <figure class="img-frame">
-                <img src="http://lorempixel.com/g/211/252/fashion/" alt="Asta Uskaite">
-            </figure>
-
-            <figure class="img-frame">
-                <img src="http://lorempixel.com/g/211/252/fashion/" alt="Asta Uskaite">
-            </figure>
-
-        </div>
     </div>
 
 </section>

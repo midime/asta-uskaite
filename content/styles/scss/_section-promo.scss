@@ -50,47 +50,89 @@
     background: $color-white;
     color: $color-white;
     .page-frame{
+        position: relative;
+        padding-top: 0;
+        height: 100%;
     }
     .slide-content{
         position: absolute;
-        top: 40%;
+        text-align: center;
         h2{
             font-family: $font-greatvibes;
             font-size: 70px;
             line-height: 1.0em;
             margin: 0;
             font-weight: normal;
+            text-align: center;
         }
         .btn{
             border-color: $color-white;
             color: $color-white;
+            margin-left: 0;
+            margin-right: 0;
+            letter-spacing: 2px;
         }
     }
 }
 
-.slide.s01 {
-    background: url(../images/slides/bg-01.jpg) 50% 30% no-repeat;
+.slide.earrings {
+    background: url(../images/slides/earrings.jpg) 100% 50% no-repeat;
     @include background-cover;
+    .slide-content{
+        right: 70px;
+        top: 44%;
+        .btn:hover{
+            color: #71665A;
+        }
+    }
 }
 
-.slide.s02 {
-    background: url(../images/slides/bg-02.jpg) 50% 30% no-repeat;
+.slide.accessories {
+    background: url(../images/slides/head_accessories.jpg) 100% 100% no-repeat;
     @include background-cover;
+    .slide-content{
+        left: 0;
+        top: 34%;
+        .btn:hover{
+            color: #693833;
+        }
+    }
 }
 
-.slide.s03 {
-    background: url(../images/slides/bg-03.jpg) 50% 30% no-repeat;
+.slide.bracelets {
+    background: url(../images/slides/bracelets.jpg) 100% 0% no-repeat;
     @include background-cover;
+    .slide-content{
+        left: 90px;
+        top: 49%;
+        .btn:hover{
+            color: #2C2A2F;
+        }
+    }
 }
 
-.slide.s04 {
-    background: url(../images/slides/bg-04.jpg) 50% 30% no-repeat;
+.slide.brooches {
+    background: url(../images/slides/brooches.jpg) 100% 100% no-repeat;
     @include background-cover;
+    .slide-content{
+        left: 0;
+        top: 38%;
+        .btn:hover{
+            color: #595649;
+        }
+    }
 }
 
-.slide.s05 {
-    background: url(../images/slides/bg-06.jpg) 50% 30% no-repeat;
+.slide.necklaces {
+    background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
     @include background-cover;
+    .slide-content{
+        right: 0;
+        top: 43%;
+        .btn:hover{
+            color: #512E20;
+        }
+    }
 }
 
 

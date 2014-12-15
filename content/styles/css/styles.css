@@ -531,67 +531,115 @@ a {
   height: 100%;
   background: #ffffff;
   color: #ffffff; }
-  /* line 54, ../scss/_section-promo.scss */
+  /* line 52, ../scss/_section-promo.scss */
+  .slide .page-frame {
+    position: relative;
+    padding-top: 0;
+    height: 100%; }
+  /* line 57, ../scss/_section-promo.scss */
   .slide .slide-content {
     position: absolute;
-    top: 40%; }
-    /* line 57, ../scss/_section-promo.scss */
+    text-align: center; }
+    /* line 60, ../scss/_section-promo.scss */
     .slide .slide-content h2 {
       font-family: "Great Vibes", cursive;
       font-size: 70px;
       line-height: 1.0em;
       margin: 0;
-      font-weight: normal; }
-    /* line 64, ../scss/_section-promo.scss */
+      font-weight: normal;
+      text-align: center; }
+    /* line 68, ../scss/_section-promo.scss */
     .slide .slide-content .btn {
       border-color: #ffffff;
-      color: #ffffff; }
+      color: #ffffff;
+      margin-left: 0;
+      margin-right: 0;
+      letter-spacing: 2px; }
 
-/* line 71, ../scss/_section-promo.scss */
-.slide.s01 {
-  background: url(../images/slides/bg-01.jpg) 50% 30% no-repeat;
+/* line 78, ../scss/_section-promo.scss */
+.slide.earrings {
+  background: url(../images/slides/earrings.jpg) 100% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  /* line 81, ../scss/_section-promo.scss */
+  .slide.earrings .slide-content {
+    right: 70px;
+    top: 44%; }
+    /* line 84, ../scss/_section-promo.scss */
+    .slide.earrings .slide-content .btn:hover {
+      color: #71665A; }
 
-/* line 76, ../scss/_section-promo.scss */
-.slide.s02 {
-  background: url(../images/slides/bg-02.jpg) 50% 30% no-repeat;
+/* line 90, ../scss/_section-promo.scss */
+.slide.accessories {
+  background: url(../images/slides/head_accessories.jpg) 100% 100% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  /* line 93, ../scss/_section-promo.scss */
+  .slide.accessories .slide-content {
+    left: 0;
+    top: 34%; }
+    /* line 96, ../scss/_section-promo.scss */
+    .slide.accessories .slide-content .btn:hover {
+      color: #693833; }
 
-/* line 81, ../scss/_section-promo.scss */
-.slide.s03 {
-  background: url(../images/slides/bg-03.jpg) 50% 30% no-repeat;
+/* line 102, ../scss/_section-promo.scss */
+.slide.bracelets {
+  background: url(../images/slides/bracelets.jpg) 100% 0% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  /* line 105, ../scss/_section-promo.scss */
+  .slide.bracelets .slide-content {
+    left: 90px;
+    top: 49%; }
+    /* line 108, ../scss/_section-promo.scss */
+    .slide.bracelets .slide-content .btn:hover {
+      color: #2C2A2F; }
 
-/* line 86, ../scss/_section-promo.scss */
-.slide.s04 {
-  background: url(../images/slides/bg-04.jpg) 50% 30% no-repeat;
+/* line 114, ../scss/_section-promo.scss */
+.slide.brooches {
+  background: url(../images/slides/brooches.jpg) 100% 100% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  /* line 117, ../scss/_section-promo.scss */
+  .slide.brooches .slide-content {
+    left: 0;
+    top: 38%; }
+    /* line 120, ../scss/_section-promo.scss */
+    .slide.brooches .slide-content .btn:hover {
+      color: #595649; }
 
-/* line 91, ../scss/_section-promo.scss */
-.slide.s05 {
-  background: url(../images/slides/bg-06.jpg) 50% 30% no-repeat;
+/* line 126, ../scss/_section-promo.scss */
+.slide.necklaces {
+  background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  /* line 129, ../scss/_section-promo.scss */
+  .slide.necklaces .slide-content {
+    right: 0;
+    top: 43%; }
+    /* line 132, ../scss/_section-promo.scss */
+    .slide.necklaces .slide-content .btn:hover {
+      color: #512E20; }
 
 /* line 1, ../scss/_section-about.scss */
 .about {
   text-align: center;
-  position: relative; }
-  /* line 4, ../scss/_section-about.scss */
+  position: relative;
+  margin-bottom: -100px; }
+  /* line 5, ../scss/_section-about.scss */
+  .about .page-frame {
+    padding-bottom: 100px; }
+  /* line 8, ../scss/_section-about.scss */
   .about:after {
     content: '';
     position: absolute;
@@ -601,7 +649,7 @@ a {
     height: 19px;
     margin-top: -9px;
     background: url("../images/slide-bg.png") 50% 50% repeat-x; }
-  /* line 14, ../scss/_section-about.scss */
+  /* line 18, ../scss/_section-about.scss */
   .about p {
     width: 700px;
     margin: 20px auto 45px; }
