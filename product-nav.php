@@ -6,7 +6,7 @@
             $currentPageId = 46;
         }
 
-        $args = array( 'posts_per_page' => 99, 'category' => 12, 'order'=> 'DESC', 'orderby' => 'date' );
+        $args = array( 'posts_per_page' => 99, 'category' => 12, 'order'=> 'ASC', 'orderby' => 'date' );
         $postList = get_posts( $args );
 
         foreach ( $postList as $post ) {

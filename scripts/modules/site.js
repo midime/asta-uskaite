@@ -18,7 +18,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
         var mapCanvas = document.getElementById('contact-map');
         if (mapCanvas) {
             var myLatlng = new google.maps.LatLng(54.897688, 23.888458),
-                pinImage = '/staging/wp-content/themes/asta-uskaite/content/images/icn-pin-flower.png',
+                pinImage = '/' + WEBFOLDER + '/wp-content/themes/asta-uskaite/content/images/icn-pin-flower.png',
                 mapOptions = {
                     zoom: 18,
                     center: myLatlng,
@@ -164,7 +164,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
             var catId = $('.accessory-page-data').data('category');
             $.ajax({
                 type: "GET",
-                url: "/staging/?p=128",
+                url: "/" + WEBFOLDER + "?p=128",
                 dataType: "html",
                 data: { 'fetchContent' : true, 'catId' : catId, 'catPage' : catPage }
             }).done(function( html ) {

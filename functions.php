@@ -1,12 +1,15 @@
 <?php
 
+define("WEBFOLDER", "staging");
+//define("WEBFOLDER", "asta");
+
 if(!is_admin()) {
     $blog_language = get_bloginfo('language');
     include('wp-content/translations/'.$blog_language.'.php');
 }
 
 function get_template_start() {
-    return '/staging/wp-content/themes/asta-uskaite/';
+    return '/' . WEBFOLDER . '/wp-content/themes/asta-uskaite/';
 }
 
 /*
