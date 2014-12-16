@@ -58,7 +58,9 @@
         <figure class="product-img">
             <div class="wrapper">
                 <div class="inner">
-                    <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+                    <a data-modal="{}" data-image="<?php echo $productImage[0]; ?>">
+                        <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+                    </a>
                 </div>
             </div>
         </figure>

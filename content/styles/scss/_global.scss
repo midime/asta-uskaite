@@ -165,7 +165,7 @@ a {
         }
     }
 }
-.icn-close{
+.icn-close, .modal-close{
     display: block;
     width: 30px;
     height: 30px;
@@ -175,6 +175,7 @@ a {
     border: $color-black solid 1px;
     border-radius: 100%;
     position: relative;
+    cursor: pointer;
     @include transition(all 0.3s);
     &:hover{
         @include transform(rotate(180deg));
@@ -205,7 +206,7 @@ a {
     }
 }
 
-//Section Header
+//module - Header
 .page-header {
     position: absolute;
     left: 0;
@@ -298,12 +299,12 @@ a {
     }
 }
 
-//Section Sections
+//module - Sections
 .page-section .page-frame {
     padding-top: 140px;
 }
 
-//Section Footer
+//module - Footer
 .page-footer{
     width: 740px;
     margin: 0 auto;
@@ -341,7 +342,7 @@ a {
     }
 }
 
-//Drawer
+//module - Drawer
 .drawer{
     position: absolute;
     right: -370px;
@@ -383,7 +384,7 @@ a {
     }
 }
 
-//Form Elements
+//module - Form Elements
 .field-wrapper{
     padding: 0 22px 0 0;
     margin-bottom: 14px;
@@ -442,6 +443,33 @@ a {
             font-family: georgia, sans-serif;
         }
     }
+}
+
+//module - Modal Window
+.modal-context{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: $color-white;
+}
+.modal-container{
+    width: $page-width;
+    margin: 50px auto;
+    position: relative;
+}
+.modal-title{
+
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.modal-content{
+
 }
 
 @-webkit-keyframes rotate-360 {

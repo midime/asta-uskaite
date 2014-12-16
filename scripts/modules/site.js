@@ -1,19 +1,23 @@
 ﻿/*jslint regexp: true, nomen: true, sloppy: true */
 /*global require, define, alert, applicationConfig, location, document, window,  setTimeout, Countable */
 
-define(['jquery', 'bxslider', 'validation'], function ($) {
+define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
     var module = {};
 
     module.initSlider = function () {
-        $('#promo-slide').bxSlider({
-            mode: 'vertical',
-            auto: true,
-            speed: 1500,
-            pause: 3000,
-            preloadImages:'visible'
-        });
+        var promoSlide = document.getElementById('promo-slide');
+        if (promoSlide) {
+            $('#promo-slide').bxSlider({
+                mode: 'vertical',
+                auto: true,
+                speed: 1500,
+                pause: 3000,
+                preloadImages:'visible'
+            });
+        }
     };
+
     module.gmaps = function () {
         var mapCanvas = document.getElementById('contact-map');
         if (mapCanvas) {
@@ -128,28 +132,10 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
             });
         }
     };
+
     module.mixedFunctions = function () {
 
         var catPage = 1;
-        //Show/Hide contact us form
-        $('.js-toggle').click(function () {
-            $('.contact-box').toggleClass('minimise');
-        });
-
-        //Contact us form validation
-        $('.js-contactform').validate({
-            errorElement: "span"
-        });
-
-        //Toggle form labels
-        $('.js-field').bind('keyup blur', function () {
-            var el = $(this);
-            if (el.val() !== '') {
-                el.parent().addClass('full');
-            } else {
-                el.parent().removeClass('full');
-            }
-        });
 
         //Load more
         $('.js-load-more').on('click', function(){
@@ -182,6 +168,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
 
         });
 
+        //On form submit
         $('form.wpcf7-form').submit(function() {
 
             thisForm = $(this);
@@ -266,13 +253,34 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
             });
         }
     };
+
     module.validateForms = function () {
         $('form').each(function () {
             $(this).validate();
         });
     };
+
+    module.initModal = function (){
+        $(document).on('click', '[data-modal]', function (e) {
+            var largeImg = $(this).attr('data-image');
+            if(largeImg.length > 0){
+                e.preventDefault();
+                $(this).openModal({
+                    closeOnBlur: false,
+                    content:'<img src="' + largeImg + '" alt="">',
+                    onLoad: function () {
+                        //Do stuff on load
+                    },onClose: function () {
+                        //Do stuff on unload
+                    }
+                });
+            }
+        });
+    };
+
     module.init = function () {
         module.initSlider();
+        module.initModal();
         module.gmaps();
         module.mixedFunctions();
         module.validateForms();
