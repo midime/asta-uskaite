@@ -580,7 +580,7 @@ a {
   background-size: cover; }
   /* line 93, ../scss/_section-promo.scss */
   .slide.accessories .slide-content {
-    left: 0;
+    left: 20px;
     top: 34%; }
     /* line 96, ../scss/_section-promo.scss */
     .slide.accessories .slide-content .btn:hover {
@@ -610,7 +610,7 @@ a {
   background-size: cover; }
   /* line 117, ../scss/_section-promo.scss */
   .slide.brooches .slide-content {
-    left: 0;
+    left: 20px;
     top: 38%; }
     /* line 120, ../scss/_section-promo.scss */
     .slide.brooches .slide-content .btn:hover {
@@ -625,7 +625,7 @@ a {
   background-size: cover; }
   /* line 129, ../scss/_section-promo.scss */
   .slide.necklaces .slide-content {
-    right: 0;
+    right: 30px;
     top: 43%; }
     /* line 132, ../scss/_section-promo.scss */
     .slide.necklaces .slide-content .btn:hover {

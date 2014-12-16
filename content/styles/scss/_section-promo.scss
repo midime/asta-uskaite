@@ -91,7 +91,7 @@
     background: url(../images/slides/head_accessories.jpg) 100% 100% no-repeat;
     @include background-cover;
     .slide-content{
-        left: 0;
+        left: 20px;
         top: 34%;
         .btn:hover{
             color: #693833;
@@ -115,7 +115,7 @@
     background: url(../images/slides/brooches.jpg) 100% 100% no-repeat;
     @include background-cover;
     .slide-content{
-        left: 0;
+        left: 20px;
         top: 38%;
         .btn:hover{
             color: #595649;
@@ -127,7 +127,7 @@
     background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
     @include background-cover;
     .slide-content{
-        right: 0;
+        right: 30px;
         top: 43%;
         .btn:hover{
             color: #512E20;
