@@ -64,7 +64,7 @@
         </figure>
         <div class="product-info">
             <div class="inner">
-                <h1><?php echo get_the_TITLE(); ?>></h1>
+                <h1><?php echo get_the_TITLE(); ?></h1>
                 <?php
                     echo __($cPost->post_content);
                 ?>
