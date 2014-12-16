@@ -10,7 +10,8 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
             mode: 'vertical',
             auto: true,
             speed: 1500,
-            pause: 3000
+            pause: 3000,
+            preloadImages:'visible'
         });
     };
     module.gmaps = function () {
@@ -106,7 +107,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                 }
             ];
             var infowindow = new google.maps.InfoWindow({
-                content: '<div class="infowindow"><a class="icon-info-close js-info-close"></a> <strong style="font-size: 16px">Asta Uskaite</strong> <br>Vilniaus g. 12-1D, Kaunas <br>Tel.: +370 612 32789</div>'
+                content: '<div class="infowindow"><a class="icon-info-close js-info-close"></a> <strong style="font-size: 16px">Asta Uskaite</strong> <br>Valanciaus g. 12-8, Kaunas, Kaunas <br>Tel.: +370 612 32789</div>'
             });
 
             var styledMapOptions = {
