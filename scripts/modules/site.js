@@ -107,7 +107,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                 }
             ];
             var infowindow = new google.maps.InfoWindow({
-                content: '<div class="infowindow"><a class="icon-info-close js-info-close"></a> <strong style="font-size: 16px">Asta Uskaite</strong> <br>Valanciaus g. 12-8, Kaunas, Kaunas <br>Tel.: +370 612 32789</div>'
+                content: '<div class="infowindow" style="width:220px; height: 80px;"><a class="icon-info-close js-info-close"></a> <strong style="font-size: 16px">Asta Uskaite</strong> <br>Valanciaus g. 12-8, Kaunas, Kaunas <br>Tel.: +370 612 32789</div>'
             });
 
             var styledMapOptions = {
