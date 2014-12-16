@@ -2,6 +2,10 @@
 
 ?>
 
+<?php
+    $postURL = str_replace(home_url() . '/', '', get_post_permalink(get_the_ID()));
+?>
+
 <nav class="page-nav">
         <?php
             $nav_sec_menu_params = array(
@@ -14,10 +18,6 @@
             );
 
             wp_nav_menu($nav_sec_menu_params);
-        ?>
-
-        <?php
-            $postURL = str_replace(home_url() . '/', '', get_post_permalink(get_the_ID()));
         ?>
 
         <span class="lang-nav">
