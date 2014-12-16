@@ -222,12 +222,12 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                     $('.form-response').children('.ferror').show();
                 }
 
-          
+
                 thisForm.find("input[type='text']").val('');
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
 
-                setTimeout('timeout_trigger()', 2000);
+                setTimeout('closeDrawer()', 2000);
 
             });
 
