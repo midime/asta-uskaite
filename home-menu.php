@@ -2,9 +2,14 @@
 
 ?>
 
-<?php
-    $postURL = str_replace(home_url() . '/', '', get_post_permalink(get_the_ID()));
-?>
+        <?php
+      
+        	if (is_home()) {
+            	$postURL = '';
+        	} else {
+        		$postURL = str_replace(home_url() . '/', '', get_post_permalink(get_the_ID()));
+        	}
+        ?>
 
 <nav class="page-nav">
         <?php

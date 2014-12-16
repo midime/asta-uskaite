@@ -6,7 +6,7 @@
             <div class="page-frame">
                 <div class="slide-content">
                     <h2><?php getQVertimas('cat_brooches'); ?></h2>
-                    <a href="<?php echo getLangLink('/sages/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
+                    <a href="<?php echo getLanguageLink('/sages/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
             <div class="page-frame">
                 <div class="slide-content">
                     <h2><?php getQVertimas('cat_necklaces'); ?></h2>
-                    <a href="<?php echo getLangLink('/kaklo-papuosalai/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
+                    <a href="<?php echo getLanguageLink('/kaklo-papuosalai/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
             <div class="page-frame">
                 <div class="slide-content">
                     <h2><?php getQVertimas('cat_earrings'); ?></h2>
-                    <a href="<?php echo getLangLink('/auskarai/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
+                    <a href="<?php echo getLanguageLink('/auskarai/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="page-frame">
                 <div class="slide-content">
                     <h2><?php getQVertimas('cat_bracelets'); ?></h2>
-                    <a href="<?php echo getLangLink('/apyrankes/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
+                    <a href="<?php echo getLanguageLink('/apyrankes/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
@@ -38,13 +38,12 @@
             <div class="page-frame">
                 <div class="slide-content">
                     <h2><?php getQVertimas('cat_head_accessories'); ?></h2>
-                    <a href="<?php echo getLangLink('/galvos-aksesuarai/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
+                    <a href="<?php echo getLanguageLink('/galvos-aksesuarai/'); ?>" class="btn"><?php getQVertimas('view_gallery'); ?></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="page-section about" id="about">
 

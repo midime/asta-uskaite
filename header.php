@@ -45,7 +45,7 @@
 <body<?php if (is_front_page()) { ?> class="home"<?php } ?>>
     <header class="page-header<?php if (is_front_page()) { ?> home<?php } ?>">
         <div class="page-frame clearfix">
-            <a href="/" class="logo">
+            <a href="/staging/" class="logo">
                 <?php if (is_front_page()) { ?>
                     <img src="<?php echo get_template_start(); ?>content/images/logo-white.png" alt="Asta Uskaite">
                 <?php }else{ ?>

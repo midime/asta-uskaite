@@ -13,7 +13,7 @@
         include('single-gallery.php');
     } elseif (get_the_ID() == 44) {
         include('single-contacts.php');
-    } elseif (get_the_ID() == 80) {
+    } elseif (get_the_ID() == 128) {
         include('single-more-products.php');
     } elseif (in_category(array(12))) {
         include('single-gallery-category.php');

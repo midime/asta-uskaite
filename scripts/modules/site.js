@@ -164,7 +164,7 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
             var catId = $('.accessory-page-data').data('category');
             $.ajax({
                 type: "GET",
-                url: "/staging/?p=80",
+                url: "/staging/?p=128",
                 dataType: "html",
                 data: { 'fetchContent' : true, 'catId' : catId, 'catPage' : catPage }
             }).done(function( html ) {
