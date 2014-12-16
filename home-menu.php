@@ -3,7 +3,6 @@
 ?>
 
         <?php
-      
         	if (is_home()) {
             	$postURL = '';
         	} else {

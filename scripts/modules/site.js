@@ -216,24 +216,28 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                     m_zinute : _m_zinute }
             }).done(function( htmlContent ) {
 
-
-
                 if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
                     $('.form-response').children('.fsuccess').show();
                 } else {
                     $('.form-response').children('.ferror').show();
                 }
 
+          
                 thisForm.find("input[type='text']").val('');
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
 
-            });
+                setTimeout('timeout_trigger()', 2000);
 
+            });
 
             return false;
 
         });
+
+        function closeDrawer() {
+            $('.js-drawer-close').trigger('click');
+        }
 
         //Toggle drawer
         var elDrawer = $('.js-drawer');

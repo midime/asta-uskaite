@@ -2,3 +2,4 @@
 .gallery a img { width: 100%; }
 .screen-reader-response { display: none; }
 .form-response span { display: none; }
+.form-response { text-align: center; }
