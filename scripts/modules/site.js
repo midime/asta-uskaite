@@ -3,6 +3,10 @@
 
 define(['jquery', 'bxslider', 'validation'], function ($) {
 
+    function closeDrawer() {
+        $('.js-drawer-close').trigger('click');
+    }
+
     var module = {};
 
     module.initSlider = function () {
@@ -222,22 +226,17 @@ define(['jquery', 'bxslider', 'validation'], function ($) {
                     $('.form-response').children('.ferror').show();
                 }
 
-
                 thisForm.find("input[type='text']").val('');
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
 
-                setTimeout('closeDrawer()', 2000);
+                setTimeout('closeDrawer', 2000);
 
             });
 
             return false;
 
         });
-
-        function closeDrawer() {
-            $('.js-drawer-close').trigger('click');
-        }
 
         //Toggle drawer
         var elDrawer = $('.js-drawer');

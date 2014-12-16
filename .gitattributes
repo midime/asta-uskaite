@@ -13,7 +13,8 @@
 
 # Default
 
-* text eol=lf
+*.php eol=lf
+*.js eol=lf
+*.css eol=lf
 
 *.sql eol=lf
-
