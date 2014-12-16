@@ -1,10 +1,18 @@
 # Default
+
 * text eol=lf
+
 *.sql eol=lf
 
+
 # Images
+
 *.bmp binary
+
 *.png binary
+
 *.gif binary
+
 *.jpg binary
+
 *.jpeg binary
