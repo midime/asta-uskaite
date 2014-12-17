@@ -223,7 +223,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
 
-                setTimeout('closeDrawer', 2000);
+                setTimeout('closeDrawer()', 2000);
 
             });
 
