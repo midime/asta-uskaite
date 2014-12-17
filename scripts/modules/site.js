@@ -3,10 +3,6 @@
 
 define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
-    function closeDrawer() {
-        $('.js-drawer-close').trigger('click');
-    }
-
     var module = {};
 
     module.initSlider = function () {
@@ -172,6 +168,8 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
         });
 
+
+
         //On form submit
         $('form.wpcf7-form').submit(function() {
 
@@ -198,17 +196,25 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             var _m_phone = $("input[name='m_phone']").val();
             var _m_zinute = $("textarea[name='m_zinute']").val();
 
+            var _m_product_url = '';
+
+            if ($('#real-product-url').length > 0) {
+                _m_product_url = $("#real-product-url").html();
+            }
+
             $.ajax({
                 type: "post",
                 url: href,
                 dataType: "html",
                 data: { _wpcf7 : _wpcf7, _wpcf7_version : _wpcf7_version, _wpcf7_locale : _wpcf7_locale, _wpcf7_unit_tag : _wpcf7_unit_tag,
                     _wpnonce : _wpnonce,  m_fname : _m_fname, m_lname : _m_lname, m_email : _m_email, m_phone : _m_phone,
-                    m_zinute : _m_zinute }
+                    m_zinute : _m_zinute, m_product_url : _m_product_url }
             }).done(function( htmlContent ) {
 
                 if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
                     $('.form-response').children('.fsuccess').show();
+                    $('.wpcf7').hide();
+                    setTimeout(function() { $('.js-drawer-close').click(); }, 2000);
                 } else {
                     $('.form-response').children('.ferror').show();
                 }
@@ -216,8 +222,6 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 thisForm.find("input[type='text']").val('');
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
-
-                setTimeout('closeDrawer', 2000);
 
             });
 

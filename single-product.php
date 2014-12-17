@@ -31,7 +31,7 @@
         </h3>
         <?php
             //$ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="77" title="Be pavadinimo"]'));
-            $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="81" title="Be pavadinimo"]'));
+            $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="76" title="Be pavadinimo"]'));
             echo $ct_shortcode;
         ?>
         <div class="form-response">
@@ -40,6 +40,7 @@
         </div>
     </div>
 </div>
+<div id="real-product-url" style="display: none"><?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?></div>
 
 <div class="page-frame page-content">
     <div class="clearfix product">
