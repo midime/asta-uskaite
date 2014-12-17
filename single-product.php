@@ -40,9 +40,7 @@
         </div>
     </div>
 </div>
-<div id="real-product-url" style="display: none">
-    <?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
-</div>
+<div id="real-product-url" style="display: none"><?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?></div>
 
 <div class="page-frame page-content">
     <div class="clearfix product">
