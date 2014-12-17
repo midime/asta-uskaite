@@ -40,7 +40,7 @@
         </div>
     </div>
 </div>
-<div style="display: none">
+<div id="real-product-url" style="display: none">
     <?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
 </div>
 

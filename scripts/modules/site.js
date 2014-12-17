@@ -200,8 +200,8 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
             var _m_product_url = '';
 
-            if ($('#product-url').length > 0) {
-                _m_product_url = $("input[name='m_product_url']").val();
+            if ($('#real-product-url').length > 0) {
+                _m_product_url = $("#real-product-url").html();
             }
 
             $.ajax({
