@@ -198,13 +198,19 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             var _m_phone = $("input[name='m_phone']").val();
             var _m_zinute = $("textarea[name='m_zinute']").val();
 
+            var _m_product_url = '';
+
+            if ($('#product-url').length > 0) {
+                _m_product_url = $("input[name='m_product_url']").val();
+            }
+
             $.ajax({
                 type: "post",
                 url: href,
                 dataType: "html",
                 data: { _wpcf7 : _wpcf7, _wpcf7_version : _wpcf7_version, _wpcf7_locale : _wpcf7_locale, _wpcf7_unit_tag : _wpcf7_unit_tag,
                     _wpnonce : _wpnonce,  m_fname : _m_fname, m_lname : _m_lname, m_email : _m_email, m_phone : _m_phone,
-                    m_zinute : _m_zinute }
+                    m_zinute : _m_zinute, m_product_url : _m_product_url }
             }).done(function( htmlContent ) {
 
                 if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
