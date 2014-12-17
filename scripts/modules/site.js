@@ -3,10 +3,6 @@
 
 define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
-    function closeDrawer() {
-        $('.js-drawer-close').trigger('click');
-    }
-
     var module = {};
 
     module.initSlider = function () {
@@ -222,6 +218,10 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 thisForm.find("input[type='text']").val('');
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
+
+                function closeDrawer() {
+                    $('.js-drawer-close').trigger('click');
+                }
 
                 setTimeout('closeDrawer()', 2000);
 
