@@ -266,12 +266,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 e.preventDefault();
                 $(this).openModal({
                     closeOnBlur: false,
-                    content:'<img src="' + largeImg + '" alt="">',
-                    onLoad: function () {
-                        //Do stuff on load
-                    },onClose: function () {
-                        //Do stuff on unload
-                    }
+                    templateId: 'image-template'
                 });
             }
         });
