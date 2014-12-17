@@ -472,21 +472,20 @@ html.modal-on, .modal-on body{
         @include background-image(linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0)));
     }
 }
-.modal-container{
-    width: $page-width;
-    margin: 50px auto;
-    position: relative;
-}
+.modal-container{}
 .modal-title{
     color: $color-white;
     font-family: $font-greatvibes;
-    font-size: 46px;
+    font-size: 66px;
     line-height: 1;
+    position: absolute;
+    right: 75px;
+    bottom: 30px;
 }
 .modal-close{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 25px;
+    top: 25px;
     display: block;
     width: 30px;
     height: 30px;

@@ -509,24 +509,21 @@ html.modal-on, .modal-on body {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
-/* line 475, ../scss/_global.scss */
-.modal-container {
-  width: 1000px;
-  margin: 50px auto;
-  position: relative; }
-
-/* line 480, ../scss/_global.scss */
+/* line 476, ../scss/_global.scss */
 .modal-title {
   color: #ffffff;
   font-family: "Great Vibes", cursive;
-  font-size: 46px;
-  line-height: 1; }
+  font-size: 66px;
+  line-height: 1;
+  position: absolute;
+  right: 75px;
+  bottom: 30px; }
 
-/* line 486, ../scss/_global.scss */
+/* line 485, ../scss/_global.scss */
 .modal-close {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 25px;
+  top: 25px;
   display: block;
   width: 30px;
   height: 30px;
@@ -540,13 +537,13 @@ html.modal-on, .modal-on body {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-  /* line 500, ../scss/_global.scss */
+  /* line 499, ../scss/_global.scss */
   .modal-close:hover {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
-  /* line 503, ../scss/_global.scss */
+  /* line 502, ../scss/_global.scss */
   .modal-close:before {
     content: '';
     display: block;
@@ -561,7 +558,7 @@ html.modal-on, .modal-on body {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
-  /* line 515, ../scss/_global.scss */
+  /* line 514, ../scss/_global.scss */
   .modal-close:after {
     content: '';
     display: block;
