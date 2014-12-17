@@ -61,7 +61,7 @@
         <figure class="product-img">
             <div class="wrapper">
                 <div class="inner">
-                    <a data-modal="{}" data-image="<?php echo $productImage[0]; ?>">
+                    <a data-modal="{}" title="<?php echo get_the_TITLE(); ?>" data-image="<?php echo $productImage[0]; ?>">
                         <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
                     </a>
                 </div>
@@ -84,3 +84,12 @@
         </div>
     </div>
 </div>
+
+<script type="text/html" id="image-template">
+    <div class="modal-context" style="background-image:url('<?php echo $productImage[0]; ?>')">
+        <div class="modal-container" data-modal-control="container">
+            <div class="modal-title" data-modal-control="title"></div>
+            <div class="modal-close" data-modal-control="close"></div>
+        </div>
+    </div>
+</script>
