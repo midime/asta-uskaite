@@ -168,6 +168,8 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
         });
 
+
+
         //On form submit
         $('form.wpcf7-form').submit(function() {
 
@@ -211,6 +213,8 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
                 if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
                     $('.form-response').children('.fsuccess').show();
+                    $('.wpcf7').hide();
+                    setTimeout(function() { $('.js-drawer-close').click(); }, 2000);
                 } else {
                     $('.form-response').children('.ferror').show();
                 }
@@ -218,12 +222,6 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 thisForm.find("input[type='text']").val('');
                 thisForm.find("input[type='email']").val('');
                 thisForm.find("textarea").val('');
-
-                function closeDrawer() {
-                    $('.js-drawer-close').trigger('click');
-                }
-
-                setTimeout('closeDrawer()', 2000);
 
             });
 
