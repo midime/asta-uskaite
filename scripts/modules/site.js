@@ -249,8 +249,9 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 e.preventDefault();
                 e.stopPropagation();
                 elDrawer.toggleClass('opened');
-
-//                $('.js-form').toggleClass('active');
+                $('.ferror').hide();
+                $('.fsuccess').hide();
+                $('.js-contact-form').show();
             });
 
             $('.js-drawer-close').on('click', function (e) {

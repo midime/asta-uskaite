@@ -23,7 +23,7 @@
     $productsPrevNext = getPrevNextProduct(get_the_ID(), $postCat[0]->cat_ID);
 ?>
 
-<div class="drawer js-drawer opened">
+<div class="drawer js-drawer">
     <a href="" class="icn-close js-drawer-close"><span>Close</span></a>
     <div class="inner">
         <div class="js-product-form">

@@ -455,6 +455,9 @@ a {
         font-family: $font-greatvibes;
         font-size: 64px;
         margin: 30px 0 0;
+        font-weight: normal;
+        line-height: 1.4;
+        font-style: normal;
     }
     p{
         font-size: 16px;
@@ -466,6 +469,9 @@ a {
     .btn{
         margin: 0;
     }
+    .contact-form-messages &{
+        top: 194px;
+    }
 }
 .ferror{
     text-align: center;
@@ -473,6 +479,11 @@ a {
     padding: 8px 15px;
     font-size: 14px;
     margin: 20px 0 0;
+    .contact-form-messages &{
+        width: 386px;
+        margin: 20px auto;
+        background: $color-white;
+    }
 }
 
 
