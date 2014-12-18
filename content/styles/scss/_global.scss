@@ -365,6 +365,7 @@ a {
     }
     .inner{
         width: 350px;
+        position: relative;
     }
     &.opened{
         right: 0;
@@ -445,6 +446,11 @@ a {
     }
 }
 .fsuccess{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     h3{
         font-family: $font-greatvibes;
         font-size: 64px;
@@ -462,6 +468,7 @@ a {
     }
 }
 .ferror{
+    text-align: center;
     border: #EF3F73 solid 2px;
     padding: 8px 15px;
     font-size: 14px;

@@ -26,21 +26,21 @@
 <div class="drawer js-drawer opened">
     <a href="" class="icn-close js-drawer-close"><span>Close</span></a>
     <div class="inner">
-        <h3>
-            <?php getQVertimas('if_order_1'); ?>: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> <?php getQVertimas('if_order_2'); ?>:
-        </h3>
-        <?php
-            //$ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="77" title="Be pavadinimo"]'));
-            $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="76" title="Be pavadinimo"]'));
-            echo $ct_shortcode;
-        ?>
-        <div class="form-response">
-            <div class="fsuccess" style="display: none">
-                <?php getQVertimas('form_success_message'); ?>
-            </div>
-            <div class="ferror" style="display: none">
-                <?php getQVertimas('form_error_message'); ?>
-            </div>
+        <div class="js-product-form">
+            <h3>
+                <?php getQVertimas('if_order_1'); ?>: <strong><?php echo __(get_field('phone_con', 44)); ?></strong> <?php getQVertimas('if_order_2'); ?>:
+            </h3>
+            <?php
+                //$ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="77" title="Be pavadinimo"]'));
+                $ct_shortcode = translate_phrases_of_forms(do_shortcode('[contact-form-7 id="76" title="Be pavadinimo"]'));
+                echo $ct_shortcode;
+            ?>
+        </div>
+        <div class="fsuccess" style="display: none">
+            <?php getQVertimas('form_success_message'); ?>
+        </div>
+        <div class="ferror" style="display: none">
+            <?php getQVertimas('form_error_message'); ?>
         </div>
     </div>
 </div>

@@ -216,14 +216,14 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             }).done(function( htmlContent ) {
 
                 if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
-                    $('.wpcf7').fadeOut();
-                    $('.form-response .fsuccess').fadeIn();
+                    $('.js-product-form').fadeOut();
+                    $('.fsuccess').fadeIn();
                     $('.js-reload').on('click', function(e){
                         e.preventDefault();
                         location.reload();
                     })
                 } else {
-                    $('.form-response .ferror').fadeIn();
+                    $('.ferror').fadeIn();
                 }
 
                 thisForm.find("input[type='text']").val('');
