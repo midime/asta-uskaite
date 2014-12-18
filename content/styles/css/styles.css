@@ -579,15 +579,15 @@ html.modal-on, .modal-on body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-/* line 1, ../scss/_section-promo.scss */
+/* line 1, ../scss/_home-promo.scss */
 .promo {
   height: 100%;
   overflow: hidden;
   background: #545454; }
-  /* line 5, ../scss/_section-promo.scss */
+  /* line 5, ../scss/_home-promo.scss */
   .promo .bx-viewport, .promo .bx-wrapper, .promo #promo-slide {
     height: 100% !important; }
-  /* line 8, ../scss/_section-promo.scss */
+  /* line 8, ../scss/_home-promo.scss */
   .promo .bx-controls {
     position: absolute;
     right: 70px;
@@ -595,7 +595,7 @@ html.modal-on, .modal-on body {
     z-index: 9999;
     width: 12px;
     margin: -65px 0 0 0; }
-    /* line 16, ../scss/_section-promo.scss */
+    /* line 16, ../scss/_home-promo.scss */
     .promo .bx-controls .bx-pager-link {
       display: block;
       width: 12px;
@@ -605,10 +605,10 @@ html.modal-on, .modal-on body {
       margin: 10px;
       text-indent: -9999px;
       overflow: hidden; }
-    /* line 26, ../scss/_section-promo.scss */
+    /* line 26, ../scss/_home-promo.scss */
     .promo .bx-controls .bx-pager-link.active {
       background: #ffffff; }
-    /* line 29, ../scss/_section-promo.scss */
+    /* line 29, ../scss/_home-promo.scss */
     .promo .bx-controls .bx-prev, .promo .bx-controls .bx-next {
       position: absolute;
       display: block;
@@ -619,127 +619,132 @@ html.modal-on, .modal-on body {
       width: 14px;
       height: 14px;
       background: url(../images/icn-top.png) 50% 50% no-repeat; }
-    /* line 40, ../scss/_section-promo.scss */
+    /* line 40, ../scss/_home-promo.scss */
     .promo .bx-controls .bx-next {
       top: auto;
       bottom: -15px;
       background-image: url(../images/icn-bottom.png); }
 
-/* line 48, ../scss/_section-promo.scss */
+/* line 48, ../scss/_home-promo.scss */
 .slide {
   width: 100%;
   height: 100%;
   background: #ffffff;
   color: #ffffff; }
-  /* line 53, ../scss/_section-promo.scss */
+  /* line 53, ../scss/_home-promo.scss */
   .slide .page-frame {
     position: relative;
     padding-top: 0;
     height: 100%; }
-  /* line 58, ../scss/_section-promo.scss */
+  /* line 58, ../scss/_home-promo.scss */
   .slide .slide-content {
     position: absolute;
     text-align: center; }
-    /* line 61, ../scss/_section-promo.scss */
+    /* line 61, ../scss/_home-promo.scss */
     .slide .slide-content h2 {
       font-family: "Great Vibes", cursive;
-      font-size: 70px;
+      font-size: 100px;
       line-height: 1.0em;
       margin: 0;
       font-weight: normal;
       text-align: center; }
-    /* line 69, ../scss/_section-promo.scss */
+    /* line 69, ../scss/_home-promo.scss */
     .slide .slide-content .btn {
       border-color: #ffffff;
       color: #ffffff;
-      margin-left: 0;
-      margin-right: 0;
+      margin: 20px 0 0;
       letter-spacing: 2px; }
 
-/* line 79, ../scss/_section-promo.scss */
+/* line 78, ../scss/_home-promo.scss */
 .slide.earrings {
   background: url(../images/slides/earrings.jpg) 100% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  /* line 82, ../scss/_section-promo.scss */
+  /* line 81, ../scss/_home-promo.scss */
   .slide.earrings .slide-content {
-    right: 70px;
+    right: 30px;
     top: 44%; }
-    /* line 85, ../scss/_section-promo.scss */
+    /* line 84, ../scss/_home-promo.scss */
     .slide.earrings .slide-content .btn:hover {
       color: #71665A; }
 
-/* line 91, ../scss/_section-promo.scss */
+/* line 90, ../scss/_home-promo.scss */
 .slide.accessories {
   background: url(../images/slides/head_accessories.jpg) 100% 100% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  /* line 94, ../scss/_section-promo.scss */
+  /* line 93, ../scss/_home-promo.scss */
   .slide.accessories .slide-content {
-    left: 20px;
-    top: 34%; }
-    /* line 97, ../scss/_section-promo.scss */
+    left: 30px;
+    top: 45%; }
+    /* line 96, ../scss/_home-promo.scss */
+    .slide.accessories .slide-content h2 {
+      font-size: 84px; }
+    /* line 99, ../scss/_home-promo.scss */
     .slide.accessories .slide-content .btn:hover {
       color: #693833; }
 
-/* line 103, ../scss/_section-promo.scss */
+/* line 105, ../scss/_home-promo.scss */
 .slide.bracelets {
   background: url(../images/slides/bracelets.jpg) 100% 0% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  /* line 106, ../scss/_section-promo.scss */
+  /* line 108, ../scss/_home-promo.scss */
   .slide.bracelets .slide-content {
-    left: 90px;
-    top: 49%; }
-    /* line 109, ../scss/_section-promo.scss */
+    left: 30px;
+    top: 42%; }
+    /* line 111, ../scss/_home-promo.scss */
     .slide.bracelets .slide-content .btn:hover {
       color: #2C2A2F; }
 
-/* line 115, ../scss/_section-promo.scss */
+/* line 117, ../scss/_home-promo.scss */
 .slide.brooches {
   background: url(../images/slides/brooches.jpg) 100% 100% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  /* line 118, ../scss/_section-promo.scss */
+  /* line 120, ../scss/_home-promo.scss */
   .slide.brooches .slide-content {
     left: 20px;
-    top: 38%; }
-    /* line 121, ../scss/_section-promo.scss */
+    top: 43%; }
+    /* line 123, ../scss/_home-promo.scss */
     .slide.brooches .slide-content .btn:hover {
       color: #595649; }
 
-/* line 127, ../scss/_section-promo.scss */
+/* line 129, ../scss/_home-promo.scss */
 .slide.necklaces {
   background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  /* line 130, ../scss/_section-promo.scss */
+  /* line 132, ../scss/_home-promo.scss */
   .slide.necklaces .slide-content {
     right: 30px;
     top: 43%; }
-    /* line 133, ../scss/_section-promo.scss */
+    /* line 135, ../scss/_home-promo.scss */
+    .slide.necklaces .slide-content h2 {
+      font-size: 77px; }
+    /* line 138, ../scss/_home-promo.scss */
     .slide.necklaces .slide-content .btn:hover {
       color: #512E20; }
 
-/* line 1, ../scss/_section-about.scss */
+/* line 1, ../scss/_home-about.scss */
 .about {
   text-align: center;
   position: relative;
   margin-bottom: -100px; }
-  /* line 5, ../scss/_section-about.scss */
+  /* line 5, ../scss/_home-about.scss */
   .about .page-frame {
     padding-bottom: 100px; }
-  /* line 8, ../scss/_section-about.scss */
+  /* line 8, ../scss/_home-about.scss */
   .about:after {
     content: '';
     position: absolute;
@@ -749,12 +754,12 @@ html.modal-on, .modal-on body {
     height: 19px;
     margin-top: -9px;
     background: url("../images/slide-bg.png") 50% 50% repeat-x; }
-  /* line 18, ../scss/_section-about.scss */
+  /* line 18, ../scss/_home-about.scss */
   .about p {
     width: 700px;
     margin: 20px auto 45px; }
 
-/* line 1, ../scss/_section-contact.scss */
+/* line 1, ../scss/_page-contact.scss */
 #contact-map {
   height: 100%;
   width: 100%;
@@ -762,7 +767,7 @@ html.modal-on, .modal-on body {
   left: 0;
   top: 0;
   z-index: 2; }
-  /* line 8, ../scss/_section-contact.scss */
+  /* line 8, ../scss/_page-contact.scss */
   #contact-map:after {
     content: '';
     position: absolute;
@@ -777,7 +782,7 @@ html.modal-on, .modal-on body {
     background-image: -webkit-linear-gradient(#c3c0b5, rgba(195, 192, 181, 0));
     background-image: linear-gradient(#c3c0b5, rgba(195, 192, 181, 0)); }
 
-/* line 18, ../scss/_section-contact.scss */
+/* line 18, ../scss/_page-contact.scss */
 .overlay {
   background: url(../images/bg.png);
   height: 100%;
@@ -794,7 +799,7 @@ html.modal-on, .modal-on body {
   border-top: #a3a3a3 solid 1px;
   margin-top: -1px; }
 
-/* line 31, ../scss/_section-contact.scss */
+/* line 31, ../scss/_page-contact.scss */
 .page-contact {
   position: relative;
   z-index: 20;
@@ -803,31 +808,31 @@ html.modal-on, .modal-on body {
   -o-transition: all 0.7s;
   -webkit-transition: all 0.7s;
   transition: all 0.7s; }
-  /* line 36, ../scss/_section-contact.scss */
+  /* line 36, ../scss/_page-contact.scss */
   .page-contact .contacts {
     width: 800px;
     margin: 40px auto 50px; }
-  /* line 40, ../scss/_section-contact.scss */
+  /* line 40, ../scss/_page-contact.scss */
   .page-contact form {
     width: 420px;
     margin: 0 auto; }
 
-/* line 46, ../scss/_section-contact.scss */
+/* line 46, ../scss/_page-contact.scss */
 .show-map #contact-map {
   overflow: hidden; }
-/* line 49, ../scss/_section-contact.scss */
+/* line 49, ../scss/_page-contact.scss */
 .show-map .page-contact {
   opacity: 0;
   z-index: 1; }
-/* line 53, ../scss/_section-contact.scss */
+/* line 53, ../scss/_page-contact.scss */
 .show-map .overlay {
   opacity: 0;
   z-index: 1; }
 
-/* line 58, ../scss/_section-contact.scss */
+/* line 58, ../scss/_page-contact.scss */
 .infowindow {
   width: 200px; }
-  /* line 60, ../scss/_section-contact.scss */
+  /* line 60, ../scss/_page-contact.scss */
   .infowindow .icon-info-close {
     position: absolute;
     width: 20px;
@@ -837,7 +842,7 @@ html.modal-on, .modal-on body {
     z-index: 999999;
     cursor: pointer; }
 
-/* line 2, ../scss/_gallery.scss */
+/* line 2, ../scss/_page-gallery.scss */
 .nav-catalog {
   width: 585px;
   margin: 30px auto 0;
@@ -845,21 +850,21 @@ html.modal-on, .modal-on body {
   white-space: nowrap;
   padding-bottom: 6px;
   background: url("../images/nav-bg.png") 50% 100% no-repeat; }
-  /* line 9, ../scss/_gallery.scss */
+  /* line 9, ../scss/_page-gallery.scss */
   .nav-catalog a {
     color: #000000;
     text-decoration: none; }
-    /* line 12, ../scss/_gallery.scss */
+    /* line 12, ../scss/_page-gallery.scss */
     .nav-catalog a + a {
       margin-left: 30px; }
-    /* line 15, ../scss/_gallery.scss */
+    /* line 15, ../scss/_page-gallery.scss */
     .nav-catalog a:hover, .nav-catalog a.active {
       color: #9E2626; }
 
-/* line 20, ../scss/_gallery.scss */
+/* line 20, ../scss/_page-gallery.scss */
 .gallery {
   margin: 22px -15px; }
-  /* line 22, ../scss/_gallery.scss */
+  /* line 22, ../scss/_page-gallery.scss */
   .gallery .tile {
     display: block;
     float: left;
@@ -867,7 +872,7 @@ html.modal-on, .modal-on body {
     height: 316px;
     margin: 12px;
     background: url("../images/tile-bg.png") 50% 50% no-repeat; }
-    /* line 29, ../scss/_gallery.scss */
+    /* line 29, ../scss/_page-gallery.scss */
     .gallery .tile figure {
       display: block;
       position: relative;
@@ -877,7 +882,7 @@ html.modal-on, .modal-on body {
       margin: 19px auto 0;
       text-align: center;
       background: #ECECEC; }
-    /* line 39, ../scss/_gallery.scss */
+    /* line 39, ../scss/_page-gallery.scss */
     .gallery .tile img {
       max-width: 410px;
       max-height: 410px;
@@ -889,13 +894,13 @@ html.modal-on, .modal-on body {
       -ms-transform-origin: 50% 100%;
       -webkit-transform-origin: 50% 100%;
       transform-origin: 50% 100%; }
-    /* line 46, ../scss/_gallery.scss */
+    /* line 46, ../scss/_page-gallery.scss */
     .gallery .tile:hover img {
       -moz-transform: scale3d(1.04, 1.04, 1);
       -ms-transform: scale3d(1.04, 1.04, 1);
       -webkit-transform: scale3d(1.04, 1.04, 1);
       transform: scale3d(1.04, 1.04, 1); }
-    /* line 50, ../scss/_gallery.scss */
+    /* line 50, ../scss/_page-gallery.scss */
     .gallery .tile .thumb-wrapper {
       position: absolute;
       left: -68px;
@@ -903,12 +908,12 @@ html.modal-on, .modal-on body {
       width: 410px;
       height: 410px;
       display: table; }
-      /* line 57, ../scss/_gallery.scss */
+      /* line 57, ../scss/_page-gallery.scss */
       .gallery .tile .thumb-wrapper .thumb-inner {
         display: table-cell;
         text-align: center;
         vertical-align: middle; }
-    /* line 63, ../scss/_gallery.scss */
+    /* line 63, ../scss/_page-gallery.scss */
     .gallery .tile figcaption {
       display: block;
       margin: 15px 0 0;
@@ -917,29 +922,29 @@ html.modal-on, .modal-on body {
       font-size: 28px;
       line-height: 1.0em;
       color: #000000; }
-      /* line 71, ../scss/_gallery.scss */
+      /* line 71, ../scss/_page-gallery.scss */
       .gallery .tile figcaption span {
         font-size: 22px;
         margin-right: 5px; }
 
-/* line 80, ../scss/_gallery.scss */
+/* line 80, ../scss/_page-gallery.scss */
 .product {
   position: relative; }
 
-/* line 83, ../scss/_gallery.scss */
+/* line 83, ../scss/_page-gallery.scss */
 .product-img {
   float: left;
   width: 507px;
   height: 507px;
   margin: 0;
   background: url("../images/product-bg.png") 50% 50% no-repeat; }
-  /* line 89, ../scss/_gallery.scss */
+  /* line 89, ../scss/_page-gallery.scss */
   .product-img .wrapper {
     overflow: hidden;
     margin: 20px;
     width: 467px;
     height: 467px; }
-  /* line 95, ../scss/_gallery.scss */
+  /* line 95, ../scss/_page-gallery.scss */
   .product-img .inner {
     width: 720px;
     height: 720px;
@@ -947,33 +952,33 @@ html.modal-on, .modal-on body {
     vertical-align: middle;
     line-height: 720px;
     margin: -126px 0 0 -126px; }
-  /* line 103, ../scss/_gallery.scss */
+  /* line 103, ../scss/_page-gallery.scss */
   .product-img img {
     max-width: 720px;
     max-height: 720px;
     vertical-align: middle; }
 
-/* line 109, ../scss/_gallery.scss */
+/* line 109, ../scss/_page-gallery.scss */
 .product-info {
   float: right;
   width: 430px;
   display: table;
   height: 507px; }
-  /* line 114, ../scss/_gallery.scss */
+  /* line 114, ../scss/_page-gallery.scss */
   .product-info .inner {
     display: table-cell;
     vertical-align: bottom;
     padding-top: 45px; }
-  /* line 119, ../scss/_gallery.scss */
+  /* line 119, ../scss/_page-gallery.scss */
   .product-info h1 {
     font-size: 50px;
     text-align: left; }
 
-/* line 124, ../scss/_gallery.scss */
+/* line 124, ../scss/_page-gallery.scss */
 .product-price {
   background: url("../images/nav-bg.png") 50% 0 no-repeat;
   padding: 15px 0 0; }
-  /* line 127, ../scss/_gallery.scss */
+  /* line 127, ../scss/_page-gallery.scss */
   .product-price h4 {
     float: left;
     font-family: "Great Vibes", cursive;
@@ -983,19 +988,19 @@ html.modal-on, .modal-on body {
     vertical-align: middle;
     margin: 0;
     letter-spacing: 1px; }
-    /* line 136, ../scss/_gallery.scss */
+    /* line 136, ../scss/_page-gallery.scss */
     .product-price h4 span {
       font-size: 24px; }
-  /* line 140, ../scss/_gallery.scss */
+  /* line 140, ../scss/_page-gallery.scss */
   .product-price .btn {
     float: right; }
 
-/* line 144, ../scss/_gallery.scss */
+/* line 144, ../scss/_page-gallery.scss */
 .prod-nav {
   position: absolute;
   right: 0;
   top: 0; }
-  /* line 148, ../scss/_gallery.scss */
+  /* line 148, ../scss/_page-gallery.scss */
   .prod-nav a {
     display: inline-block;
     width: 30px;
@@ -1011,7 +1016,7 @@ html.modal-on, .modal-on body {
     -o-transition: background 0.3s;
     -webkit-transition: background 0.3s;
     transition: background 0.3s; }
-    /* line 160, ../scss/_gallery.scss */
+    /* line 160, ../scss/_page-gallery.scss */
     .prod-nav a:before {
       content: '';
       display: block;
@@ -1021,14 +1026,14 @@ html.modal-on, .modal-on body {
       margin: -8px 0 0 -15px;
       border: transparent solid 8px;
       border-right: #000000 solid 12px; }
-    /* line 171, ../scss/_gallery.scss */
+    /* line 171, ../scss/_page-gallery.scss */
     .prod-nav a + a {
       margin-left: 5px; }
-      /* line 173, ../scss/_gallery.scss */
+      /* line 173, ../scss/_page-gallery.scss */
       .prod-nav a + a:before {
         border: transparent solid 8px;
         border-left: #000000 solid 12px;
         margin: -8px 0 0 -4px; }
-    /* line 179, ../scss/_gallery.scss */
+    /* line 179, ../scss/_page-gallery.scss */
     .prod-nav a:hover {
       background: #ffffff; }

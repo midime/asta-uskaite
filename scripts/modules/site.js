@@ -8,13 +8,19 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
     module.initSlider = function () {
         var promoSlide = document.getElementById('promo-slide');
         if (promoSlide) {
-            $('#promo-slide').bxSlider({
+            var slider = $('#promo-slide').bxSlider({
                 mode: 'vertical',
                 auto: true,
                 speed: 1500,
-                pause: 3000,
+                pause: 4000,
                 preloadImages:'visible'
             });
+
+            $('.slide-content .btn').hover(function(){
+                slider.stopAuto();
+            }, function(){
+                slider.startAuto();
+            })
         }
     };
 

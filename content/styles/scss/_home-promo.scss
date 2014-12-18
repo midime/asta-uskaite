@@ -60,7 +60,7 @@
         text-align: center;
         h2{
             font-family: $font-greatvibes;
-            font-size: 70px;
+            font-size: 100px;
             line-height: 1.0em;
             margin: 0;
             font-weight: normal;
@@ -69,8 +69,7 @@
         .btn{
             border-color: $color-white;
             color: $color-white;
-            margin-left: 0;
-            margin-right: 0;
+            margin:20px 0 0;
             letter-spacing: 2px;
         }
     }
@@ -80,7 +79,7 @@
     background: url(../images/slides/earrings.jpg) 100% 50% no-repeat;
     @include background-cover;
     .slide-content{
-        right: 70px;
+        right: 30px;
         top: 44%;
         .btn:hover{
             color: #71665A;
@@ -92,8 +91,11 @@
     background: url(../images/slides/head_accessories.jpg) 100% 100% no-repeat;
     @include background-cover;
     .slide-content{
-        left: 20px;
-        top: 34%;
+        left: 30px;
+        top: 45%;
+        h2{
+            font-size: 84px;
+        }
         .btn:hover{
             color: #693833;
         }
@@ -104,8 +106,8 @@
     background: url(../images/slides/bracelets.jpg) 100% 0% no-repeat;
     @include background-cover;
     .slide-content{
-        left: 90px;
-        top: 49%;
+        left: 30px;
+        top: 42%;
         .btn:hover{
             color: #2C2A2F;
         }
@@ -117,7 +119,7 @@
     @include background-cover;
     .slide-content{
         left: 20px;
-        top: 38%;
+        top: 43%;
         .btn:hover{
             color: #595649;
         }
@@ -130,6 +132,9 @@
     .slide-content{
         right: 30px;
         top: 43%;
+        h2{
+            font-size: 77px;
+        }
         .btn:hover{
             color: #512E20;
         }
