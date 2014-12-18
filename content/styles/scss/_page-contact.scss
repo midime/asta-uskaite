@@ -31,7 +31,8 @@
 .page-contact{
     position: relative;
     z-index: 20;
-    oacity: 1;
+    opacity: 1;
+    min-height: 400px;
     @include transition(all 0.7s);
     .contacts{
         width: 800px;

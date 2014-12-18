@@ -843,36 +843,37 @@ html.modal-on, .modal-on body {
 .page-contact {
   position: relative;
   z-index: 20;
-  oacity: 1;
+  opacity: 1;
+  min-height: 400px;
   -moz-transition: all 0.7s;
   -o-transition: all 0.7s;
   -webkit-transition: all 0.7s;
   transition: all 0.7s; }
-  /* line 36, ../scss/_page-contact.scss */
+  /* line 37, ../scss/_page-contact.scss */
   .page-contact .contacts {
     width: 800px;
     margin: 40px auto 50px; }
-  /* line 40, ../scss/_page-contact.scss */
+  /* line 41, ../scss/_page-contact.scss */
   .page-contact form {
     width: 420px;
     margin: 0 auto; }
 
-/* line 46, ../scss/_page-contact.scss */
+/* line 47, ../scss/_page-contact.scss */
 .show-map #contact-map {
   overflow: hidden; }
-/* line 49, ../scss/_page-contact.scss */
+/* line 50, ../scss/_page-contact.scss */
 .show-map .page-contact {
   opacity: 0;
   z-index: 1; }
-/* line 53, ../scss/_page-contact.scss */
+/* line 54, ../scss/_page-contact.scss */
 .show-map .overlay {
   opacity: 0;
   z-index: 1; }
 
-/* line 58, ../scss/_page-contact.scss */
+/* line 59, ../scss/_page-contact.scss */
 .infowindow {
   width: 200px; }
-  /* line 60, ../scss/_page-contact.scss */
+  /* line 61, ../scss/_page-contact.scss */
   .infowindow .icon-info-close {
     position: absolute;
     width: 20px;
