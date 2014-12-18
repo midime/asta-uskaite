@@ -174,8 +174,6 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
 
         });
 
-
-
         //On form submit
         $('form.wpcf7-form').submit(function() {
 
@@ -218,11 +216,14 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             }).done(function( htmlContent ) {
 
                 if (htmlContent.indexOf("wpcf7-mail-sent-ok") > 0) {
-                    $('.form-response').children('.fsuccess').show();
-                    $('.wpcf7').hide();
-                    setTimeout(function() { $('.js-drawer-close').click(); }, 2000);
+                    $('.wpcf7').fadeOut();
+                    $('.form-response .fsuccess').fadeIn();
+                    $('.js-reload').on('click', function(e){
+                        e.preventDefault();
+                        location.reload();
+                    })
                 } else {
-                    $('.form-response').children('.ferror').show();
+                    $('.form-response .ferror').fadeIn();
                 }
 
                 thisForm.find("input[type='text']").val('');

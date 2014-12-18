@@ -23,7 +23,7 @@
     $productsPrevNext = getPrevNextProduct(get_the_ID(), $postCat[0]->cat_ID);
 ?>
 
-<div class="drawer js-drawer">
+<div class="drawer js-drawer opened">
     <a href="" class="icn-close js-drawer-close"><span>Close</span></a>
     <div class="inner">
         <h3>
@@ -35,8 +35,12 @@
             echo $ct_shortcode;
         ?>
         <div class="form-response">
-            <span class="fsuccess"><?php getQVertimas('form_success_message'); ?></span>
-            <span class="ferror"><?php getQVertimas('form_error_message'); ?></span>
+            <div class="fsuccess" style="display: none">
+                <?php getQVertimas('form_success_message'); ?>
+            </div>
+            <div class="ferror" style="display: none">
+                <?php getQVertimas('form_error_message'); ?>
+            </div>
         </div>
     </div>
 </div>

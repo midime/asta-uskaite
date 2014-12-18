@@ -444,6 +444,30 @@ a {
         }
     }
 }
+.fsuccess{
+    h3{
+        font-family: $font-greatvibes;
+        font-size: 64px;
+        margin: 30px 0 0;
+    }
+    p{
+        font-size: 16px;
+        margin: 0 0 55px;
+        strong{
+
+        }
+    }
+    .btn{
+        margin: 0;
+    }
+}
+.ferror{
+    border: #EF3F73 solid 2px;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 20px 0 0;
+}
+
 
 //module - Modal Window
 html.modal-on, .modal-on body{
