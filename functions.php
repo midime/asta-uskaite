@@ -589,4 +589,10 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'gallery-thumb', 9999, 450, false );
 }
 
+add_filter('wpcf7_form_action_url', 'wpcf7_custom_form_action_url');
+function wpcf7_custom_form_action_url()
+{
+    return qtrans_convertURL("http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+}
+
 ?>
