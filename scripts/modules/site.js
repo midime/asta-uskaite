@@ -246,7 +246,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 }
             });
 
-            $('.js-show-form').on('click', function (e) {
+            $('.js-show-form').on('click touch', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 elDrawer.toggleClass('opened');
@@ -255,12 +255,12 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 $('.js-contact-form').show();
             });
 
-            $('.js-drawer-close').on('click', function (e) {
+            $('.js-drawer-close').on('click touch', function (e) {
                 e.preventDefault();
                 elDrawer.removeClass('opened');
             });
 
-            elDrawer.on('click', function (e) {
+            elDrawer.on('click touch', function (e) {
                 e.stopPropagation();
             });
         }

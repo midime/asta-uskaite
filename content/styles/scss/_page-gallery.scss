@@ -142,12 +142,14 @@
             display: block;
             text-align: center;
             padding-top: 0;
+            width: 70%;
+            margin: 0 auto;
         }
         h1{
             text-align: center;
         }
         .product-price{
-            width: 300px;
+            width: 70%;
             margin: 0 auto;
         }
     }
@@ -226,10 +228,16 @@
         text-align: center;
         .cat-title{
             position: relative;
-            text-align: center;
             right: auto;
             top: auto;
-            margin-bottom: 15px;
+            display: inline-block;
+            margin-right: 25px;
+        }
+        > a{
+            vertical-align: middle;
+            + a{
+                margin-left: 20px;
+            }
         }
     }
 }
