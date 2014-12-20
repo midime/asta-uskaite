@@ -145,7 +145,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    a{
+    > a{
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -179,5 +179,13 @@
         &:hover{
             background: $color-white;
         }
+    }
+    .cat-title{
+        position: absolute;
+        right: 100%;
+        top: 3px;
+        white-space: nowrap;
+        font-style: italic;
+        margin: 0 20px 0 0;
     }
 }

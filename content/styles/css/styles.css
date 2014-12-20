@@ -1042,7 +1042,7 @@ html.modal-on, .modal-on body {
   right: 0;
   top: 0; }
   /* line 148, ../scss/_page-gallery.scss */
-  .prod-nav a {
+  .prod-nav > a {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -1058,7 +1058,7 @@ html.modal-on, .modal-on body {
     -webkit-transition: background 0.3s;
     transition: background 0.3s; }
     /* line 160, ../scss/_page-gallery.scss */
-    .prod-nav a:before {
+    .prod-nav > a:before {
       content: '';
       display: block;
       position: absolute;
@@ -1068,13 +1068,21 @@ html.modal-on, .modal-on body {
       border: transparent solid 8px;
       border-right: #000000 solid 12px; }
     /* line 171, ../scss/_page-gallery.scss */
-    .prod-nav a + a {
+    .prod-nav > a + a {
       margin-left: 5px; }
       /* line 173, ../scss/_page-gallery.scss */
-      .prod-nav a + a:before {
+      .prod-nav > a + a:before {
         border: transparent solid 8px;
         border-left: #000000 solid 12px;
         margin: -8px 0 0 -4px; }
     /* line 179, ../scss/_page-gallery.scss */
-    .prod-nav a:hover {
+    .prod-nav > a:hover {
       background: #ffffff; }
+  /* line 183, ../scss/_page-gallery.scss */
+  .prod-nav .cat-title {
+    position: absolute;
+    right: 100%;
+    top: 3px;
+    white-space: nowrap;
+    font-style: italic;
+    margin: 0 20px 0 0; }

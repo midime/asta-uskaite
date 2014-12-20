@@ -49,6 +49,11 @@
 <div class="page-frame page-content">
     <div class="clearfix product">
         <div class="prod-nav">
+
+            <div class="cat-title">
+                <?php getQVertimas('gallery_title'); ?>: <a href="<?php echo get_permalink($postCatDetails[0]->post_id); ?>"><?php echo __($postCatDetails[0]->post_title); ?></a>
+            </div>
+
             <?php if ($productsPrevNext['prev'] ) { ?>
                 <a href="<?php echo get_permalink($productsPrevNext['prev']); ?>">prev</a>
             <?php } else { ?>
@@ -75,9 +80,6 @@
                 <?php
                     echo __($cPost->post_content);
                 ?>
-                <p>
-                    <a href="<?php echo get_permalink($postCatDetails[0]->post_id); ?>"><?php echo __($postCatDetails[0]->post_title); ?></a>
-                </p>
                 <div class="product-price clearfix">
                     <h4><span>€</span><?php echo get_field('price', get_the_ID()); ?></h4>
                     <a href="#nolink" class="btn dark js-show-form"><?php getQVertimas('order'); ?></a>
