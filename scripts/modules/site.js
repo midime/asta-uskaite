@@ -13,7 +13,8 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 auto: true,
                 speed: 1500,
                 pause: 4000,
-                preloadImages:'visible'
+                preloadImages:'visible',
+                preventDefaultSwipeX:true
             });
 
             $('.slide-content .btn').hover(function(){
