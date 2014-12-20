@@ -65,15 +65,6 @@
                 <a href="<?php echo get_permalink($productsPrevNext['next']); ?>">next</a>
             <?php } ?>
         </div>
-        <figure class="product-img">
-            <div class="wrapper">
-                <div class="inner">
-                    <a data-modal="{}" title="<?php echo get_the_TITLE(); ?>" data-image="<?php echo $productImage[0]; ?>">
-                        <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
-                    </a>
-                </div>
-            </div>
-        </figure>
         <div class="product-info">
             <div class="inner">
                 <h1><?php echo get_the_TITLE(); ?></h1>
@@ -86,6 +77,15 @@
                 </div>
             </div>
         </div>
+        <figure class="product-img">
+            <div class="wrapper">
+                <div class="inner">
+                    <a data-modal="{}" title="<?php echo get_the_TITLE(); ?>" data-image="<?php echo $productImage[0]; ?>">
+                        <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
+                    </a>
+                </div>
+            </div>
+        </figure>
     </div>
 </div>
 
