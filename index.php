@@ -45,7 +45,7 @@
     </div>
 </section>
 
-<section class="page-section about" id="about">
+<section class="page-section about" id="about" style="display: none">
 
     <div class="page-frame clearfix">
         <h1>
@@ -63,5 +63,5 @@
 
 </section>
 
-<?php include("html-footer.php"); ?>
-<?php get_footer(); ?>
+<!--<?php include("html-footer.php"); ?>-->
+<!--<?php get_footer(); ?>-->
