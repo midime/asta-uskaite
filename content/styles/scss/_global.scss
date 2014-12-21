@@ -33,6 +33,7 @@ body {
     @include respond-to(1024, max){
         min-width: 100%;
         width: 100%;
+        background-size: 50%;
     }
 }
 img {
@@ -378,6 +379,7 @@ a {
     padding: 75px 35px 35px;
     background: $color-white;
     z-index: 100;
+    @include transform(translateZ(0));
     @include transition(all 0.5s);
     &:before{
         content: '';
@@ -397,6 +399,7 @@ a {
         right: 0;
         width: 50%;
         margin-right: -105px;
+
     }
     h3{
         margin: 0 0 35px;
@@ -408,6 +411,11 @@ a {
     .icn-close{
         position: absolute;
         top: 15px;
+    }
+    @include respond-to(768, max){
+        &.opened{
+            width: 63%;
+        }
     }
 }
 
@@ -426,6 +434,10 @@ a {
         padding: 8px 10px;
         font-family: $font-opensans;
         font-size: 16px;
+        -moz-appearance:none;
+        -webkit-appearance: none;
+        box-shadow: none;
+        border-radius: none;
     }
     .field-text{
         @extend %field-style;
@@ -511,7 +523,6 @@ a {
         background: $color-white;
     }
 }
-
 
 //module - Modal Window
 html.modal-on, .modal-on body{

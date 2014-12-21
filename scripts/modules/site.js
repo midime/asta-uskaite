@@ -249,7 +249,6 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             $('.js-show-form').on('click touch', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
-                alert('ss');
                 elDrawer.toggleClass('opened');
                 $('.ferror').hide();
                 $('.fsuccess').hide();
