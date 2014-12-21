@@ -595,4 +595,13 @@ function wpcf7_custom_form_action_url()
     return qtrans_convertURL("http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 }
 
+function getCurrentHtmlLanguage() {
+    $blog_language = get_bloginfo('language');
+    if ($blog_language == "lt-LT") {
+        return "lan-lt";
+    }
+
+    return "lan-en";
+}
+
 ?>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <!--[if lte IE 7]>
-<html class="ie7"><![endif]-->
+<html class="ie7 <?php echo getCurrentHtmlLanguage(); ?>"><![endif]-->
 <!--[if IE 8]>
-<html class="ie8"><![endif]-->
+<html class="ie8 <?php echo getCurrentHtmlLanguage(); ?>"><![endif]-->
 <!--[if IE 9]>
-<html class="ie9"><![endif]-->
+<html class="ie9 <?php echo getCurrentHtmlLanguage(); ?>"><![endif]-->
 <!--[if !IE]><!-->
-<html><!--<![endif]-->
+<html class="<?php echo getCurrentHtmlLanguage(); ?>"><!--<![endif]-->
 
 <head>
     <meta charset="utf-8">

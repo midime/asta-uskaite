@@ -165,7 +165,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 catPage++;
 
                 if (html == "no result") {
-                    thisButton.addClass('no-more-items');
+                    thisButton.hide();
                 } else {
                     $( ".gallery" ).append( html );
                 }
