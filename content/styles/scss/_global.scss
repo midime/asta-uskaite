@@ -31,7 +31,7 @@ body {
         height: 100%;
     }
     @include respond-to(1024, max){
-        min-width: 600px;
+        min-width: 100%;
         width: 100%;
     }
 }
@@ -228,8 +228,9 @@ a {
     content: '';
     display: block;
     position: absolute;
-    left: 27%;
-    width: 49%;
+    left: 50%;
+    top: 50%;
+    width: 50%;
     height: 3px;
     background: $color-black;
     overflow: hidden;
@@ -317,18 +318,29 @@ a {
         cursor: pointer;
         &:before{
             @extend %icn-menu;
-            top: 34%;
+            margin: -18% 0 0 -25%;
         }
         &:after{
             @extend %icn-menu;
-            bottom: 34%;
+            margin: 8% 0 0 -25%;
+        }
+    }
+    &.opened{
+        .icn-nav-menu{
+            &:before{
+                height: 2px;
+                margin-top: -1px;
+                @include transform(rotate(45deg));
+            }
+            &:after{
+                height: 2px;
+                margin-top: -1px;
+                @include transform(rotate(-45deg));
+            }
         }
     }
     @include respond-to(1024, max){
         min-width: 100%;
-        .page-nav > a{
-            font-size: 20px;
-        }
         .page-frame:before{
             display: block;
             right: 20px;
@@ -338,7 +350,7 @@ a {
         }
     }
     @include respond-to(768, max){
-        @include transition(all 1s);
+        @include transition(all 0.5s);
         @include transform(translateZ(0));
         .page-frame{
             margin-top: 25px;
@@ -360,7 +372,7 @@ a {
         }
         .page-nav{
             float: none;
-            margin: -210px 0 0;
+            margin: -240px 0 0;
             padding-bottom: 20px;
             @include transition(all 0.5s);
             @include transform(translateZ(0));
@@ -370,6 +382,7 @@ a {
                 font-family: $font-opensans;
                 font-size: 18px;
                 padding: 10px 0;
+                margin: 0;
             }
         }
         .lang-nav{
@@ -402,18 +415,36 @@ a {
             .lang-nav{
                 //opacity: 1;
             }
-            .icn-nav-menu{
-                &:before{
-                    top: 45%;
-                    height: 2px;
-                    @include transform(rotate(45deg));
-                }
-                &:after{
-                    bottom: 46%;
-                    height: 2px;
-                    @include transform(rotate(-45deg));
-                }
+        }
+    }
+    @include respond-to(480, max){
+        background: $color-white;
+        .page-frame{
+            margin-top: 12px;
+            padding-bottom: 8px;
+            &:before{
+                left: 0;
+                right: 0;
+                background-position: 100% 100%;
             }
+        }
+        .logo{
+            width: 80px;
+            height: 40px;
+            overflow: hidden;
+            margin: 0;
+            img{
+                width: 190px;
+            }
+        }
+        .page-nav{
+            padding: 20px 0 10px;
+        }
+        .lang-nav{
+            top: -38px;
+        }
+        .icn-nav-menu{
+            top: 2px;
         }
     }
 }
