@@ -6,9 +6,7 @@
     <div class="js-product-form">
         <h1><?php echo do_shortcode(get_the_title(get_the_ID())); ?></h1>
         <div class="contacts centered">
-            <span class="tel"><?php echo get_field('phone_con', 44); ?></span>
-            <span class="address"><a href="" class="js-contact"><?php echo get_field('address_con', 44); ?></a></span>
-            <span class="facebook"><a href="<?php echo get_field('facebook_con', 44); ?>"><?php getQVertimas('fb_page'); ?></a></span>
+            <?php getQVertimas('contact_message'); ?>
         </div>
         <div class="contact-form-messages">
             <div class="ferror" style="display: none"><?php getQVertimas('contact_form_error_message'); ?></div>
