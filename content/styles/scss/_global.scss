@@ -140,6 +140,10 @@ a {
     position: relative;
     z-index: 10;
     cursor: pointer;
+    -moz-appearance:none;
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-radius: 0;
     @include  transition(all, 0.5s);
     &:hover{
         background: $color-white;
@@ -437,7 +441,7 @@ a {
         -moz-appearance:none;
         -webkit-appearance: none;
         box-shadow: none;
-        border-radius: none;
+        border-radius: 0;
     }
     .field-text{
         @extend %field-style;
