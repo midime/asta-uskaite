@@ -294,7 +294,7 @@ a {
         height: 30px;
         position: absolute;
         right: 20px;
-        top: 6px;
+        top: -1px;
         cursor: pointer;
         &:before{
             content: '';
@@ -336,7 +336,7 @@ a {
         background: $color-white;
         .page-frame{
             margin-top: 10px;
-            padding-bottom: 20px;
+            padding-bottom: 8px;
             min-height: 40px;
             &:before{
                 left: 0;
@@ -349,10 +349,15 @@ a {
         }
         .logo{
             float: none;
+            width: 160px;
+            img{
+                width: 100%;
+            }
         }
         .page-nav{
             float: none;
             margin: -210px 0 0;
+            padding-bottom: 20px;
             @include transition(all 0.5s);
             @include transform(translateZ(0));
             > a{
@@ -365,7 +370,7 @@ a {
         }
         .lang-nav{
             position: absolute;
-            top: -35px;
+            top: -36px;
             right: 55px;
             margin: 0;
             height: 30px;
@@ -374,6 +379,9 @@ a {
             @include transition(opacity 0.5s);
             -webkit-transition-delay: 0.7s;
             transition-delay: 0.7s;
+            a + a{
+                margin-left: 15px;
+            }
         }
         &.opened{
             .page-nav{
