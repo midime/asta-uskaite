@@ -80,6 +80,84 @@
                 font-size: 70px;
             }
         }
+        @include respond-to(480, max){
+            h2{
+                font-size: 50px;
+            }
+            .btn{
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
+
+.slide.brooches {
+    background-image: url(../images/slides/brooches.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    @include background-cover;
+    .slide-content{
+        left: 20px;
+        top: 43%;
+        .btn:hover{
+            color: #595649;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 77% 100%;
+        .slide-content{
+            left: 7%;
+        }
+    }
+    @include respond-to(768, max){
+        background-position: 40% 100%;
+        .slide-content{
+            left: 9%   ;
+            top: 47%;
+        }
+    }
+    @include respond-to(480, max){
+        background-position: 57% 100%;
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+        }
+    }
+}
+
+.slide.necklaces {
+    background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
+    @include background-cover;
+    .slide-content{
+        right: 30px;
+        top: 43%;
+        h2{
+            font-size: 77px;
+        }
+        .btn:hover{
+            color: #512E20;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 30% 0;
+        .slide-content{
+            right: 10%;
+        }
+    }
+    @include  respond-to(768, max){
+        .slide-content{
+            top: 79%;
+        }
+    }
+    @include respond-to(480, max){
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+            h2{
+                font-size: 50px;
+            }
+        }
     }
 }
 
@@ -106,6 +184,49 @@
             top: 65%;
         }
     }
+    @include respond-to(480, max){
+        background-position: 35% 0;
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+            right: 10%;
+        }
+    }
+}
+
+.slide.bracelets {
+    background-image: url(../images/slides/bracelets.jpg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    @include background-cover;
+    .slide-content{
+        left: 30px;
+        top: 42%;
+        .btn:hover{
+            color: #2C2A2F;
+        }
+        @include respond-to(1024, max){
+            left: 10%;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 60% 0;
+        .slide-content{
+            left: 10%;
+        }
+    }
+    @include  respond-to(768, max){
+        .slide-content{
+            top: 50%;
+        }
+    }
+    @include respond-to(480, max){
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+        }
+    }
+
 }
 
 .slide.accessories {
@@ -137,88 +258,19 @@
             top: 53%;
         }
     }
-}
-
-.slide.bracelets {
-    background-image: url(../images/slides/bracelets.jpg);
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
-    @include background-cover;
-    .slide-content{
-        left: 30px;
-        top: 42%;
-        .btn:hover{
-            color: #2C2A2F;
-        }
-        @include respond-to(1024, max){
+    @include respond-to(480, max){
+        .slide-content{
+            top: auto;
             left: 10%;
-        }
-    }
-    @include respond-to(1024, max){
-        background-position: 60% 0;
-        .slide-content{
-            left: 10%;
-        }
-    }
-    @include  respond-to(768, max){
-        .slide-content{
-            top: 50%;
+            bottom: 7%;
+            text-align: left;
+            h2{
+                text-align: left;
+            }
         }
     }
 }
 
-.slide.brooches {
-    background-image: url(../images/slides/brooches.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    @include background-cover;
-    .slide-content{
-        left: 20px;
-        top: 43%;
-        .btn:hover{
-            color: #595649;
-        }
-    }
-    @include respond-to(1024, max){
-        background-position: 77% 100%;
-        .slide-content{
-            left: 7%;
-        }
-    }
-    @include  respond-to(768, max){
-        background-position: 40% 100%;
-        .slide-content{
-            left: 9%   ;
-            top: 47%;
-        }
-    }
-}
-
-.slide.necklaces {
-    background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
-    @include background-cover;
-    .slide-content{
-        right: 30px;
-        top: 43%;
-        h2{
-            font-size: 77px;
-        }
-        .btn:hover{
-            color: #512E20;
-        }
-    }
-    @include respond-to(1024, max){
-        background-position: 30% 0;
-        .slide-content{
-            right: 10%;
-        }
-    }
-    @include  respond-to(768, max){
-        .slide-content{
-            top: 79%;
-        }
-    }
-}
 
 
 

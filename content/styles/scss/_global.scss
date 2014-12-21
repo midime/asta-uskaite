@@ -31,7 +31,7 @@ body {
         height: 100%;
     }
     @include respond-to(1024, max){
-        min-width: 100%;
+        min-width: 320px;
         width: 100%;
     }
 }
@@ -181,6 +181,12 @@ a {
             bottom: -3px;
             -webkit-animation: rotate-360 5s infinite;
         }
+    }
+    @include respond-to(480, max){
+        font-size: 12px;
+        padding: 0 15px;
+        height: 34px;
+        line-height: 34px;
     }
 }
 .icn-close{
@@ -489,6 +495,11 @@ a {
         &:before{
             height: 400px;
             @include background-image(linear-gradient(rgba(#000000, 0.8), rgba(#000000, 0)));
+        }
+        @include respond-to(480, max){
+            top: 0;
+            height: 100%;
+            @include background-image(linear-gradient(rgba(#000000, 1), rgba(#000000, 0)));
         }
     }
 }
