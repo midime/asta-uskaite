@@ -1,14 +1,14 @@
 ﻿/*jslint regexp: true, nomen: true, sloppy: true */
 
-//var WEBFOLDER = 'asta';
-//var WEBFOLDER = 'staging';
+//var WEBFOLDER = '/asta';
+//var WEBFOLDER = '/staging';
 var WEBFOLDER = '';
 
 /*global require, applicationConfig, window, applicationConfig */
 
 require.config({
 
-    baseUrl: '/' + WEBFOLDER + '/wp-content/themes/asta-uskaite/scripts',
+    baseUrl: WEBFOLDER + '/wp-content/themes/asta-uskaite/scripts',
     paths: {
         jquery: 'libs/jquery-1.8.3.min',
         site: 'modules/site',

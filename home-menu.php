@@ -27,9 +27,9 @@
         <span class="lang-nav">
 
 
-            <a href="/<?php echo WEBFOLDER; ?>/<?php echo $postURL; ?>">LT</a>
+            <a href="<?php echo WEBFOLDER; ?>/<?php echo $postURL; ?>">LT</a>
 
-            <a href="/<?php echo WEBFOLDER; ?>/en/<?php echo $postURL; ?>">ENG</a>
+            <a href="<?php echo WEBFOLDER; ?>/en/<?php echo $postURL; ?>">ENG</a>
 
         </span>
 
