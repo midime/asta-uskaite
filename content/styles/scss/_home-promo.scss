@@ -186,9 +186,10 @@
         }
     }
     @include  respond-to(768, max){
+        background-position: 40% 100%;
         .slide-content{
-            left: 35%;
-            top: 23%;
+            left: 9%   ;
+            top: 47%;
         }
     }
 }
