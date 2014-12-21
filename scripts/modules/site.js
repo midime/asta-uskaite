@@ -268,7 +268,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
         //Main navigation toggle
         $('.js-nav-toggler').on('click touch', function(e){
             e.preventDefault();
-            alert('ss');
+            $('.page-header').toggleClass('opened');
         });
     };
 

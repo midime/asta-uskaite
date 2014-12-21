@@ -44,7 +44,7 @@
 </head>
 
 <body<?php if (is_front_page()) { ?> class="home"<?php } ?>>
-    <header class="page-header<?php if (is_front_page()) { ?> home<?php } ?>">
+    <header class="page-header<?php if (is_front_page()) { ?> home<?php } ?> opened">
         <div class="page-frame clearfix">
             <a href="/<?php echo WEBFOLDER; ?>/" class="logo">
                 <?php if (is_front_page()) { ?>
