@@ -221,6 +221,22 @@ a {
     }
 }
 
+%icn-menu{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 27%;
+    width: 49%;
+    height: 3px;
+    background: $color-black;
+    overflow: hidden;
+    @include transition(all 0.3s);
+    @include transform(rotate(0));
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+}
+
 //module - Header
 .page-header {
     position: absolute;
@@ -297,26 +313,12 @@ a {
         top: -1px;
         cursor: pointer;
         &:before{
-            content: '';
-            display: block;
-            position: absolute;
+            @extend %icn-menu;
             top: 34%;
-            left: 28%;
-            right: 28%;
-            height: 3px;
-            background: $color-black;
-            overflow: hidden;
         }
         &:after{
-            content: '';
-            display: block;
-            position: absolute;
+            @extend %icn-menu;
             bottom: 34%;
-            left: 28%;
-            right: 28%;
-            height: 3px;
-            background: $color-black;
-            overflow: hidden;
         }
     }
     @include respond-to(1024, max){
@@ -333,14 +335,13 @@ a {
         }
     }
     @include respond-to(768, max){
-        background: $color-white;
+        @include transition(all 1s);
+        @include transform(translateZ(0));
         .page-frame{
-            margin-top: 10px;
-            padding-bottom: 8px;
+            margin-top: 25px;
+            padding-bottom: 15px;
             min-height: 40px;
             &:before{
-                left: 0;
-                right: 0;
                 bottom: -7px;
             }
         }
@@ -376,20 +377,39 @@ a {
             height: 30px;
             line-height: 30px;
             opacity: 0;
-            @include transition(opacity 0.5s);
-            -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+            //@include transition(opacity 0.5s);
+            //-webkit-transition-delay: 0.7s;
+            //transition-delay: 0.7s;
             a + a{
                 margin-left: 15px;
             }
         }
         &.opened{
+            background: $color-white;
+            .page-frame{
+                &:before{
+                    left: 0;
+                    right: 0;
+                }
+            }
             .page-nav{
                 margin: 0;
                 display: block;
             }
             .lang-nav{
                 opacity: 1;
+            }
+            .icn-nav-menu{
+                &:before{
+                    top: 45%;
+                    height: 2px;
+                    @include transform(rotate(45deg));
+                }
+                &:after{
+                    bottom: 46%;
+                    height: 2px;
+                    @include transform(rotate(-45deg));
+                }
             }
         }
     }
