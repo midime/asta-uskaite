@@ -337,7 +337,8 @@ a {
         background: $color-white;
         .page-frame{
             margin-top: 10px;
-            padding-bottom: 25px;
+            padding-bottom: 20px;
+            min-height: 40px;
             &:before{
                 left: 0;
                 right: 0;
@@ -352,17 +353,20 @@ a {
         }
         .page-nav{
             float: none;
-            display: none;
+            margin: -210px 0 0;
+            @include transition(all 0.5s);
+            @include transform(translateZ(0));
             > a{
                 display: block;
                 text-align: center;
                 font-family: $font-opensans;
                 font-size: 18px;
-                padding: 5px 0;
+                padding: 10px 0;
             }
         }
         &.opened{
             .page-nav{
+                margin: 0;
                 display: block;
             }
         }

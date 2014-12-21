@@ -381,33 +381,43 @@ a {
       /* line 338, ../scss/_global.scss */
       .page-header .page-frame {
         margin-top: 10px;
-        padding-bottom: 25px; }
-        /* line 341, ../scss/_global.scss */
+        padding-bottom: 20px;
+        min-height: 40px; }
+        /* line 342, ../scss/_global.scss */
         .page-header .page-frame:before {
           left: 0;
           right: 0;
           bottom: -7px; }
-      /* line 347, ../scss/_global.scss */
+      /* line 348, ../scss/_global.scss */
       .page-header .icn-nav-menu {
         display: block; }
-      /* line 350, ../scss/_global.scss */
+      /* line 351, ../scss/_global.scss */
       .page-header .logo {
         float: none; }
-      /* line 353, ../scss/_global.scss */
+      /* line 354, ../scss/_global.scss */
       .page-header .page-nav {
         float: none;
-        display: none; }
-        /* line 356, ../scss/_global.scss */
+        margin: -210px 0 0;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0); }
+        /* line 359, ../scss/_global.scss */
         .page-header .page-nav > a {
           display: block;
           text-align: center;
           font-family: "Open Sans", sans-serif;
           font-size: 18px;
-          padding: 5px 0; }
-      /* line 365, ../scss/_global.scss */
+          padding: 10px 0; }
+      /* line 368, ../scss/_global.scss */
       .page-header.opened .page-nav {
+        margin: 0;
         display: block; }
-      /* line 369, ../scss/_global.scss */
+      /* line 373, ../scss/_global.scss */
       .page-header .lang-nav {
         position: absolute;
         top: 6px;
@@ -416,19 +426,19 @@ a {
         height: 30px;
         line-height: 30px; } }
 
-/* line 381, ../scss/_global.scss */
+/* line 385, ../scss/_global.scss */
 .home .page-header .page-frame:before {
   background-image: url(../images/bar-white.png); }
-/* line 386, ../scss/_global.scss */
+/* line 390, ../scss/_global.scss */
 .home .page-header .page-nav a {
   color: #ffffff; }
-  /* line 388, ../scss/_global.scss */
+  /* line 392, ../scss/_global.scss */
   .home .page-header .page-nav a:hover {
     color: #9E2626; }
-/* line 393, ../scss/_global.scss */
+/* line 397, ../scss/_global.scss */
 .home .page-header .lang-nav {
   border-color: #ffffff; }
-/* line 396, ../scss/_global.scss */
+/* line 400, ../scss/_global.scss */
 .home .page-header:before {
   content: '';
   display: block;
@@ -444,11 +454,11 @@ a {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
-/* line 409, ../scss/_global.scss */
+/* line 413, ../scss/_global.scss */
 .page-section .page-frame {
   padding-top: 140px; }
 
-/* line 414, ../scss/_global.scss */
+/* line 418, ../scss/_global.scss */
 .page-footer {
   width: 740px;
   margin: 0 auto;
@@ -459,13 +469,13 @@ a {
   position: relative;
   z-index: 99; }
 
-/* line 425, ../scss/_global.scss */
+/* line 429, ../scss/_global.scss */
 .contacts span, .contacts .facebook {
   display: inline-block;
   margin: 0 20px;
   padding-left: 25px;
   position: relative; }
-  /* line 430, ../scss/_global.scss */
+  /* line 434, ../scss/_global.scss */
   .contacts span:before, .contacts .facebook:before {
     content: '';
     display: block;
@@ -477,14 +487,14 @@ a {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url("../images/icn-facebook.png"); }
-  /* line 442, ../scss/_global.scss */
+  /* line 446, ../scss/_global.scss */
   .contacts span.tel:before, .contacts .facebook.tel:before {
     background-image: url("../images/icn-phone.png"); }
-  /* line 445, ../scss/_global.scss */
+  /* line 449, ../scss/_global.scss */
   .contacts span.address:before, .contacts .facebook.address:before {
     background-image: url("../images/icn-map.png"); }
 
-/* line 452, ../scss/_global.scss */
+/* line 456, ../scss/_global.scss */
 .drawer {
   position: absolute;
   right: -370px;
@@ -502,7 +512,7 @@ a {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
-  /* line 463, ../scss/_global.scss */
+  /* line 467, ../scss/_global.scss */
   .drawer:before {
     content: '';
     display: block;
@@ -512,40 +522,40 @@ a {
     position: absolute;
     left: 1px;
     top: 0; }
-  /* line 473, ../scss/_global.scss */
+  /* line 477, ../scss/_global.scss */
   .drawer .inner {
     width: 350px;
     position: relative; }
-  /* line 477, ../scss/_global.scss */
+  /* line 481, ../scss/_global.scss */
   .drawer.opened {
     right: 0;
     width: 50%;
     margin-right: -105px; }
-  /* line 483, ../scss/_global.scss */
+  /* line 487, ../scss/_global.scss */
   .drawer h3 {
     margin: 0 0 35px;
     font-weight: normal;
     font-style: italic;
     font-size: 18px;
     line-height: 1.4; }
-  /* line 490, ../scss/_global.scss */
+  /* line 494, ../scss/_global.scss */
   .drawer .icn-close {
     position: absolute;
     top: 15px; }
   @media screen and (max-width: 768px) {
-    /* line 495, ../scss/_global.scss */
+    /* line 499, ../scss/_global.scss */
     .drawer.opened {
       width: 63%; } }
 
-/* line 502, ../scss/_global.scss */
+/* line 506, ../scss/_global.scss */
 .field-wrapper {
   padding: 0 22px 0 0;
   margin-bottom: 14px;
   position: relative; }
-  /* line 506, ../scss/_global.scss */
+  /* line 510, ../scss/_global.scss */
   .field-wrapper.centered {
     padding-right: 0; }
-  /* line 509, ../scss/_global.scss */
+  /* line 513, ../scss/_global.scss */
   .field-wrapper .field-text, .field-wrapper .text-area {
     background: #ffffff;
     border: #808080 solid 1px;
@@ -558,16 +568,16 @@ a {
     -webkit-appearance: none;
     box-shadow: none;
     border-radius: 0; }
-  /* line 524, ../scss/_global.scss */
+  /* line 528, ../scss/_global.scss */
   .field-wrapper .field-text:focus {
     box-shadow: inset 4px 4px 0 rgba(0, 0, 0, 0.06); }
-  /* line 528, ../scss/_global.scss */
+  /* line 532, ../scss/_global.scss */
   .field-wrapper .text-area {
     height: 150px; }
-    /* line 531, ../scss/_global.scss */
+    /* line 535, ../scss/_global.scss */
     .field-wrapper .text-area:focus {
       box-shadow: inset 4px 4px 0 rgba(0, 0, 0, 0.06); }
-  /* line 535, ../scss/_global.scss */
+  /* line 539, ../scss/_global.scss */
   .field-wrapper label.error {
     position: absolute;
     right: 0;
@@ -583,7 +593,7 @@ a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-    /* line 548, ../scss/_global.scss */
+    /* line 552, ../scss/_global.scss */
     .field-wrapper label.error:after {
       content: '!';
       text-align: center;
@@ -600,14 +610,14 @@ a {
       font-weight: bold;
       font-family: georgia, sans-serif; }
 
-/* line 566, ../scss/_global.scss */
+/* line 570, ../scss/_global.scss */
 .fsuccess {
   text-align: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
-  /* line 572, ../scss/_global.scss */
+  /* line 576, ../scss/_global.scss */
   .fsuccess h3 {
     font-family: "Great Vibes", cursive;
     font-size: 64px;
@@ -615,37 +625,37 @@ a {
     font-weight: normal;
     line-height: 1.4;
     font-style: normal; }
-  /* line 580, ../scss/_global.scss */
+  /* line 584, ../scss/_global.scss */
   .fsuccess p {
     font-size: 16px;
     margin: 0 0 55px; }
-  /* line 587, ../scss/_global.scss */
+  /* line 591, ../scss/_global.scss */
   .fsuccess .btn {
     margin: 0; }
-  /* line 590, ../scss/_global.scss */
+  /* line 594, ../scss/_global.scss */
   .contact-form-messages .fsuccess {
     top: 194px; }
 
-/* line 594, ../scss/_global.scss */
+/* line 598, ../scss/_global.scss */
 .ferror {
   text-align: center;
   border: #EF3F73 solid 2px;
   padding: 8px 15px;
   font-size: 14px;
   margin: 20px 0 0; }
-  /* line 600, ../scss/_global.scss */
+  /* line 604, ../scss/_global.scss */
   .contact-form-messages .ferror {
     width: 386px;
     margin: 20px auto;
     background: #ffffff; }
 
-/* line 608, ../scss/_global.scss */
+/* line 612, ../scss/_global.scss */
 html.modal-on, .modal-on body {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
-/* line 613, ../scss/_global.scss */
+/* line 617, ../scss/_global.scss */
 .modal-context {
   position: absolute;
   left: 0;
@@ -656,7 +666,7 @@ html.modal-on, .modal-on body {
   background: #ffffff;
   background-position: 50% 50%;
   background-size: cover; }
-  /* line 623, ../scss/_global.scss */
+  /* line 627, ../scss/_global.scss */
   .modal-context:before {
     content: '';
     display: block;
@@ -672,7 +682,7 @@ html.modal-on, .modal-on body {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
-/* line 635, ../scss/_global.scss */
+/* line 639, ../scss/_global.scss */
 .modal-title {
   color: #ffffff;
   font-family: "Great Vibes", cursive;
@@ -682,7 +692,7 @@ html.modal-on, .modal-on body {
   right: 75px;
   bottom: 30px; }
 
-/* line 644, ../scss/_global.scss */
+/* line 648, ../scss/_global.scss */
 .modal-close {
   position: absolute;
   right: 25px;
@@ -700,13 +710,13 @@ html.modal-on, .modal-on body {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-  /* line 658, ../scss/_global.scss */
+  /* line 662, ../scss/_global.scss */
   .modal-close:hover {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
-  /* line 661, ../scss/_global.scss */
+  /* line 665, ../scss/_global.scss */
   .modal-close:before {
     content: '';
     display: block;
@@ -721,7 +731,7 @@ html.modal-on, .modal-on body {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
-  /* line 673, ../scss/_global.scss */
+  /* line 677, ../scss/_global.scss */
   .modal-close:after {
     content: '';
     display: block;
