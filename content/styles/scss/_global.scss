@@ -33,7 +33,6 @@ body {
     @include respond-to(1024, max){
         min-width: 100%;
         width: 100%;
-        background-size: 50%;
     }
 }
 img {
@@ -373,8 +372,8 @@ a {
             line-height: 30px;
             opacity: 0;
             @include transition(opacity 0.5s);
-            -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+            -webkit-transition-delay: 0.7s;
+            transition-delay: 0.7s;
         }
         &.opened{
             .page-nav{
@@ -388,9 +387,12 @@ a {
     }
 }
 .home .page-header {
+    background: none;
     .page-frame{
         &:before{
             background-image: url(../images/bar-white.png);
+            left: 20px;
+            right: 20px;
         }
     }
     .page-nav {
@@ -413,6 +415,19 @@ a {
         top: -25px;
         height: 280px;
         @include background-image(linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0)));
+        @include transition(all 0.5s);
+    }
+    .icn-nav-menu{
+        border-color:$color-white;
+        &:before, &:after{
+            background: $color-white;
+        }
+    }
+    &.opened{
+        &:before{
+            height: 400px;
+            @include background-image(linear-gradient(rgba(#000000, 0.8), rgba(#000000, 0)));
+        }
     }
 }
 
