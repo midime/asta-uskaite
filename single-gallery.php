@@ -36,7 +36,7 @@
 
 <p class="centered">
 
-    <a href="#nolink" class="btn js-load-more" <?php if ($noLoadMore) { echo 'style="display: none;'; } ?>><span>Rodyti daugiau</span></a>
+    <a href="#nolink" class="btn js-load-more" <?php if ($noLoadMore) { echo 'style="display: none;"'; } ?>><span>Rodyti daugiau</span></a>
 
 </p>
 </div>
