@@ -9,7 +9,7 @@
         		$postURL = str_replace(home_url() . '/', '', get_post_permalink(get_the_ID()));
         	}
         ?>
-
+<a class="icn-nav-menu js-nav-toggler"></a>
 <nav class="page-nav">
         <?php
             $nav_sec_menu_params = array(

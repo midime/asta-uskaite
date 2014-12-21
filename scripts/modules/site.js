@@ -264,6 +264,12 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 e.stopPropagation();
             });
         }
+
+        //Main navigation toggle
+        $('.js-nav-toggler').on('click touch', function(e){
+            e.preventDefault();
+            alert('ss');
+        });
     };
 
     module.validateForms = function () {
