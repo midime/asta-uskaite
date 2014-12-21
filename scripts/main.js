@@ -1,7 +1,8 @@
 ﻿/*jslint regexp: true, nomen: true, sloppy: true */
 
 //var WEBFOLDER = 'asta';
-var WEBFOLDER = 'staging';
+//var WEBFOLDER = 'staging';
+var WEBFOLDER = '';
 
 /*global require, applicationConfig, window, applicationConfig */
 

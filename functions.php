@@ -1,7 +1,8 @@
 <?php
 
-define("WEBFOLDER", "staging");
+//define("WEBFOLDER", "staging");
 //define("WEBFOLDER", "asta");
+define("WEBFOLDER", "");
 
 if(!is_admin()) {
     $blog_language = get_bloginfo('language');
@@ -493,7 +494,7 @@ class ik_walker extends Walker_Nav_Menu{
         $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
         $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
         $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-        $attributes .= ! empty( $item->url )        ? ' href="/staging'   . esc_attr( $this->__($item->url)        ) .'"' : '';
+        $attributes .= ! empty( $item->url )        ? ' href="/' . WEBFOLDER  . esc_attr( $this->__($item->url)        ) .'"' : '';
 
         $item_output = $args->before;
         $item_output .= '<a'. $attributes .'>';
