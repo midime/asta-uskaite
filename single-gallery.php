@@ -9,6 +9,11 @@
     $args = array( 'posts_per_page' => 12, 'category' => 4, 'order'=> 'DESC', 'orderby' => 'date' );
     $postList = get_posts( $args );
 
+    $noLoadMore = false;
+    if (count($postList) < 12) {
+        $noLoadMore = true;
+    }
+
     foreach ( $postList as $post ) {
         $productImage = getProductImageObject($post->ID);
         ?>
@@ -31,7 +36,7 @@
 
 <p class="centered">
 
-    <a href="#nolink" class="btn js-load-more"><span>Rodyti daugiau</span></a>
+    <a href="#nolink" class="btn js-load-more" <?php if ($noLoadMore) { echo 'style="display: none;'; } ?>><span>Rodyti daugiau</span></a>
 
 </p>
 </div>
