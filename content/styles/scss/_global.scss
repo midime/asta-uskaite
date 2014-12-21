@@ -484,6 +484,7 @@ a {
         height: 280px;
         @include background-image(linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0)));
         @include transition(all 0.5s);
+        @include transform(translateZ(0));
     }
     .icn-nav-menu{
         border-color:$color-white;
