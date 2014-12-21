@@ -26,6 +26,7 @@
         height: 316px;
         margin: 12px;
         background: url('../images/tile-bg.png') 50% 50% no-repeat;
+        background-size: 100%;
         figure{
             display: block;
             position: relative;
@@ -74,8 +75,48 @@
             }
         }
     }
+    @include respond-to(1024, max){
+        margin-left: -10px;
+        margin-right: -10px;
+        .tile{
+            width: 31.3%;
+            height: auto;
+            padding-bottom: 32%;
+            margin: 1%;
+            position: relative;
+            figure{
+                position: absolute;
+                left: 7%;
+                top: 8%;
+                width: 86%;
+                height: 73%;
+                margin: 0;
+            }
+            figcaption{
+                position: absolute;
+                bottom: 4%;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+            .thumb-wrapper{
+                left: 50%;
+                top: 50%;
+                margin: -205px 0 0 -205px;
+            }
+        }
+    }
     @include respond-to(768, max){
-        margin-left: 27px;
+        margin-left: 20px;
+        margin-right: 20px;
+        .tile{
+            width: 46%;
+            padding-bottom: 47%;
+            margin: 2%;
+            figure{
+                height: 75%;
+            }
+        }
     }
 }
 
