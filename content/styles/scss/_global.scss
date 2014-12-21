@@ -364,19 +364,26 @@ a {
                 padding: 10px 0;
             }
         }
+        .lang-nav{
+            position: absolute;
+            top: -35px;
+            right: 55px;
+            margin: 0;
+            height: 30px;
+            line-height: 30px;
+            opacity: 0;
+            @include transition(opacity 0.5s);
+            -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+        }
         &.opened{
             .page-nav{
                 margin: 0;
                 display: block;
             }
-        }
-        .lang-nav{
-            position: absolute;
-            top: 6px;
-            right: 66px;
-            margin: 0;
-            height: 30px;
-            line-height: 30px;
+            .lang-nav{
+                opacity: 1;
+            }
         }
     }
 }
