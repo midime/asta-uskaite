@@ -11,7 +11,7 @@ html{
     width: 100%;
     margin: 0;
     @include respond-to(1024, max){
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 body {
@@ -31,7 +31,7 @@ body {
         height: 100%;
     }
     @include respond-to(1024, max){
-        min-width: 100%;
+        min-width: 600px;
         width: 100%;
     }
 }

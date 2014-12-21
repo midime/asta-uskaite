@@ -11,7 +11,7 @@ html {
   @media screen and (max-width: 1024px) {
     /* line 8, ../scss/_global.scss */
     html {
-      overflow: hidden; } }
+      overflow-x: hidden; } }
 
 /* line 17, ../scss/_global.scss */
 body {
@@ -33,7 +33,7 @@ body {
   @media screen and (max-width: 1024px) {
     /* line 17, ../scss/_global.scss */
     body {
-      min-width: 100%;
+      min-width: 600px;
       width: 100%; } }
 
 /* line 38, ../scss/_global.scss */
