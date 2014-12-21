@@ -121,6 +121,9 @@ a {
         text-align: center;
         margin-top: 0;
     }
+    @include respond-to(768, max){
+        padding-top: 150px;
+    }
 }
 .centered{
     text-align: center;
@@ -376,7 +379,7 @@ a {
             margin: 0;
             height: 30px;
             line-height: 30px;
-            opacity: 0;
+            //opacity: 0;
             //@include transition(opacity 0.5s);
             //-webkit-transition-delay: 0.7s;
             //transition-delay: 0.7s;
@@ -397,7 +400,7 @@ a {
                 display: block;
             }
             .lang-nav{
-                opacity: 1;
+                //opacity: 1;
             }
             .icn-nav-menu{
                 &:before{
@@ -474,6 +477,14 @@ a {
     font-size: 14px;
     position: relative;
     z-index: 99;
+    @include respond-to(768, max){
+        width: auto;
+        margin: 0;
+        padding-bottom: 15px;
+        .contacts .facebook{
+            display: none;
+        }
+    }
 }
 .contacts{
     span, .facebook{

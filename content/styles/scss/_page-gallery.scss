@@ -16,6 +16,12 @@
             color: $color-red;
         }
     }
+    @include respond-to(768, max){
+        width: 560px;
+        a + a{
+            margin-left: 15px;
+        }
+    }
 }
 .gallery{
     margin: 22px -15px;
@@ -117,6 +123,10 @@
                 height: 75%;
             }
         }
+    }
+    @include respond-to(600, max){
+        margin-left: -10px;
+        margin-right: -10px;
     }
 }
 
