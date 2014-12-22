@@ -48,7 +48,7 @@
         <div class="page-frame clearfix">
             <a href="<?php echo WEBFOLDER; ?>/" class="logo">
                 <?php if (is_front_page()) { ?>
-                    <img src="<?php echo get_template_start(); ?>content/images/logo-white.png" alt="Asta Uskaite">
+                    <img src="<?php echo get_template_start(); ?>content/images/logo-white.svg" alt="Asta Uskaite">
                 <?php }else{ ?>
                     <img src="<?php echo get_template_start(); ?>content/images/logo-black.svg" alt="Asta Uskaite">
                 <?php } ?>
