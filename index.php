@@ -64,4 +64,4 @@
 </section>
 
 <!--<?php include("html-footer.php"); ?>-->
-<!--<?php get_footer(); ?>-->
+<?php get_footer(); ?>

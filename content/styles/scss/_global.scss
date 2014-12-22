@@ -230,23 +230,6 @@ a {
     }
 }
 
-%icn-menu{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    height: 3px;
-    background: $color-black;
-    overflow: hidden;
-    @include transition(all 0.3s);
-    @include transform(rotate(0));
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-
-}
-
 //module - Header
 .page-header {
     position: absolute;
@@ -274,7 +257,12 @@ a {
     .logo {
         display: block;
         float: left;
-        margin-top: 17px;
+        margin-top: 20px;
+        width: 190px;
+        height: 32px;
+        img{
+            width: 100%;
+        }
     }
     .page-nav {
         float: right;
@@ -315,33 +303,33 @@ a {
     .icn-nav-menu{
         display: none;
         border: $color-black solid 1px;
-        @include border-radius(3px);
+        @include border-radius(50%);
         width: 30px;
         height: 30px;
         position: absolute;
         right: 20px;
-        top: -1px;
+        top: 5px;
         cursor: pointer;
-        &:before{
-            @extend %icn-menu;
-            margin: -18% 0 0 -25%;
-        }
         &:after{
-            @extend %icn-menu;
-            margin: 8% 0 0 -25%;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 6px;
+            height: 6px;
+            margin: -4px 0 0 -3px;
+            border-right: $color-black solid 1px;
+            border-bottom: $color-black solid 1px;
+            @include transition(all 0.3s);
+            @include transform(rotate(45deg));
         }
     }
     &.opened{
         .icn-nav-menu{
-            &:before{
-                height: 2px;
-                margin-top: -1px;
-                @include transform(rotate(45deg));
-            }
             &:after{
-                height: 2px;
-                margin-top: -1px;
-                @include transform(rotate(-45deg));
+                margin-top: -2px;
+                @include transform(rotate(-135deg));
             }
         }
     }
@@ -435,12 +423,12 @@ a {
             }
         }
         .logo{
-            width: 80px;
-            height: 40px;
+            width: 87px;
+            height: 43px;
             overflow: hidden;
-            margin: 0;
+            margin: 20px 0 0;
             img{
-                width: 190px;
+                width: 210px;
             }
         }
         .page-nav{
@@ -449,9 +437,6 @@ a {
         .lang-nav{
             top: -38px;
         }
-        .icn-nav-menu{
-            top: 2px;
-        }
     }
 }
 .home .page-header {
@@ -459,6 +444,7 @@ a {
     z-index: 99999;
     .page-frame{
         &:before{
+            display: none;
             background-image: url(../images/bar-white.png);
         }
     }
@@ -487,8 +473,9 @@ a {
     }
     .icn-nav-menu{
         border-color:$color-white;
-        &:before, &:after{
-            background: $color-white;
+        &:after{
+            border-right-color: $color-white;
+            border-bottom-color: $color-white;
         }
     }
     &.opened{

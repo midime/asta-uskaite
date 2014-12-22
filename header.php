@@ -50,7 +50,7 @@
                 <?php if (is_front_page()) { ?>
                     <img src="<?php echo get_template_start(); ?>content/images/logo-white.png" alt="Asta Uskaite">
                 <?php }else{ ?>
-                    <img src="<?php echo get_template_start(); ?>content/images/logo-black.png" alt="Asta Uskaite">
+                    <img src="<?php echo get_template_start(); ?>content/images/logo-black.svg" alt="Asta Uskaite">
                 <?php } ?>
             </a>
             <?php include("home-menu.php"); ?>
