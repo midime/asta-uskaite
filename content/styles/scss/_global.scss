@@ -460,8 +460,6 @@ a {
     .page-frame{
         &:before{
             background-image: url(../images/bar-white.png);
-            left: 20px;
-            right: 20px;
         }
     }
     .page-nav {
@@ -503,6 +501,14 @@ a {
                 top: 0;
                 height: 150%;
                 @include background-image(linear-gradient(rgba(#000000, 1), rgba(#000000, 0)));
+            }
+        }
+    }
+    @include respond-to(480, max){
+        .page-frame{
+            &:before{
+                left: 20px;
+                right: 20px;
             }
         }
     }
