@@ -388,11 +388,14 @@ a {
             border: none;
             a{
                 display: inline-block;
-                width: 24px;
-                height: 24px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                vertical-align: middle;
                 border: $color-black solid 1px;
                 border-radius: 50%;
                 font-size: 13px;
+                letter-spacing: 1px;
                 + a{
                     margin-left: 15px;
                 }
@@ -446,9 +449,6 @@ a {
 .home .page-header {
     background: none;
     z-index: 99999;
-    .logo{
-        margin-left: 15px;
-    }
     .page-frame{
         &:before{
             display: none;
@@ -503,8 +503,11 @@ a {
         }
     }
     @include respond-to(480, max){
+        .logo{
+            margin-left: 15px;
+        }
         .page-frame{
-            margin-top: 25px;
+            margin-top: 30px;
             &:before{
                 left: 20px;
                 right: 20px;

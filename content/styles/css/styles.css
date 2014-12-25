@@ -386,11 +386,14 @@ a {
         border: none; }
         .page-header .lang-nav a {
           display: inline-block;
-          width: 24px;
-          height: 24px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          vertical-align: middle;
           border: #000000 solid 1px;
           border-radius: 50%;
-          font-size: 13px; }
+          font-size: 13px;
+          letter-spacing: 1px; }
           .page-header .lang-nav a + a {
             margin-left: 15px; }
       .page-header.opened {
@@ -426,8 +429,6 @@ a {
 .home .page-header {
   background: none;
   z-index: 99999; }
-  .home .page-header .logo {
-    margin-left: 15px; }
   .home .page-header .page-frame:before {
     display: none;
     background-image: url(../images/bar-white.png); }
@@ -486,8 +487,10 @@ a {
       background-image: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0));
       background-image: linear-gradient(#000000, rgba(0, 0, 0, 0)); } }
   @media screen and (max-width: 480px) {
+    .home .page-header .logo {
+      margin-left: 15px; }
     .home .page-header .page-frame {
-      margin-top: 25px; }
+      margin-top: 30px; }
       .home .page-header .page-frame:before {
         left: 20px;
         right: 20px; } }
