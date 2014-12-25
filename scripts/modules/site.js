@@ -8,14 +8,26 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
     module.initSlider = function () {
         var promoSlide = document.getElementById('promo-slide');
         if (promoSlide) {
-            var slider = $('#promo-slide').bxSlider({
-                mode: 'vertical',
-                auto: true,
-                speed: 1500,
-                pause: 4000,
-                preloadImages:'visible',
-                preventDefaultSwipeX:true
-            });
+            var slider;
+            if($(window).width() > 768){
+                slider = $('#promo-slide').bxSlider({
+                    mode: 'vertical',
+                    auto: true,
+                    speed: 1500,
+                    pause: 4000,
+                    preloadImages:'visible',
+                    preventDefaultSwipeX:true
+                });
+            }else{
+                slider = $('#promo-slide').bxSlider({
+                    mode: 'horizontal',
+                    auto: true,
+                    speed: 1500,
+                    pause: 4000,
+                    preloadImages:'visible',
+                    preventDefaultSwipeY:true
+                });
+            }
 
             $('.slide-content .btn').hover(function(){
                 slider.stopAuto();
