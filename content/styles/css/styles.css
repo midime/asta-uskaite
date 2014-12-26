@@ -311,7 +311,7 @@ a {
       top: 50%;
       width: 6px;
       height: 6px;
-      margin: -4px 0 0 -3px;
+      margin: -4px 0 0 -4px;
       border-right: #000000 solid 1px;
       border-bottom: #000000 solid 1px;
       -moz-transition: all 0.3s;
@@ -321,9 +321,13 @@ a {
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
-      transform: rotate(45deg); }
+      transform: rotate(45deg);
+      -webkit-transform-origin: 65% 65%;
+      -moz-transform-origin: 65% 65%;
+      -ms-transform-origin: 65% 65%;
+      -o-transform-origin: 65% 65%;
+      transform-origin: 65% 65%; }
   .page-header.opened .icn-nav-menu:after {
-    margin-top: -2px;
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
