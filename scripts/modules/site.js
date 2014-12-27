@@ -287,7 +287,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
         //Toggle gallery navigation on mobile screens
         $('.js-nav-catalog a.active').on('click touch', function(e){
             e.preventDefault();
-            $(this).toggleClass('opened');
+            $('.js-nav-catalog').toggleClass('opened');
         });
     };
 
