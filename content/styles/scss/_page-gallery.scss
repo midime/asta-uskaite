@@ -5,7 +5,9 @@
     text-align: center;
     white-space: nowrap;
     padding-bottom: 6px;
-    background: url('../images/nav-bg.png')50% 100% no-repeat;
+    background-image: url('../images/nav-bg.png');
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
     a{
         color: $color-red;
         text-decoration: none;
@@ -20,6 +22,54 @@
         width: 560px;
         a + a{
             margin-left: 15px;
+        }
+    }
+    @include respond-to(600, max){
+        width: auto;
+        max-width: 350px;
+        padding: 40px 0 0;
+        overflow: hidden;
+        position: relative;
+        background-position: 50% -2px;
+        background-color: $color-white;
+        a{
+            text-align: left;
+            display: none;
+            padding: 5px 10px;
+            margin: 0;
+            + a{
+                margin: 0;
+            }
+            &.active{
+                display: block;
+                position: absolute;
+                left:0;
+                top: 5px;
+            }
+        }
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            width: 7px;
+            height: 7px;
+            margin: -4px 0 0 -4px;
+            border-right: $color-black solid 1px;
+            border-bottom: $color-black solid 1px;
+            @include transition(all 0.3s);
+            @include transform(rotate(45deg));
+            -webkit-transform-origin: 65% 65%;
+            -moz-transform-origin: 65% 65%;
+            -ms-transform-origin: 65% 65%;
+            -o-transform-origin: 65% 65%;
+            transform-origin: 65% 65%;
+        }
+        &.opened {
+            a{
+                display: block;
+            }
         }
     }
 }

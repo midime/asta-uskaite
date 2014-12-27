@@ -1,4 +1,4 @@
-<nav class="nav-catalog">
+<nav class="nav-catalog js-nav-catalog">
     <?php
         $currentPageId = get_the_ID();
 

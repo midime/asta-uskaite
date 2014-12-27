@@ -118,6 +118,9 @@ a {
   @media screen and (max-width: 768px) {
     .page-content {
       padding-top: 150px; } }
+  @media screen and (max-width: 600px) {
+    .page-content {
+      padding-top: 120px; } }
 
 .centered {
   text-align: center; }
@@ -431,7 +434,6 @@ a {
         .page-header .logo img {
           width: 210px;
           height: 35px;
-          outline: #ff0000 solid 1px;
           display: block; }
       .page-header .page-nav {
         padding: 20px 0 10px; }
@@ -1171,7 +1173,9 @@ html.modal-on, .modal-on body {
   text-align: center;
   white-space: nowrap;
   padding-bottom: 6px;
-  background: url("../images/nav-bg.png") 50% 100% no-repeat; }
+  background-image: url("../images/nav-bg.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat; }
   .nav-catalog a {
     color: #9E2626;
     text-decoration: none; }
@@ -1184,6 +1188,53 @@ html.modal-on, .modal-on body {
       width: 560px; }
       .nav-catalog a + a {
         margin-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .nav-catalog {
+      width: auto;
+      max-width: 350px;
+      padding: 40px 0 0;
+      overflow: hidden;
+      position: relative;
+      background-position: 50% -2px;
+      background-color: #ffffff; }
+      .nav-catalog a {
+        text-align: left;
+        display: none;
+        padding: 5px 10px;
+        margin: 0; }
+        .nav-catalog a + a {
+          margin: 0; }
+        .nav-catalog a.active {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 5px; }
+      .nav-catalog:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        width: 7px;
+        height: 7px;
+        margin: -4px 0 0 -4px;
+        border-right: #000000 solid 1px;
+        border-bottom: #000000 solid 1px;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 65% 65%;
+        -moz-transform-origin: 65% 65%;
+        -ms-transform-origin: 65% 65%;
+        -o-transform-origin: 65% 65%;
+        transform-origin: 65% 65%; }
+      .nav-catalog.opened a {
+        display: block; } }
 
 .gallery {
   margin: 22px -15px; }

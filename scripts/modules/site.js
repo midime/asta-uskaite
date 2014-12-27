@@ -283,6 +283,12 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             e.preventDefault();
             $('.page-header').toggleClass('opened');
         });
+
+        //Toggle gallery navigation on mobile screens
+        $('.js-nav-catalog').on('click touch', function(e){
+            e.preventDefault();
+            $(this).toggleClass('opened');
+        });
     };
 
     module.validateForms = function () {

@@ -127,6 +127,9 @@ a {
     @include respond-to(768, max){
         padding-top: 150px;
     }
+    @include respond-to(600, max){
+        padding-top: 120px;
+    }
 }
 .centered{
     text-align: center;
@@ -447,7 +450,6 @@ a {
             img{
                 width: 210px;
                 height: 35px;
-                outline: #ff0000 solid 1px;
                 display: block;
             }
         }
