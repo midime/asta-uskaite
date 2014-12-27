@@ -121,6 +121,9 @@ a {
         text-align: center;
         margin-top: 0;
     }
+    @include respond-to(1024, max){
+        padding-top: 150px;
+    }
     @include respond-to(768, max){
         padding-top: 150px;
     }
@@ -341,12 +344,15 @@ a {
     }
     @include respond-to(1024, max){
         min-width: 100%;
-        .page-frame:before{
-            display: block;
-            right: 20px;
-            left: 20px;
-            width: auto;
-            background-position: 0 100%;
+        .page-frame{
+            margin-top: 10px;
+            &:before{
+                display: block;
+                right: 20px;
+                left: 20px;
+                width: auto;
+                background-position: 0 100%;
+            }
         }
     }
     @include respond-to(768, max){

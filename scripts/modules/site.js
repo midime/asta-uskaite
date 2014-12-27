@@ -23,7 +23,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 slider = $('#promo-slide').bxSlider({
                     mode: 'horizontal',
                     auto: true,
-                    speed: 1500,
+                    speed: 700,
                     pause: 4000,
                     preloadImages:'visible',
                     preventDefaultSwipeY:true

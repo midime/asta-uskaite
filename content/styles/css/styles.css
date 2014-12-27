@@ -112,6 +112,9 @@ a {
   .page-content h1 {
     text-align: center;
     margin-top: 0; }
+  @media screen and (max-width: 1024px) {
+    .page-content {
+      padding-top: 150px; } }
   @media screen and (max-width: 768px) {
     .page-content {
       padding-top: 150px; } }
@@ -335,12 +338,14 @@ a {
   @media screen and (max-width: 1024px) {
     .page-header {
       min-width: 100%; }
-      .page-header .page-frame:before {
-        display: block;
-        right: 20px;
-        left: 20px;
-        width: auto;
-        background-position: 0 100%; } }
+      .page-header .page-frame {
+        margin-top: 10px; }
+        .page-header .page-frame:before {
+          display: block;
+          right: 20px;
+          left: 20px;
+          width: auto;
+          background-position: 0 100%; } }
   @media screen and (max-width: 768px) {
     .page-header {
       -moz-transition: all 0.5s;
