@@ -893,7 +893,9 @@ html.modal-on, .modal-on body {
       .slide .slide-content h2 {
         font-size: 50px; }
       .slide .slide-content .btn {
-        margin-top: 5px; } }
+        margin-top: 5px;
+        background: #ffffff;
+        color: #000000; } }
 
 .slide.brooches {
   background-image: url(../images/slides/brooches.jpg);
@@ -924,7 +926,12 @@ html.modal-on, .modal-on body {
       background-position: 57% 100%; }
       .slide.brooches .slide-content {
         top: auto;
-        bottom: 7%; } }
+        bottom: 7%;
+        text-align: left; }
+        .slide.brooches .slide-content h2 {
+          text-align: left; }
+        .slide.brooches .slide-content .btn {
+          color: #464844; } }
 
 .slide.necklaces {
   background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
@@ -950,9 +957,13 @@ html.modal-on, .modal-on body {
   @media screen and (max-width: 480px) {
     .slide.necklaces .slide-content {
       top: auto;
-      bottom: 7%; }
+      bottom: 7%;
+      text-align: right; }
       .slide.necklaces .slide-content h2 {
-        font-size: 50px; } }
+        font-size: 50px;
+        text-align: right; }
+      .slide.necklaces .slide-content .btn {
+        color: #412317; } }
 
 .slide.earrings {
   background-image: url(../images/slides/earrings.jpg);
@@ -981,7 +992,12 @@ html.modal-on, .modal-on body {
       .slide.earrings .slide-content {
         top: auto;
         bottom: 7%;
-        right: 10%; } }
+        right: 10%;
+        text-align: right; }
+        .slide.earrings .slide-content h2 {
+          text-align: right; }
+        .slide.earrings .slide-content .btn {
+          color: #6F6A60; } }
 
 .slide.bracelets {
   background-image: url(../images/slides/bracelets.jpg);
@@ -1010,7 +1026,12 @@ html.modal-on, .modal-on body {
   @media screen and (max-width: 480px) {
     .slide.bracelets .slide-content {
       top: auto;
-      bottom: 7%; } }
+      bottom: 7%;
+      text-align: left; }
+      .slide.bracelets .slide-content h2 {
+        text-align: left; }
+      .slide.bracelets .slide-content .btn {
+        color: #71402B; } }
 
 .slide.accessories {
   background-image: url(../images/slides/head_accessories.jpg);
@@ -1044,7 +1065,10 @@ html.modal-on, .modal-on body {
       bottom: 7%;
       text-align: left; }
       .slide.accessories .slide-content h2 {
-        text-align: left; } }
+        text-align: left;
+        font-size: 54px; }
+      .slide.accessories .slide-content .btn {
+        color: #71402B; } }
 
 .about {
   text-align: center;

@@ -120,10 +120,11 @@
             }
             .btn{
                 margin-top: 5px;
+                background: $color-white;
+                color: $color-black;
             }
         }
     }
-
 }
 
 .slide.brooches {
@@ -156,6 +157,13 @@
         .slide-content{
             top: auto;
             bottom: 7%;
+            text-align: left;
+            h2{
+                text-align: left;
+            }
+            .btn{
+                color: #464844;
+            }
         }
     }
 }
@@ -188,8 +196,13 @@
         .slide-content{
             top: auto;
             bottom: 7%;
+            text-align: right;
             h2{
                 font-size: 50px;
+                text-align: right;
+            }
+            .btn{
+                color: #412317;
             }
         }
     }
@@ -224,6 +237,13 @@
             top: auto;
             bottom: 7%;
             right: 10%;
+            text-align: right;
+            h2{
+                text-align: right;
+            }
+            .btn{
+                color: #6F6A60;
+            }
         }
     }
 }
@@ -258,9 +278,15 @@
         .slide-content{
             top: auto;
             bottom: 7%;
+            text-align: left;
+            h2{
+                text-align: left;
+            }
+            .btn{
+                color: #71402B;
+            }
         }
     }
-
 }
 
 .slide.accessories {
@@ -300,6 +326,10 @@
             text-align: left;
             h2{
                 text-align: left;
+                font-size: 54px;
+            }
+            .btn{
+                color: #71402B;
             }
         }
     }
