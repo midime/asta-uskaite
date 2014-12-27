@@ -31,19 +31,49 @@
             display: block;
             overflow: hidden;
             text-indent: -99px;
-            left: $slider-paging-margin;
-            top: -15px;
-            width: 14px;
-            height: 14px;
-            background: url(../images/icn-top.png) 50% 50% no-repeat;
+            left: 13px;
+            top: -8px;
+            width: 7px;
+            height: 7px;
+            border-top: $color-white solid 1px;
+            border-right: $color-white solid 1px;
+            @include transform(rotate(-45deg));
         }
         .bx-next {
             top: auto;
-            bottom: -15px;
-            background-image: url(../images/icn-bottom.png);
+            bottom: -8px;
+            @include transform(rotate(135deg));
         }
         @include respond-to(1024, max) {
             right: 30px;
+        }
+    }
+}
+.slide-mode-h{
+    .bx-controls{
+        right: auto;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        margin: 0 0 30px -50px;
+        width: 100px;
+        .bx-pager-link{
+            width: 8px;
+            height: 8px;
+            margin: 5px;
+            float: left;
+        }
+        .bx-prev{
+            top: 6px;
+            left: -7px;
+            @include transform(rotate(-135deg));
+        }
+        .bx-next{
+            top: 6px;
+            right: -7px;
+            bottom: auto;
+            left: auto;
+            @include transform(rotate(45deg));
         }
     }
 }

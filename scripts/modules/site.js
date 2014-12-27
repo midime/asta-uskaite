@@ -19,6 +19,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                     preventDefaultSwipeX:true
                 });
             }else{
+                $('body').addClass('slide-mode-h');
                 slider = $('#promo-slide').bxSlider({
                     mode: 'horizontal',
                     auto: true,
