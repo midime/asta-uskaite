@@ -55,7 +55,7 @@
         top: auto;
         bottom: 0;
         left: 50%;
-        margin: 0 0 30px -50px;
+        margin: 0 0 10px -50px;
         width: 100px;
         .bx-pager-link{
             width: 8px;
@@ -74,6 +74,11 @@
             bottom: auto;
             left: auto;
             @include transform(rotate(45deg));
+        }
+    }
+    @include respond-to(480, max){
+        .bx-controls{
+            display: none;
         }
     }
 }
@@ -176,7 +181,7 @@
     }
     @include  respond-to(768, max){
         .slide-content{
-            top: 79%;
+            top: 76%;
         }
     }
     @include respond-to(480, max){
