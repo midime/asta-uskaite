@@ -195,13 +195,20 @@
         }
     }
     @include respond-to(480, max){
+        .tile{
+            figcaption{
+                font-size: 20px;
+                margin-bottom: -10px;
+            }
+        }
+    }
+    @include respond-to(320, max){
         margin-left: -4px;
         margin-right: -4px;
         .tile{
             width: 100%;
-            max-width: 313px;
             padding-bottom: 101%;
-            margin: 0 0 3%;
+            margin: 0 0 4%;
             figure{
                 height: 75%;
             }
@@ -249,8 +256,11 @@
     }
     @include respond-to(768, max){
         float: none;
-        margin: 0 auto;
+        margin: 0 auto 100px;
         padding-top:1px;
+        .wrapper{
+            height: 430px;
+        }
     }
 }
 .product-info{
@@ -272,7 +282,8 @@
         display: block;
         width: auto;
         height: auto;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        position: relative;
         .inner{
             display: block;
             text-align: center;
@@ -282,10 +293,7 @@
         }
         h1{
             text-align: center;
-        }
-        .product-price{
-            width: 70%;
-            margin: 0 auto;
+            font-size: 70px;
         }
     }
 }
@@ -307,6 +315,22 @@
     }
     .btn{
         float: right;
+    }
+    @include respond-to(768, max){
+        position: absolute;
+        bottom: -609px;
+        left: 50%;
+        background: none;
+        width: 160px;
+        margin: 0 0 0 -80px;
+        padding: 0;
+        h4{
+            float: none;
+            margin: 0 0 30px;
+        }
+        .btn{
+            float: none;
+        }
     }
 }
 .prod-nav{

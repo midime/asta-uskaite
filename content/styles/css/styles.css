@@ -1354,14 +1354,17 @@ html.modal-on, .modal-on body {
           font-size: 24px;
           margin-bottom: -12px; } }
   @media screen and (max-width: 480px) {
+    .gallery .tile figcaption {
+      font-size: 20px;
+      margin-bottom: -10px; } }
+  @media screen and (max-width: 320px) {
     .gallery {
       margin-left: -4px;
       margin-right: -4px; }
       .gallery .tile {
         width: 100%;
-        max-width: 313px;
         padding-bottom: 101%;
-        margin: 0 0 3%; }
+        margin: 0 0 4%; }
         .gallery .tile figure {
           height: 75%; }
         .gallery .tile figcaption {
@@ -1401,8 +1404,10 @@ html.modal-on, .modal-on body {
   @media screen and (max-width: 768px) {
     .product-img {
       float: none;
-      margin: 0 auto;
-      padding-top: 1px; } }
+      margin: 0 auto 100px;
+      padding-top: 1px; }
+      .product-img .wrapper {
+        height: 430px; } }
 
 .product-info {
   float: right;
@@ -1422,7 +1427,8 @@ html.modal-on, .modal-on body {
       display: block;
       width: auto;
       height: auto;
-      margin-bottom: 50px; }
+      margin-bottom: 30px;
+      position: relative; }
       .product-info .inner {
         display: block;
         text-align: center;
@@ -1430,10 +1436,8 @@ html.modal-on, .modal-on body {
         width: 70%;
         margin: 0 auto; }
       .product-info h1 {
-        text-align: center; }
-      .product-info .product-price {
-        width: 70%;
-        margin: 0 auto; } }
+        text-align: center;
+        font-size: 70px; } }
 
 .product-price {
   background: url("../images/nav-bg.png") 50% 0 no-repeat;
@@ -1451,6 +1455,20 @@ html.modal-on, .modal-on body {
       font-size: 24px; }
   .product-price .btn {
     float: right; }
+  @media screen and (max-width: 768px) {
+    .product-price {
+      position: absolute;
+      bottom: -609px;
+      left: 50%;
+      background: none;
+      width: 160px;
+      margin: 0 0 0 -80px;
+      padding: 0; }
+      .product-price h4 {
+        float: none;
+        margin: 0 0 30px; }
+      .product-price .btn {
+        float: none; } }
 
 .prod-nav {
   position: absolute;
