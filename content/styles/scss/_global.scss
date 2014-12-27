@@ -44,6 +44,9 @@ h1 {
     font-size: 64px;
     line-height: 1.2em;
     margin: 0;
+    @include respond-to(480, max){
+        font-size: 48px;
+    }
 }
 a {
     color: $color-red;
@@ -129,6 +132,9 @@ a {
     }
     @include respond-to(600, max){
         padding-top: 120px;
+    }
+    @include respond-to(480, max){
+        padding-top: 90px;
     }
 }
 .centered{

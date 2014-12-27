@@ -39,6 +39,9 @@ h1 {
   font-size: 64px;
   line-height: 1.2em;
   margin: 0; }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 48px; } }
 
 a {
   color: #9E2626;
@@ -121,6 +124,9 @@ a {
   @media screen and (max-width: 600px) {
     .page-content {
       padding-top: 120px; } }
+  @media screen and (max-width: 480px) {
+    .page-content {
+      padding-top: 90px; } }
 
 .centered {
   text-align: center; }
@@ -1351,12 +1357,17 @@ html.modal-on, .modal-on body {
     .gallery {
       margin-left: -4px;
       margin-right: -4px; }
-      .gallery .tile figure {
-        height: 70%; }
-      .gallery .tile figcaption {
-        bottom: 11%;
-        font-size: 20px;
-        margin-bottom: -10px; } }
+      .gallery .tile {
+        width: 100%;
+        max-width: 313px;
+        padding-bottom: 101%;
+        margin: 0 0 3%; }
+        .gallery .tile figure {
+          height: 75%; }
+        .gallery .tile figcaption {
+          bottom: 8.5%;
+          font-size: 24px;
+          margin-bottom: -12px; } }
 
 .product {
   position: relative; }

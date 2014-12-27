@@ -198,13 +198,17 @@
         margin-left: -4px;
         margin-right: -4px;
         .tile{
+            width: 100%;
+            max-width: 313px;
+            padding-bottom: 101%;
+            margin: 0 0 3%;
             figure{
-                height: 70%;
+                height: 75%;
             }
             figcaption{
-                bottom: 11%;
-                font-size: 20px;
-                margin-bottom: -10px;
+                bottom: 8.5%;
+                font-size: 24px;
+                margin-bottom: -12px;
             }
         }
     }
