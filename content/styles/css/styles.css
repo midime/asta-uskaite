@@ -1290,10 +1290,11 @@ html.modal-on, .modal-on body {
       text-align: center;
       font-family: "Great Vibes", cursive;
       font-size: 28px;
-      line-height: 1.0em;
+      line-height: 1;
+      vertical-align: middle;
       color: #000000; }
       .gallery .tile figcaption span {
-        font-size: 22px;
+        font-size: 0.75em;
         margin-right: 5px; }
   @media screen and (max-width: 1024px) {
     .gallery {
@@ -1314,10 +1315,11 @@ html.modal-on, .modal-on body {
           margin: 0; }
         .gallery .tile figcaption {
           position: absolute;
-          bottom: 4%;
+          bottom: 9.5%;
           width: 100%;
           text-align: center;
-          margin: 0; }
+          overflow: hidden;
+          margin: 0 0 -14px; }
         .gallery .tile .thumb-wrapper {
           left: 50%;
           top: 50%;
@@ -1331,11 +1333,30 @@ html.modal-on, .modal-on body {
         padding-bottom: 47%;
         margin: 2%; }
         .gallery .tile figure {
-          height: 75%; } }
+          height: 75%; }
+        .gallery .tile figcaption {
+          bottom: 8.5%; } }
   @media screen and (max-width: 600px) {
     .gallery {
-      margin-left: -10px;
-      margin-right: -10px; } }
+      margin-left: -8px;
+      margin-right: -8px; }
+      .gallery .tile {
+        width: 48%;
+        padding-bottom: 49%;
+        margin: 1%; }
+        .gallery .tile figcaption {
+          font-size: 24px;
+          margin-bottom: -12px; } }
+  @media screen and (max-width: 480px) {
+    .gallery {
+      margin-left: -4px;
+      margin-right: -4px; }
+      .gallery .tile figure {
+        height: 70%; }
+      .gallery .tile figcaption {
+        bottom: 11%;
+        font-size: 20px;
+        margin-bottom: -10px; } }
 
 .product {
   position: relative; }
