@@ -25,8 +25,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                     auto: true,
                     speed: 700,
                     pause: 4000,
-                    preloadImages:'visible',
-                    preventDefaultSwipeY:true
+                    preloadImages:'visible'
                 });
             }
 
