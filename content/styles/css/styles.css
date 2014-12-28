@@ -1173,7 +1173,7 @@ html.modal-on, .modal-on body {
   @media screen and (max-width: 480px) {
     .page-contact .contact-form-messages .ferror {
       width: auto; }
-    .page-contact .page-contact form {
+    .page-contact form {
       width: auto; } }
 
 .show-map #contact-map {
