@@ -279,7 +279,7 @@
         .product-price{
             display: block;
             position: absolute;
-            top: 88%;
+            top: 89%;
             width: 100%;
             text-align: center;
             background: none;
@@ -296,6 +296,21 @@
     @include respond-to(600, max){
         width: 100%;
         padding-bottom: 100%;
+    }
+    @include respond-to(480, max){
+        margin-bottom: 190px;
+        .product-price{
+            top: 88%;
+            h4{
+                font-size: 22px;
+                margin-bottom: 5%;
+            }
+        }
+    }
+    @include respond-to(320, max){
+        .product-price{
+            top: 85%;
+        }
     }
 }
 .product-info{
@@ -345,6 +360,9 @@
     }
     @include respond-to(600, max){
         position: static;
+        .inner{
+            width: auto;
+        }
     }
 }
 .product-price{
@@ -360,7 +378,7 @@
         margin: 0;
         letter-spacing: 1px;
         span{
-            font-size: 24px;
+            font-size: 0.75em;
         }
     }
     .btn{
@@ -434,6 +452,13 @@
             + a{
                 margin-left: 20px;
             }
+        }
+    }
+    @include respond-to(480, max){
+        .cat-title{
+            display: block;
+            margin-right: 0;
+            margin-bottom: 20px;
         }
     }
 }

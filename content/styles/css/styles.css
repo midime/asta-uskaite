@@ -182,12 +182,6 @@ a {
       right: -3px;
       bottom: -3px;
       -webkit-animation: rotate-360 5s infinite; }
-  @media screen and (max-width: 480px) {
-    .btn {
-      font-size: 12px;
-      padding: 0 15px;
-      height: 34px;
-      line-height: 34px; } }
 
 .icn-close {
   display: block;
@@ -609,6 +603,23 @@ a {
   @media screen and (max-width: 768px) {
     .drawer.opened {
       width: 63%; } }
+  @media screen and (max-width: 600px) {
+    .drawer.opened {
+      width: 100%;
+      margin-right: -65px; } }
+  @media screen and (max-width: 480px) {
+    .drawer {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .drawer.opened {
+        margin-right: 0; }
+      .drawer:before {
+        display: none; }
+      .drawer .inner {
+        width: auto; } }
 
 .field-wrapper {
   padding: 0 22px 0 0;
@@ -1079,7 +1090,11 @@ html.modal-on, .modal-on body {
         text-align: left;
         font-size: 54px; }
       .slide.accessories .slide-content .btn {
-        color: #71402B; } }
+        color: #71402B;
+        font-size: 12px;
+        padding: 0 15px;
+        height: 34px;
+        line-height: 34px; } }
 
 .about {
   text-align: center;
@@ -1427,7 +1442,7 @@ html.modal-on, .modal-on body {
       .product-img-frame .product-price {
         display: block;
         position: absolute;
-        top: 88%;
+        top: 89%;
         width: 100%;
         text-align: center;
         background: none;
@@ -1441,6 +1456,17 @@ html.modal-on, .modal-on body {
     .product-img-frame {
       width: 100%;
       padding-bottom: 100%; } }
+  @media screen and (max-width: 480px) {
+    .product-img-frame {
+      margin-bottom: 190px; }
+      .product-img-frame .product-price {
+        top: 88%; }
+        .product-img-frame .product-price h4 {
+          font-size: 22px;
+          margin-bottom: 5%; } }
+  @media screen and (max-width: 320px) {
+    .product-img-frame .product-price {
+      top: 85%; } }
 
 .product-info {
   float: right;
@@ -1484,7 +1510,9 @@ html.modal-on, .modal-on body {
         font-size: 70px; } }
   @media screen and (max-width: 600px) {
     .product-info {
-      position: static; } }
+      position: static; }
+      .product-info .inner {
+        width: auto; } }
 
 .product-price {
   background: url("../images/nav-bg.png") 50% 0 no-repeat;
@@ -1499,7 +1527,7 @@ html.modal-on, .modal-on body {
     margin: 0;
     letter-spacing: 1px; }
     .product-price h4 span {
-      font-size: 24px; }
+      font-size: 0.75em; }
   .product-price .btn {
     float: right; }
   @media screen and (max-width: 768px) {
@@ -1565,3 +1593,8 @@ html.modal-on, .modal-on body {
         vertical-align: middle; }
         .prod-nav > a + a {
           margin-left: 20px; } }
+  @media screen and (max-width: 480px) {
+    .prod-nav .cat-title {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 20px; } }
