@@ -1241,6 +1241,11 @@ html.modal-on, .modal-on body {
         -ms-transform-origin: 65% 65%;
         -o-transform-origin: 65% 65%;
         transform-origin: 65% 65%; }
+      .nav-catalog.opened:after {
+        -moz-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        transform: rotate(225deg); }
       .nav-catalog.opened a {
         display: block; } }
 
@@ -1374,40 +1379,68 @@ html.modal-on, .modal-on body {
 
 .product {
   position: relative; }
-  @media screen and (max-width: 768px) {
-    .product {
-      padding-bottom: 150px; } }
 
-.product-img {
+.product-img-frame {
   float: left;
   width: 507px;
   height: 507px;
   margin: 0;
+  position: relative;
   background: url("../images/product-bg.svg") 50% 50% no-repeat;
   background-size: 100%; }
-  .product-img .wrapper {
-    overflow: hidden;
-    margin: 20px;
-    width: 467px;
-    height: 467px; }
-  .product-img .inner {
+  .product-img-frame .product-img {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    width: 92%;
+    height: 92%;
+    overflow: hidden; }
+  .product-img-frame .product-price {
+    display: none; }
+  .product-img-frame .inner {
     width: 720px;
     height: 720px;
     text-align: center;
     vertical-align: middle;
     line-height: 720px;
-    margin: -126px 0 0 -126px; }
-  .product-img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -360px 0 0 -360px; }
+  .product-img-frame img {
     max-width: 720px;
     max-height: 720px;
     vertical-align: middle; }
+  @media screen and (max-width: 1024px) {
+    .product-img-frame {
+      width: 55%;
+      height: auto;
+      padding-bottom: 55%; } }
   @media screen and (max-width: 768px) {
-    .product-img {
+    .product-img-frame {
       float: none;
-      margin: 0 auto 100px;
-      padding-top: 1px; }
-      .product-img .wrapper {
-        height: 430px; } }
+      margin: 0 auto 160px;
+      width: 507px;
+      padding-bottom: 507px; }
+      .product-img-frame .product-img {
+        height: 84%; }
+      .product-img-frame .product-price {
+        display: block;
+        position: absolute;
+        top: 88%;
+        width: 100%;
+        text-align: center;
+        background: none;
+        padding: 0; }
+        .product-img-frame .product-price h4 {
+          float: none;
+          margin-bottom: 30px; }
+        .product-img-frame .product-price .btn {
+          float: none; } }
+  @media screen and (max-width: 600px) {
+    .product-img-frame {
+      width: 100%;
+      padding-bottom: 100%; } }
 
 .product-info {
   float: right;
@@ -1421,15 +1454,26 @@ html.modal-on, .modal-on body {
   .product-info h1 {
     font-size: 50px;
     text-align: left; }
+  @media screen and (max-width: 1024px) {
+    .product-info {
+      width: 40%;
+      height: auto; }
+      .product-info .inner {
+        position: absolute;
+        bottom: 0;
+        width: 40%; } }
   @media screen and (max-width: 768px) {
     .product-info {
       float: none;
       display: block;
       width: auto;
-      height: auto;
       margin-bottom: 30px;
-      position: relative; }
+      position: relative;
+      z-index: 2;
+      padding-bottom: 0; }
       .product-info .inner {
+        position: static;
+        bottom: auto;
         display: block;
         text-align: center;
         padding-top: 0;
@@ -1438,6 +1482,9 @@ html.modal-on, .modal-on body {
       .product-info h1 {
         text-align: center;
         font-size: 70px; } }
+  @media screen and (max-width: 600px) {
+    .product-info {
+      position: static; } }
 
 .product-price {
   background: url("../images/nav-bg.png") 50% 0 no-repeat;
@@ -1457,18 +1504,7 @@ html.modal-on, .modal-on body {
     float: right; }
   @media screen and (max-width: 768px) {
     .product-price {
-      position: absolute;
-      bottom: -609px;
-      left: 50%;
-      background: none;
-      width: 160px;
-      margin: 0 0 0 -80px;
-      padding: 0; }
-      .product-price h4 {
-        float: none;
-        margin: 0 0 30px; }
-      .product-price .btn {
-        float: none; } }
+      display: none; } }
 
 .prod-nav {
   position: absolute;
@@ -1516,7 +1552,7 @@ html.modal-on, .modal-on body {
   @media screen and (max-width: 768px) {
     .prod-nav {
       top: auto;
-      bottom: 50px;
+      bottom: 0;
       left: 0;
       text-align: center; }
       .prod-nav .cat-title {

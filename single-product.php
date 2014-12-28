@@ -49,7 +49,6 @@
 <div class="page-frame page-content">
     <div class="clearfix product">
         <div class="prod-nav">
-
             <div class="cat-title">
                 <?php getQVertimas('gallery_title'); ?>: <a href="<?php echo get_permalink($postCatDetails[0]->post_id); ?>"><?php echo __($postCatDetails[0]->post_title); ?></a>
             </div>
@@ -77,14 +76,18 @@
                 </div>
             </div>
         </div>
-        <figure class="product-img">
-            <div class="wrapper">
+        <figure class="product-img-frame">
+            <div class="product-img">
                 <div class="inner">
                     <a data-modal="{}" title="<?php echo get_the_TITLE(); ?>" data-image="<?php echo $productImage[0]; ?>">
                         <img src="<?php echo $productImage[0]; ?>" alt="<?php echo $productTitle; ?>">
                     </a>
                 </div>
             </div>
+            <figcaption class="product-price">
+                <h4><span>€</span><?php echo get_field('price', get_the_ID()); ?></h4>
+                <a href="#nolink" class="btn dark js-show-form"><?php getQVertimas('order'); ?></a>
+            </figcaption>
         </figure>
     </div>
 </div>

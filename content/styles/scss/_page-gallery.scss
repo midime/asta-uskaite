@@ -69,6 +69,9 @@
             transform-origin: 65% 65%;
         }
         &.opened {
+            &:after{
+                @include transform(rotate(225deg));
+            }
             a{
                 display: block;
             }
@@ -224,22 +227,25 @@
 //Product single
 .product{
     position: relative;
-    @include respond-to(768, max){
-        padding-bottom: 150px;
-    }
 }
-.product-img{
+.product-img-frame{
     float: left;
     width: 507px;
     height: 507px;
     margin: 0;
+    position: relative;
     background: url('../images/product-bg.svg') 50% 50% no-repeat;
     background-size: 100%;
-    .wrapper{
+    .product-img{
+        position: absolute;
+        left: 4%;
+        top: 4%;
+        width: 92%;
+        height: 92%;
         overflow: hidden;
-        margin: 20px;
-        width: 467px;
-        height: 467px;
+    }
+    .product-price{
+        display: none;
     }
     .inner{
         width: 720px;
@@ -247,20 +253,49 @@
         text-align: center;
         vertical-align: middle;
         line-height: 720px;
-        margin: -126px 0 0 -126px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -360px 0 0 -360px;
     }
     img{
         max-width: 720px;
         max-height: 720px;
         vertical-align: middle;
     }
+    @include respond-to(1024, max){
+        width: 55%;
+        height: auto;
+        padding-bottom: 55%;
+    }
     @include respond-to(768, max){
         float: none;
-        margin: 0 auto 100px;
-        padding-top:1px;
-        .wrapper{
-            height: 430px;
+        margin: 0 auto 160px;
+        width: 507px;
+        padding-bottom: 507px;
+        .product-img{
+            height: 84%;
         }
+        .product-price{
+            display: block;
+            position: absolute;
+            top: 88%;
+            width: 100%;
+            text-align: center;
+            background: none;
+            padding: 0;
+            h4{
+                float: none;
+                margin-bottom: 30px;
+            }
+            .btn{
+                float: none;
+            }
+        }
+    }
+    @include respond-to(600, max){
+        width: 100%;
+        padding-bottom: 100%;
     }
 }
 .product-info{
@@ -277,14 +312,26 @@
         font-size: 50px;
         text-align: left;
     }
+    @include respond-to(1024, max){
+        width: 40%;
+        height: auto;
+        .inner{
+            position: absolute;
+            bottom: 0;
+            width: 40%;
+        }
+    }
     @include respond-to(768, max){
         float: none;
         display: block;
         width: auto;
-        height: auto;
         margin-bottom: 30px;
         position: relative;
+        z-index: 2;
+        padding-bottom: 0;
         .inner{
+            position: static;
+            bottom: auto;
             display: block;
             text-align: center;
             padding-top: 0;
@@ -295,6 +342,9 @@
             text-align: center;
             font-size: 70px;
         }
+    }
+    @include respond-to(600, max){
+        position: static;
     }
 }
 .product-price{
@@ -317,20 +367,7 @@
         float: right;
     }
     @include respond-to(768, max){
-        position: absolute;
-        bottom: -609px;
-        left: 50%;
-        background: none;
-        width: 160px;
-        margin: 0 0 0 -80px;
-        padding: 0;
-        h4{
-            float: none;
-            margin: 0 0 30px;
-        }
-        .btn{
-            float: none;
-        }
+        display: none;
     }
 }
 .prod-nav{
@@ -382,7 +419,7 @@
     }
     @include respond-to(768, max){
         top: auto;
-        bottom: 50px;
+        bottom: 0;
         left: 0;
         text-align: center;
         .cat-title{
