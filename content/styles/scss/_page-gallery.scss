@@ -364,6 +364,14 @@
             width: auto;
         }
     }
+    @include respond-to(480, max){
+        h1{
+            margin: 10px 0 -5px;
+        }
+        p{
+            margin-top: 0;
+        }
+    }
 }
 .product-price{
     background:url('../images/nav-bg.png')50% 0 no-repeat;

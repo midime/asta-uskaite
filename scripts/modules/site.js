@@ -266,6 +266,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
                 $('.ferror').hide();
                 $('.fsuccess').hide();
                 $('.js-contact-form').show();
+                $(window).scrollTop(0);
             });
 
             $('.js-drawer-close').on('click touch', function (e) {
@@ -289,6 +290,7 @@ define(['jquery', 'bxslider', 'validation', 'modal'], function ($) {
             e.preventDefault();
             $('.js-nav-catalog').toggleClass('opened');
         });
+
     };
 
     module.validateForms = function () {
