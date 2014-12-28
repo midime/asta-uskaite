@@ -917,7 +917,11 @@ html.modal-on, .modal-on body {
       .slide .slide-content .btn {
         margin-top: 5px;
         background: #ffffff;
-        color: #000000; } }
+        color: #000000;
+        font-size: 12px;
+        padding: 0 15px;
+        height: 34px;
+        line-height: 34px; } }
 
 .slide.brooches {
   background-image: url(../images/slides/brooches.jpg);
@@ -983,7 +987,8 @@ html.modal-on, .modal-on body {
       text-align: right; }
       .slide.necklaces .slide-content h2 {
         font-size: 50px;
-        text-align: right; }
+        text-align: right;
+        margin-left: 10px; }
       .slide.necklaces .slide-content .btn {
         color: #412317; } }
 
@@ -1090,11 +1095,7 @@ html.modal-on, .modal-on body {
         text-align: left;
         font-size: 54px; }
       .slide.accessories .slide-content .btn {
-        color: #71402B;
-        font-size: 12px;
-        padding: 0 15px;
-        height: 34px;
-        line-height: 34px; } }
+        color: #71402B; } }
 
 .about {
   text-align: center;
