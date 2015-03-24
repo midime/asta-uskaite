@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </figure>
-            <figcaption><?php echo get_field('price', $post->ID); ?></figcaption>
+            <figcaption><span>€</span><?php echo get_field('price', $post->ID); ?></figcaption>
         </a>
     <?php
     }
