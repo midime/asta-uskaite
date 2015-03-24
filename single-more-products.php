@@ -21,9 +21,11 @@ foreach ( $postList as $post ) {
     <a href="<?php echo get_permalink($post->ID); ?>" class="tile">
 
         <figure>
-
-            <img src="<?php echo $productImage['image']; ?>" alt="<?php echo _($productImage['title']); ?>">
-
+            <div class="thumb-wrapper">
+                <div class="thumb-inner">
+                    <img src="<?php echo $productImage['image']; ?>" alt="<?php echo _($productImage['title']); ?>">
+                </div>
+            </div>
         </figure>
 
         <figcaption><?php echo get_field('price', $post->ID); ?></figcaption>
