@@ -1,0 +1,349 @@
+.promo {
+    height: 100%;
+    overflow: hidden;
+    background: #545454;
+    .bx-viewport, .bx-wrapper, #promo-slide {
+        height: 100% !important;
+    }
+    .bx-controls {
+        $slider-paging-margin: 10px;
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        z-index: 9999;
+        width: 12px;
+        margin: -65px 0 0 0;
+        .bx-pager-link {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border: $color-white solid 1px;
+            border-radius: 100%;
+            margin: $slider-paging-margin;
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+        .bx-pager-link.active {
+            background: $color-white;
+        }
+        .bx-prev, .bx-next {
+            position: absolute;
+            display: block;
+            overflow: hidden;
+            text-indent: -99px;
+            left: 13px;
+            top: -8px;
+            width: 7px;
+            height: 7px;
+            border-top: $color-white solid 1px;
+            border-right: $color-white solid 1px;
+            @include transform(rotate(-45deg));
+        }
+        .bx-next {
+            top: auto;
+            bottom: -8px;
+            @include transform(rotate(135deg));
+        }
+        @include respond-to(1024, max) {
+            right: 30px;
+        }
+    }
+}
+.slide-mode-h{
+    .bx-controls{
+        right: auto;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        margin: 0 0 10px -50px;
+        width: 100px;
+        .bx-pager-link{
+            width: 8px;
+            height: 8px;
+            margin: 5px;
+            float: left;
+        }
+        .bx-prev{
+            top: 6px;
+            left: -7px;
+            @include transform(rotate(-135deg));
+        }
+        .bx-next{
+            top: 6px;
+            right: -7px;
+            bottom: auto;
+            left: auto;
+            @include transform(rotate(45deg));
+        }
+    }
+    @include respond-to(480, max){
+        .bx-controls{
+            display: none;
+        }
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    color: $color-white;
+    .page-frame{
+        position: relative;
+        padding-top: 0;
+        height: 100%;
+    }
+    .slide-content{
+        position: absolute;
+        text-align: center;
+        h2{
+            font-family: $font-greatvibes;
+            font-size: 100px;
+            line-height: 1.0em;
+            margin: 0;
+            font-weight: normal;
+            text-align: center;
+        }
+        .btn{
+            border-color: $color-white;
+            color: $color-white;
+            margin:20px 0 0;
+            letter-spacing: 2px;
+        }
+        @include respond-to(1024, max) {
+            h2{
+                font-size: 70px;
+            }
+        }
+        @include respond-to(480, max){
+            h2{
+                font-size: 50px;
+            }
+            .btn{
+                margin-top: 5px;
+                background: $color-white;
+                color: $color-black;
+                font-size: 12px;
+                padding: 0 15px;
+                height: 34px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+.slide.brooches {
+    background-image: url(../images/slides/brooches.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    @include background-cover;
+    .slide-content{
+        left: 20px;
+        top: 43%;
+        .btn:hover{
+            color: #595649;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 77% 100%;
+        .slide-content{
+            left: 7%;
+        }
+    }
+    @include respond-to(768, max){
+        background-position: 40% 100%;
+        .slide-content{
+            left: 9%   ;
+            top: 47%;
+        }
+    }
+    @include respond-to(480, max){
+        background-position: 57% 100%;
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+            text-align: left;
+            h2{
+                text-align: left;
+            }
+            .btn{
+                color: #464844;
+            }
+        }
+    }
+}
+
+.slide.necklaces {
+    background: url(../images/slides/necklaces.jpg) 0% 0% no-repeat;
+    @include background-cover;
+    .slide-content{
+        right: 30px;
+        top: 43%;
+        h2{
+            font-size: 77px;
+        }
+        .btn:hover{
+            color: #512E20;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 30% 0;
+        .slide-content{
+            right: 10%;
+        }
+    }
+    @include  respond-to(768, max){
+        .slide-content{
+            top: 76%;
+        }
+    }
+    @include respond-to(480, max){
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+            text-align: right;
+            h2{
+                font-size: 50px;
+                text-align: right;
+                margin-left: 10px;
+            }
+            .btn{
+                color: #412317;
+            }
+        }
+    }
+}
+
+.slide.earrings {
+    background-image: url(../images/slides/earrings.jpg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    @include background-cover;
+    .slide-content{
+        right: 30px;
+        top: 44%;
+        .btn:hover{
+            color: #71665A;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 55% 0;
+        .slide-content{
+            right: 19%;
+        }
+    }
+    @include  respond-to(768, max){
+        .slide-content{
+            top: 65%;
+        }
+    }
+    @include respond-to(480, max){
+        background-position: 35% 0;
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+            right: 10%;
+            text-align: right;
+            h2{
+                text-align: right;
+            }
+            .btn{
+                color: #6F6A60;
+            }
+        }
+    }
+}
+
+.slide.bracelets {
+    background-image: url(../images/slides/bracelets.jpg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    @include background-cover;
+    .slide-content{
+        left: 30px;
+        top: 42%;
+        .btn:hover{
+            color: #2C2A2F;
+        }
+        @include respond-to(1024, max){
+            left: 10%;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 60% 0;
+        .slide-content{
+            left: 10%;
+        }
+    }
+    @include  respond-to(768, max){
+        .slide-content{
+            top: 50%;
+        }
+    }
+    @include respond-to(480, max){
+        .slide-content{
+            top: auto;
+            bottom: 7%;
+            text-align: left;
+            h2{
+                text-align: left;
+            }
+            .btn{
+                color: #71402B;
+            }
+        }
+    }
+}
+
+.slide.accessories {
+    background-image: url(../images/slides/head_accessories.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    @include background-cover;
+    .slide-content{
+        left: 30px;
+        top: 45%;
+        h2{
+            font-size: 84px;
+        }
+        .btn:hover{
+            color: #693833;
+        }
+    }
+    @include respond-to(1024, max){
+        background-position: 58% 0;
+        .slide-content{
+            left: 8%;
+            h2{
+                font-size: 64px;
+            }
+        }
+    }
+    @include  respond-to(768, max){
+        .slide-content{
+            top: 53%;
+        }
+    }
+    @include respond-to(480, max){
+        .slide-content{
+            top: auto;
+            left: 10%;
+            bottom: 7%;
+            text-align: left;
+            h2{
+                text-align: left;
+                font-size: 54px;
+            }
+            .btn{
+                color: #71402B;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

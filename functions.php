@@ -521,7 +521,6 @@ function getProductImageObject($postID) {
         foreach ( $attachments as $attachment ) {
             $productTitle = apply_filters( 'the_title', $attachment->post_title );
             $productImage = wp_get_attachment_image_src( $attachment->ID, 'gallery-thumb' );
-
         }
     }
 

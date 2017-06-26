@@ -1,5 +1,3 @@
-@import "compass/css3";
-@import "mixins";
 
 .xdebug-var-dump{
     display: none;
@@ -772,6 +770,7 @@ html.modal-on, .modal-on body{
     height: 100%;
     overflow: hidden;
 }
+
 .modal-context{
     position: absolute;
     left: 0;
@@ -782,6 +781,7 @@ html.modal-on, .modal-on body{
     background: $color-white;
     background-position: 50% 50%;
     background-size: cover;
+
     &:before{
         content:'';
         display: block;

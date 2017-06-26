@@ -8,7 +8,7 @@
         'post__in' => explode(',', $results[0]->meta_value),
         'post_type' => 'attachment',
         'posts_per_page' => 1
-    ) );
+    ));
 
     if ( $attachments ) {
         foreach ( $attachments as $attachment ) {
@@ -93,9 +93,15 @@
 </div>
 
 <script type="text/html" id="image-template">
-    <div class="modal-context" style="background-image:url('<?php echo $productImage[0]; ?>')">
-        <div class="modal-container" data-modal-control="container">
-            <div class="modal-title" data-modal-control="title"></div>
+    <div class="au-modal-context">
+        <div class="au-modal-container" data-modal-control="container">
+            <div class="au-modal-title" data-modal-control="title"></div>
+            <div class="modal-content">
+                <div class="image-holder">
+                    <img src="<?php echo $productImage[0]; ?>" alt="<?php echo get_the_TITLE(); ?>" />
+                </div>
+
+            </div>
             <div class="modal-close" data-modal-control="close"></div>
         </div>
     </div>

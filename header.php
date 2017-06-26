@@ -20,7 +20,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="google-site-verification" content="SjaZeiYpP_-1zOtDQxr6kGUEHwhdXXc1emhTRCmGlXQ" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic|Great+Vibes|Lora:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/styles.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/styles.css?v=2">
+    <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/update-06.26.2017.css?v=2">
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_start(); ?>content/styles/css/custom.css">
     <!--[if lt IE 9]>
         <script src="<?php echo get_template_start(); ?>scripts/html5shim.js" type="text/javascript"></script>

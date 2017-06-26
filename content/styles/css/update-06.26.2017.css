@@ -1,0 +1,65 @@
+.au-modal-context {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  overflow-y: auto;
+  height: 100%;
+
+
+
+}
+
+.au-modal-container {
+  width: 70%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px 30px 60px;
+  position: relative;
+}
+
+.au-modal-container .image-holder {
+
+}
+
+.au-modal-container .modal-close {
+  background: #000;
+  top: 16px;
+  right: 16px;
+  border: 0;
+}
+
+.au-modal-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  color: #000;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.au-modal-container img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .au-modal-container {
+    width: auto;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .au-modal-container {
+    padding: 20px 20px 60px;
+    margin: 0;
+  }
+}

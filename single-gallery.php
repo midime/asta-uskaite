@@ -1,4 +1,14 @@
-<div class="page-frame page-content">
+<div class="page-frame page-content pos-relative">
+
+<form role="search" method="get" class="search-form in-gallery" action="/">
+    <div class="field-wrapper">
+        <label>
+            <input type="search" class="field-text" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s" title="Search...">
+        </label>
+        <button type="submit" class="btn dark">Search <i class="icon-search"></i></button>
+    </div>
+</form>
+
 <h1><?php echo __(get_the_title()); ?></h1>
 
 <?php include("product-nav.php"); ?>
@@ -25,7 +35,10 @@
                     </div>
                 </div>
             </figure>
-            <figcaption><span>€</span><?php echo get_field('price', $post->ID); ?></figcaption>
+            <figcaption>
+                <strong><?php echo trim($productImage['title'], '()'); ?></strong>
+                <span>€</span><?php echo get_field('price', $post->ID); ?>
+            </figcaption>
         </a>
     <?php
     }
